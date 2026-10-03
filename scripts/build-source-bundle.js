@@ -19,7 +19,7 @@ const walk = async (directory, prefix) => {
 const main = async () => {
   const output = process.argv[2];
   if (!output || process.argv.length !== 3 || !output.endsWith('.zip')) throw new Error('Use node scripts/build-source-bundle.js /absolute/new-source.zip');
-  const files = ['package.json', 'package-lock.json', '.npmrc', '.gitignore', 'baseline.json',
+  const files = ['package.json', 'package-lock.json', '.npmrc', '.gitignore', '.gitattributes', 'baseline.json',
     'README.md', 'LICENSE', 'NOTICE', 'THIRD_PARTY_NOTICES.md', 'CONTRIBUTING.md', 'SECURITY.md', 'tw'];
   for (const name of ['bin', 'src', 'resources', 'vendor', 'LICENSES', 'upstream', 'docs', 'scripts', 'test']) {
     files.push(...await walk(path.join(root, name), name));

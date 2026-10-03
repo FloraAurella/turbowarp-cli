@@ -1,0 +1,7 @@
+# Preserve third-party bytes and historical logs; their whitespace is upstream data.
+LICENSES/** -text -whitespace
+vendor/** -text -whitespace
+docs/verification/** -whitespace
+resources/** -text
+upstream/*.zip -text
+test/fixtures/*.sb3 -text
