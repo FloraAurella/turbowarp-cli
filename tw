@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if command -v node >/dev/null 2>&1; then
+  exec node "$ROOT/bin/tw.js" "$@"
+fi
+# An explicit executable can bootstrap selection even without a PATH node.
+if [ "${TW_NODE+x}" = x ]; then
+  exec "$TW_NODE" "$ROOT/bin/tw.js" "$@"
+fi
+echo 'tw: Node.js is not on PATH; set TW_NODE to a Node 24 executable.' >&2
+exit 1

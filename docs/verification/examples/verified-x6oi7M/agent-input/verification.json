@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "mode": "input",
+  "directory": "/path/to/turbowarp-cli/examples/verified-x6oi7M/agent-input",
+  "verified": true,
+  "commands": 21,
+  "expectedErrors": 0,
+  "files": [
+    "demo.sb3",
+    "result.png",
+    "transcript.json",
+    "verification.json"
+  ]
+}

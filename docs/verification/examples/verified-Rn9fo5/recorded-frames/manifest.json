@@ -1,0 +1,399 @@
+{
+  "version": 1,
+  "protocol": "tw-record-v1",
+  "complete": true,
+  "backend": "NativeVM/NativeRenderer; no DOM, no browser, no MediaRecorder",
+  "sourceProjectSha256": "042fe3a54e720bfac7e3b583dd9e2047b5c3a3fa5de2b7c7bfc0e162a31339d3",
+  "options": {
+    "duration": 0.2,
+    "delay": 0,
+    "fps": 10,
+    "waitflag": true,
+    "flagFrame": 0,
+    "stopOnStop": true,
+    "stopFrame": null,
+    "projectaudio": false,
+    "microphonemix": false,
+    "answer": "",
+    "durationFrames": 2,
+    "delayFrames": 0,
+    "triggerFrame": 0,
+    "captureStartFrame": 0,
+    "endFrame": 2
+  },
+  "timing": {
+    "fps": 10,
+    "duration": 0.2,
+    "frameCount": 2,
+    "simulatedFrames": 2,
+    "triggerFrame": 0,
+    "captureStartFrame": 0,
+    "endExclusiveFrame": 2,
+    "stopReason": "duration",
+    "durationIncludesDelay": true,
+    "threadExhaustionIsStop": false,
+    "frameSampling": "after input and runtime step; frame zero is included"
+  },
+  "dimensions": {
+    "width": 640,
+    "height": 480
+  },
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame-000000.png",
+      "simulationFrame": 0,
+      "timeSeconds": 0,
+      "simulationSeconds": 0,
+      "format": "png",
+      "width": 640,
+      "height": 480,
+      "bytes": 2360,
+      "sha256": "8b3ace41da37d65355848c30dcf0244cb232589957cf636286ceb37a96fe1c66",
+      "pixelsSha256": "1050aa2da73c74835174728393ee19c67a747390c23ddc759963a49d4ddd3ee6",
+      "pixels": 307200
+    },
+    {
+      "index": 1,
+      "file": "frame-000001.png",
+      "simulationFrame": 1,
+      "timeSeconds": 0.1,
+      "simulationSeconds": 0.1,
+      "format": "png",
+      "width": 640,
+      "height": 480,
+      "bytes": 2360,
+      "sha256": "8b3ace41da37d65355848c30dcf0244cb232589957cf636286ceb37a96fe1c66",
+      "pixelsSha256": "1050aa2da73c74835174728393ee19c67a747390c23ddc759963a49d4ddd3ee6",
+      "pixels": 307200
+    }
+  ],
+  "audio": null,
+  "outputBytes": 4720,
+  "questions": [
+    "null",
+    "null"
+  ],
+  "noDOM": true,
+  "limits": {
+    "wallMS": 30000,
+    "frames": 900,
+    "rssBytes": 536870912,
+    "outputBytes": 268435456,
+    "projectBytes": 33554432,
+    "audioBytes": 16777216,
+    "decodedAudioBytes": 33554432,
+    "tracks": 16,
+    "audioSeconds": 30,
+    "sampleRate": 44100,
+    "channels": 2,
+    "pngBytes": 4194304,
+    "pixels": 2073600
+  },
+  "capabilities": {
+    "projectaudio": "not-yet-supported: fail-closed",
+    "microphone": "D7 pre-recorded replacement permitted; live mic capture denied; no realdevice claim",
+    "realGUI": "not-run; tests compare frozen source/parser and digital media, not GUI capture"
+  },
+  "runtimeCopy": {
+    "targets": [
+      {
+        "id": "!a?zc(Zv!n~{kc?Rcn{@",
+        "name": "Stage",
+        "isStage": true,
+        "x": 0,
+        "y": 0,
+        "size": 100,
+        "direction": 90,
+        "visible": true,
+        "costumes": [
+          {
+            "index": 0,
+            "name": "背景",
+            "format": "svg",
+            "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+          }
+        ],
+        "sounds": [],
+        "blocks": 0,
+        "variables": []
+      },
+      {
+        "id": "#Duym)n_`PMJ*@WCv%+h",
+        "name": "Sprite1",
+        "isStage": false,
+        "x": 25,
+        "y": 0,
+        "size": 100,
+        "direction": 90,
+        "visible": true,
+        "costumes": [
+          {
+            "index": 0,
+            "name": "造型",
+            "format": "svg",
+            "md5": "6af63c492552d450bec7fe06428992d6.svg"
+          },
+          {
+            "index": 1,
+            "name": "drawing",
+            "format": "svg",
+            "md5": "119fcfdd91b92b060c15d1090daa2de5.svg"
+          }
+        ],
+        "sounds": [],
+        "blocks": 3,
+        "variables": [
+          {
+            "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+            "name": "得分",
+            "type": "",
+            "value": 5,
+            "cloud": false
+          }
+        ]
+      }
+    ],
+    "threads": 0
+  },
+  "memory": {
+    "limitBytes": 536870912,
+    "sampledPeakRSSBytes": 162086912,
+    "peakRSSBytes": 162136064,
+    "hostFontDiscovery": false,
+    "canvasBootstrapFontFamilies": 0,
+    "phases": [
+      {
+        "phase": "bootstrap",
+        "rssBytes": 47202304,
+        "heapUsedBytes": 5285320,
+        "externalBytes": 1958724,
+        "arrayBufferBytes": 137679,
+        "peakRSSBytes": 103333888
+      },
+      {
+        "phase": "canvas-require",
+        "rssBytes": 57671680,
+        "heapUsedBytes": 6056992,
+        "externalBytes": 2329700,
+        "arrayBufferBytes": 143823,
+        "peakRSSBytes": 103333888
+      },
+      {
+        "phase": "modules-loaded",
+        "rssBytes": 101761024,
+        "heapUsedBytes": 17077424,
+        "externalBytes": 2690664,
+        "arrayBufferBytes": 157575,
+        "peakRSSBytes": 103333888,
+        "fontFamilies": 0
+      },
+      {
+        "phase": "archive-preflight-before",
+        "rssBytes": 102023168,
+        "heapUsedBytes": 17200480,
+        "externalBytes": 2692954,
+        "arrayBufferBytes": 159863,
+        "peakRSSBytes": 103333888
+      },
+      {
+        "phase": "archive-preflight-after",
+        "rssBytes": 105775104,
+        "heapUsedBytes": 17734520,
+        "externalBytes": 4064106,
+        "arrayBufferBytes": 1197232,
+        "peakRSSBytes": 105807872
+      },
+      {
+        "phase": "native-audio-decoded",
+        "rssBytes": 112263168,
+        "heapUsedBytes": 27148392,
+        "externalBytes": 4358827,
+        "arrayBufferBytes": 546799,
+        "peakRSSBytes": 112263168
+      },
+      {
+        "phase": "project-load-before",
+        "rssBytes": 112263168,
+        "heapUsedBytes": 27150440,
+        "externalBytes": 4358827,
+        "arrayBufferBytes": 546799,
+        "peakRSSBytes": 112263168
+      },
+      {
+        "phase": "native-fonts-0-before",
+        "rssBytes": 125091840,
+        "heapUsedBytes": 24641488,
+        "externalBytes": 5781694,
+        "arrayBufferBytes": 1969666,
+        "peakRSSBytes": 125091840,
+        "fontFamilies": 0
+      },
+      {
+        "phase": "native-fonts-0-after",
+        "rssBytes": 130072576,
+        "heapUsedBytes": 24758904,
+        "externalBytes": 7486816,
+        "arrayBufferBytes": 3674786,
+        "peakRSSBytes": 130072576,
+        "fontFamilies": 14
+      },
+      {
+        "phase": "native-fonts-1-before",
+        "rssBytes": 130301952,
+        "heapUsedBytes": 24923208,
+        "externalBytes": 7488422,
+        "arrayBufferBytes": 3674786,
+        "peakRSSBytes": 130301952,
+        "fontFamilies": 14
+      },
+      {
+        "phase": "native-fonts-1-after",
+        "rssBytes": 131497984,
+        "heapUsedBytes": 25000560,
+        "externalBytes": 8785252,
+        "arrayBufferBytes": 4970010,
+        "peakRSSBytes": 131497984,
+        "fontFamilies": 14
+      },
+      {
+        "phase": "project-load-after",
+        "rssBytes": 138723328,
+        "heapUsedBytes": 25635320,
+        "externalBytes": 10262058,
+        "arrayBufferBytes": 5707610,
+        "peakRSSBytes": 138723328,
+        "fontFamilies": 14
+      },
+      {
+        "phase": "project-load-gc",
+        "rssBytes": 140967936,
+        "heapUsedBytes": 22046640,
+        "externalBytes": 10263664,
+        "arrayBufferBytes": 760266,
+        "peakRSSBytes": 140967936
+      },
+      {
+        "phase": "input-replay-prepared",
+        "rssBytes": 141033472,
+        "heapUsedBytes": 22123496,
+        "externalBytes": 10263664,
+        "arrayBufferBytes": 760266,
+        "peakRSSBytes": 141033472
+      },
+      {
+        "phase": "frame-before",
+        "frame": 0,
+        "rssBytes": 141033472,
+        "heapUsedBytes": 22126040,
+        "externalBytes": 10263664,
+        "arrayBufferBytes": 760266,
+        "peakRSSBytes": 141033472
+      },
+      {
+        "phase": "frame-native-png",
+        "frame": 0,
+        "rssBytes": 150536192,
+        "heapUsedBytes": 22409592,
+        "externalBytes": 8998846,
+        "arrayBufferBytes": 3218058,
+        "peakRSSBytes": 150536192
+      },
+      {
+        "phase": "frame-verified",
+        "frame": 0,
+        "rssBytes": 153157632,
+        "heapUsedBytes": 22557968,
+        "externalBytes": 10227646,
+        "arrayBufferBytes": 3218058,
+        "peakRSSBytes": 153157632
+      },
+      {
+        "phase": "frame-after-release",
+        "frame": 0,
+        "rssBytes": 153157632,
+        "heapUsedBytes": 22590448,
+        "externalBytes": 10228062,
+        "arrayBufferBytes": 3218474,
+        "peakRSSBytes": 153157632
+      },
+      {
+        "phase": "frame-before",
+        "frame": 1,
+        "rssBytes": 153157632,
+        "heapUsedBytes": 22592936,
+        "externalBytes": 10228062,
+        "arrayBufferBytes": 3218474,
+        "peakRSSBytes": 153157632
+      },
+      {
+        "phase": "frame-native-png",
+        "frame": 1,
+        "rssBytes": 158138368,
+        "heapUsedBytes": 22620144,
+        "externalBytes": 13916822,
+        "arrayBufferBytes": 5676074,
+        "peakRSSBytes": 158138368
+      },
+      {
+        "phase": "frame-verified",
+        "frame": 1,
+        "rssBytes": 161923072,
+        "heapUsedBytes": 22724232,
+        "externalBytes": 15145622,
+        "arrayBufferBytes": 5676074,
+        "peakRSSBytes": 161923072
+      },
+      {
+        "phase": "frame-after-release",
+        "frame": 1,
+        "rssBytes": 162037760,
+        "heapUsedBytes": 22190840,
+        "externalBytes": 15146038,
+        "arrayBufferBytes": 760874,
+        "peakRSSBytes": 162037760
+      },
+      {
+        "phase": "output-ready",
+        "rssBytes": 162054144,
+        "heapUsedBytes": 22217144,
+        "externalBytes": 15146038,
+        "arrayBufferBytes": 760874,
+        "peakRSSBytes": 162054144
+      },
+      {
+        "phase": "native-fonts-2-before",
+        "rssBytes": 162070528,
+        "heapUsedBytes": 22254744,
+        "externalBytes": 15146038,
+        "arrayBufferBytes": 760874,
+        "peakRSSBytes": 162070528,
+        "fontFamilies": 14
+      },
+      {
+        "phase": "native-fonts-2-after",
+        "rssBytes": 162086912,
+        "heapUsedBytes": 22320632,
+        "externalBytes": 7840852,
+        "arrayBufferBytes": 2056098,
+        "peakRSSBytes": 162086912,
+        "fontFamilies": 14
+      },
+      {
+        "phase": "disposed",
+        "rssBytes": 160628736,
+        "heapUsedBytes": 22073744,
+        "externalBytes": 7842458,
+        "arrayBufferBytes": 281126,
+        "peakRSSBytes": 162136064,
+        "fontFamilies": 0
+      }
+    ]
+  },
+  "format": "frames",
+  "authorization": {
+    "outputDirectory": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/recorded-frames",
+    "executablePolicy": "exact per-command grants; pinned realpath; no shell; not an OS sandbox",
+    "tracks": []
+  }
+}

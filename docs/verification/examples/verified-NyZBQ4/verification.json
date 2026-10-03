@@ -1,0 +1,24 @@
+{
+  "directory": "/path/to/turbowarp-cli/examples/verified-NyZBQ4",
+  "commands": 37,
+  "targetXAfterRun": 25,
+  "editorXAfterRun": 0,
+  "traceEntries": 1,
+  "libraryAssets": 1304,
+  "noDOM": true,
+  "recordingFrames": 2,
+  "files": [
+    "demo.sb3",
+    "result.png",
+    "demo.html",
+    "demo.zip",
+    "with-cat.sb3",
+    "drawing.svg",
+    "drawing.png",
+    "font.png",
+    "inputs.jsonl",
+    "tutorial.sb3",
+    "tutorial.html",
+    "recorded-frames/manifest.json"
+  ]
+}

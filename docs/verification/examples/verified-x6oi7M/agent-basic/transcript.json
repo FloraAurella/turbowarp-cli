@@ -1,0 +1,1136 @@
+[
+  {
+    "request": {
+      "id": 1,
+      "command": "help",
+      "args": [
+        "script",
+        "--json"
+      ]
+    },
+    "reply": {
+      "id": 1,
+      "ok": true,
+      "result": {
+        "schemaVersion": 1,
+        "family": "script",
+        "commands": [
+          {
+            "command": "script",
+            "action": "demo",
+            "minArguments": 0,
+            "maxArguments": 1,
+            "parameters": [
+              {
+                "name": "distance",
+                "type": "string",
+                "semanticType": null,
+                "required": false,
+                "semanticKnown": true
+              }
+            ],
+            "options": [
+              {
+                "name": "project",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "path",
+                  "description": "打开本地项目；script validate 使用独立只读项目，不替换原会话。"
+                },
+                "default": null,
+                "defaultKnown": false
+              },
+              {
+                "name": "target",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "selector",
+                  "description": "目标名称或稳定 ID；pack build 中为打包目标。"
+                },
+                "default": null,
+                "defaultKnown": false
+              },
+              {
+                "name": "out",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "path",
+                  "description": "编辑命令保存 SB3；run/render 输出 PNG；package 输出打包文件。"
+                },
+                "default": null,
+                "defaultKnown": false
+              },
+              {
+                "name": "force",
+                "takesValue": false,
+                "type": "boolean",
+                "semantic": {
+                  "type": "boolean",
+                  "description": "显式覆盖输出或丢弃修改，不能绕过文件/权限限制。"
+                },
+                "default": null,
+                "defaultKnown": false
+              }
+            ],
+            "project": "required",
+            "access": "write",
+            "persistence": "session: save; one-shot: --out .sb3",
+            "examples": [
+              [
+                "script",
+                "demo",
+                "25"
+              ]
+            ],
+            "semanticKnown": true
+          },
+          {
+            "command": "script",
+            "action": "validate",
+            "minArguments": 1,
+            "maxArguments": 1,
+            "parameters": [
+              {
+                "name": "file",
+                "type": "string",
+                "semanticType": null,
+                "required": true,
+                "semanticKnown": true
+              }
+            ],
+            "options": [
+              {
+                "name": "project",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "path",
+                  "description": "打开本地项目；script validate 使用独立只读项目，不替换原会话。"
+                },
+                "default": null,
+                "defaultKnown": false
+              },
+              {
+                "name": "target",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "selector",
+                  "description": "目标名称或稳定 ID；pack build 中为打包目标。"
+                },
+                "default": null,
+                "defaultKnown": false
+              }
+            ],
+            "project": "required",
+            "access": "read",
+            "persistence": "does not edit project",
+            "examples": [
+              [
+                "script",
+                "validate",
+                "script.json",
+                "--project",
+                "demo.sb3"
+              ]
+            ],
+            "semanticKnown": true
+          },
+          {
+            "command": "script",
+            "action": "apply",
+            "minArguments": 1,
+            "maxArguments": 1,
+            "parameters": [
+              {
+                "name": "file",
+                "type": "string",
+                "semanticType": null,
+                "required": true,
+                "semanticKnown": true
+              }
+            ],
+            "options": [
+              {
+                "name": "project",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "path",
+                  "description": "打开本地项目；script validate 使用独立只读项目，不替换原会话。"
+                },
+                "default": null,
+                "defaultKnown": false
+              },
+              {
+                "name": "target",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "selector",
+                  "description": "目标名称或稳定 ID；pack build 中为打包目标。"
+                },
+                "default": null,
+                "defaultKnown": false
+              },
+              {
+                "name": "out",
+                "takesValue": true,
+                "type": "string",
+                "semantic": {
+                  "type": "path",
+                  "description": "编辑命令保存 SB3；run/render 输出 PNG；package 输出打包文件。"
+                },
+                "default": null,
+                "defaultKnown": false
+              },
+              {
+                "name": "force",
+                "takesValue": false,
+                "type": "boolean",
+                "semantic": {
+                  "type": "boolean",
+                  "description": "显式覆盖输出或丢弃修改，不能绕过文件/权限限制。"
+                },
+                "default": null,
+                "defaultKnown": false
+              }
+            ],
+            "project": "required",
+            "access": "write",
+            "persistence": "session: save; one-shot: --out .sb3",
+            "examples": [
+              [
+                "script",
+                "apply",
+                "script.json",
+                "--project",
+                "demo.sb3",
+                "--out",
+                "edited.sb3"
+              ]
+            ],
+            "semanticKnown": true
+          }
+        ],
+        "transport": {
+          "protocol": "JSONL",
+          "request": {
+            "id": "caller-supplied",
+            "command": "string",
+            "args": "string[]"
+          },
+          "session": [
+            "session",
+            "--jsonl"
+          ],
+          "failFastSession": [
+            "session",
+            "--jsonl",
+            "--fail-fast"
+          ],
+          "exitCodes": {
+            "0": "completed; inspect each reply.ok",
+            "1": "failure",
+            "2": "unsaved changes"
+          }
+        }
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 2,
+      "command": "capabilities",
+      "args": [
+        "--json"
+      ]
+    },
+    "reply": {
+      "id": 2,
+      "ok": true,
+      "result": {
+        "schemaVersion": 1,
+        "implemented": [
+          {
+            "id": "project-editing",
+            "commands": [
+              "new",
+              "open",
+              "save",
+              "undo",
+              "redo"
+            ],
+            "conditions": [
+              "Node 24",
+              "本地项目文件"
+            ],
+            "acceptance": "local-functional-tests"
+          },
+          {
+            "id": "script-recipes",
+            "commands": [
+              "script validate",
+              "script apply",
+              "blocks schema"
+            ],
+            "conditions": [
+              "已打开项目",
+              "可查询 schema 的已加载积木",
+              "过程使用现有 proc 命令"
+            ],
+            "acceptance": "local-functional-tests"
+          },
+          {
+            "id": "offline-library",
+            "commands": [
+              "library status",
+              "library search",
+              "library load"
+            ],
+            "conditions": [
+              "随附本地素材"
+            ],
+            "acceptance": "resource-hashes"
+          },
+          {
+            "id": "isolated-runtime",
+            "commands": [
+              "run",
+              "runtime"
+            ],
+            "conditions": [
+              "断点、积木单步与 trace 需要解释模式"
+            ],
+            "acceptance": "local-functional-tests"
+          },
+          {
+            "id": "recorded-input",
+            "commands": [
+              "device",
+              "input"
+            ],
+            "conditions": [
+              "显式预录数据",
+              "不采集真实设备"
+            ],
+            "acceptance": "local-functional-tests"
+          },
+          {
+            "id": "offscreen-rendering",
+            "commands": [
+              "render",
+              "paint",
+              "font"
+            ],
+            "conditions": [
+              "原生依赖",
+              "冻结或显式导入字体"
+            ],
+            "acceptance": "local-functional-tests; GUI differential pending"
+          },
+          {
+            "id": "sound-assets",
+            "commands": [
+              "sound",
+              "asset"
+            ],
+            "conditions": [
+              "指定声音资源",
+              "不代表整项目音轨"
+            ],
+            "acceptance": "local-functional-tests; browser audio differential pending"
+          },
+          {
+            "id": "recording",
+            "commands": [
+              "record start"
+            ],
+            "conditions": [
+              "projectaudio=false",
+              "视频编码须精确授权 ffmpeg/ffprobe"
+            ],
+            "acceptance": "local-functional-tests"
+          },
+          {
+            "id": "packaging",
+            "commands": [
+              "package",
+              "pack build"
+            ],
+            "conditions": [
+              "HTML/ZIP 本地生成",
+              "平台播放验收独立进行"
+            ],
+            "acceptance": "generated-artifact-only"
+          }
+        ],
+        "unsupported": [
+          {
+            "id": "whole-project-audio",
+            "command": "record start --projectaudio true",
+            "code": "NOT_SUPPORTED",
+            "alternative": "使用 projectaudio=false 和显式预录 WAV 音轨。"
+          },
+          {
+            "id": "arbitrary-executable-extensions",
+            "alternative": "使用已批准的 pen/music 或预录 videoSensing/Gamepad。"
+          },
+          {
+            "id": "live-device-capture",
+            "alternative": "使用预录输入回放。"
+          },
+          {
+            "id": "recorded-provider-packaging",
+            "alternative": "videoSensing/Gamepad 数据提供器项目暂不转包。"
+          }
+        ],
+        "acceptance": {
+          "fullGUIParity": false,
+          "commandAvailabilityIsAcceptance": false,
+          "detailsCommand": "check",
+          "pending": [
+            "imageDifferential",
+            "audioDifferential",
+            "platforms",
+            "performance",
+            "permissions",
+            "devices"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 3,
+      "command": "blocks",
+      "args": [
+        "schema",
+        "motion_movesteps"
+      ]
+    },
+    "reply": {
+      "id": 3,
+      "ok": true,
+      "result": {
+        "schemaVersion": 1,
+        "opcode": "motion_movesteps",
+        "shape": "statement",
+        "inputs": {
+          "STEPS": {
+            "type": "value",
+            "menuOpcode": null,
+            "default": null,
+            "defaultKnown": false
+          }
+        },
+        "fields": {},
+        "available": null,
+        "recipeSupported": true,
+        "example": {
+          "opcode": "motion_movesteps",
+          "inputs": {
+            "STEPS": 25
+          }
+        },
+        "exampleRequires": [],
+        "notes": [
+          "来源为冻结积木声明；动态资源和可执行性需结合项目查询。"
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 4,
+      "command": "new",
+      "args": []
+    },
+    "reply": {
+      "id": 4,
+      "ok": true,
+      "result": {
+        "file": null,
+        "stage": {
+          "width": 480,
+          "height": 360
+        },
+        "selected": "Sprite1",
+        "targets": [
+          {
+            "id": "21|6OKN5G}D4%aS#|Ku1",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": "^tTt,7P[I^?XLS]F+_e*",
+            "name": "Sprite1",
+            "isStage": false,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "造型",
+                "format": "svg",
+                "md5": "6af63c492552d450bec7fe06428992d6.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 5,
+      "command": "library",
+      "args": [
+        "load",
+        "sprite",
+        "Cat 2"
+      ]
+    },
+    "reply": {
+      "id": 5,
+      "ok": true,
+      "result": {
+        "id": ")nXA~S(+kU)bDVinXjm8",
+        "name": "Cat 2"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 6,
+      "command": "sprite",
+      "args": [
+        "select",
+        "Sprite1"
+      ]
+    },
+    "reply": {
+      "id": 6,
+      "ok": true,
+      "result": {
+        "selected": "Sprite1"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 7,
+      "command": "sprite",
+      "args": [
+        "delete"
+      ]
+    },
+    "reply": {
+      "id": 7,
+      "ok": true,
+      "result": {
+        "file": null,
+        "stage": {
+          "width": 480,
+          "height": 360
+        },
+        "selected": "Cat 2",
+        "targets": [
+          {
+            "id": "21|6OKN5G}D4%aS#|Ku1",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": ")nXA~S(+kU)bDVinXjm8",
+            "name": "Cat 2",
+            "isStage": false,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "cat 2",
+                "format": "svg",
+                "md5": "7499cf6ec438d0c7af6f896bc6adc294.svg"
+              }
+            ],
+            "sounds": [
+              {
+                "index": 0,
+                "name": "meow2",
+                "rate": 44100,
+                "samples": 26048
+              }
+            ],
+            "blocks": 0,
+            "variables": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 8,
+      "command": "sprite",
+      "args": [
+        "select",
+        "Cat 2"
+      ]
+    },
+    "reply": {
+      "id": 8,
+      "ok": true,
+      "result": {
+        "selected": "Cat 2"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 9,
+      "command": "sprite",
+      "args": [
+        "rename",
+        "小猫"
+      ]
+    },
+    "reply": {
+      "id": 9,
+      "ok": true,
+      "result": {
+        "file": null,
+        "stage": {
+          "width": 480,
+          "height": 360
+        },
+        "selected": "小猫",
+        "targets": [
+          {
+            "id": "21|6OKN5G}D4%aS#|Ku1",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": ")nXA~S(+kU)bDVinXjm8",
+            "name": "小猫",
+            "isStage": false,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "cat 2",
+                "format": "svg",
+                "md5": "7499cf6ec438d0c7af6f896bc6adc294.svg"
+              }
+            ],
+            "sounds": [
+              {
+                "index": 0,
+                "name": "meow2",
+                "rate": 44100,
+                "samples": 26048
+              }
+            ],
+            "blocks": 0,
+            "variables": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 10,
+      "command": "sprite",
+      "args": [
+        "set",
+        "x",
+        "-120"
+      ]
+    },
+    "reply": {
+      "id": 10,
+      "ok": true,
+      "result": {
+        "file": null,
+        "stage": {
+          "width": 480,
+          "height": 360
+        },
+        "selected": "小猫",
+        "targets": [
+          {
+            "id": "21|6OKN5G}D4%aS#|Ku1",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": ")nXA~S(+kU)bDVinXjm8",
+            "name": "小猫",
+            "isStage": false,
+            "x": -120,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "cat 2",
+                "format": "svg",
+                "md5": "7499cf6ec438d0c7af6f896bc6adc294.svg"
+              }
+            ],
+            "sounds": [
+              {
+                "index": 0,
+                "name": "meow2",
+                "rate": 44100,
+                "samples": 26048
+              }
+            ],
+            "blocks": 0,
+            "variables": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 11,
+      "command": "script",
+      "args": [
+        "validate",
+        "/path/to/turbowarp-cli/scripts/recipes/basic.json"
+      ]
+    },
+    "reply": {
+      "id": 11,
+      "ok": true,
+      "result": {
+        "schemaVersion": 1,
+        "valid": true,
+        "targetId": ")nXA~S(+kU)bDVinXjm8",
+        "roots": [
+          "ed62ed5c-807b-4a1e-af83-f25bd9e4d685"
+        ],
+        "nodeMap": {
+          "$.scripts[0][0]": "ed62ed5c-807b-4a1e-af83-f25bd9e4d685",
+          "$.scripts[0][1]": "65ef2721-8578-406a-8acc-1626953683fc",
+          "$.scripts[0][2]": "2a83c34c-fdc9-45a2-9481-f18664635668"
+        },
+        "blockCount": 5,
+        "nodeCount": 3,
+        "diagnostics": [],
+        "applied": false
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 12,
+      "command": "script",
+      "args": [
+        "apply",
+        "/path/to/turbowarp-cli/scripts/recipes/basic.json"
+      ]
+    },
+    "reply": {
+      "id": 12,
+      "ok": true,
+      "result": {
+        "schemaVersion": 1,
+        "valid": true,
+        "targetId": ")nXA~S(+kU)bDVinXjm8",
+        "roots": [
+          "ad2d9c94-415f-40bd-af0e-531023a191f4"
+        ],
+        "nodeMap": {
+          "$.scripts[0][0]": "ad2d9c94-415f-40bd-af0e-531023a191f4",
+          "$.scripts[0][1]": "f9231fbc-caa3-414e-b87a-f73b3de919e9",
+          "$.scripts[0][2]": "f3b7c308-d8f7-457e-8f1d-7dddf7f2426c"
+        },
+        "blockCount": 5,
+        "nodeCount": 3,
+        "diagnostics": [],
+        "applied": true
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 13,
+      "command": "save",
+      "args": [
+        "demo.sb3"
+      ]
+    },
+    "reply": {
+      "id": 13,
+      "ok": true,
+      "result": {
+        "path": "/path/to/turbowarp-cli/examples/verified-x6oi7M/agent-basic/demo.sb3",
+        "bytes": 17962,
+        "sha256": "97af27b6c6712fa4af3f6678db83a045ebfd69b67de5831e01c2b6877fa92bac"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 14,
+      "command": "open",
+      "args": [
+        "demo.sb3"
+      ]
+    },
+    "reply": {
+      "id": 14,
+      "ok": true,
+      "result": {
+        "file": "/path/to/turbowarp-cli/examples/verified-x6oi7M/agent-basic/demo.sb3",
+        "stage": {
+          "width": 480,
+          "height": 360
+        },
+        "selected": "小猫",
+        "targets": [
+          {
+            "id": "21|6OKN5G}D4%aS#|Ku1",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": ")nXA~S(+kU)bDVinXjm8",
+            "name": "小猫",
+            "isStage": false,
+            "x": -120,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "cat 2",
+                "format": "svg",
+                "md5": "7499cf6ec438d0c7af6f896bc6adc294.svg"
+              }
+            ],
+            "sounds": [
+              {
+                "index": 0,
+                "name": "meow2",
+                "rate": 44100,
+                "samples": 26048
+              }
+            ],
+            "blocks": 5,
+            "variables": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 15,
+      "command": "run",
+      "args": [
+        "--frames",
+        "2",
+        "--seed",
+        "1234",
+        "--trace",
+        "100",
+        "--out",
+        "result.png"
+      ]
+    },
+    "reply": {
+      "id": 15,
+      "ok": true,
+      "result": {
+        "frames": 2,
+        "threads": 0,
+        "questions": [
+          null,
+          null
+        ],
+        "targets": [
+          {
+            "id": "21|6OKN5G}D4%aS#|Ku1",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": ")nXA~S(+kU)bDVinXjm8",
+            "name": "小猫",
+            "isStage": false,
+            "x": -20,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "cat 2",
+                "format": "svg",
+                "md5": "7499cf6ec438d0c7af6f896bc6adc294.svg"
+              }
+            ],
+            "sounds": [
+              {
+                "index": 0,
+                "name": "meow2",
+                "rate": 44100,
+                "samples": 26048
+              }
+            ],
+            "blocks": 5,
+            "variables": []
+          }
+        ],
+        "noDOM": true,
+        "seed": 1234,
+        "trace": {
+          "mode": "interpreter-primitives",
+          "entries": [
+            {
+              "sequence": 1,
+              "type": "block",
+              "frame": 0,
+              "timeMS": 0,
+              "threadId": ")nXA~S(+kU)bDVinXjm8&ad2d9c94-415f-40bd-af0e-531023a191f4",
+              "targetId": ")nXA~S(+kU)bDVinXjm8",
+              "originalTargetId": ")nXA~S(+kU)bDVinXjm8",
+              "blockId": "f9231fbc-caa3-414e-b87a-f73b3de919e9",
+              "opcode": "motion_movesteps"
+            },
+            {
+              "sequence": 2,
+              "type": "block",
+              "frame": 0,
+              "timeMS": 0,
+              "threadId": ")nXA~S(+kU)bDVinXjm8&ad2d9c94-415f-40bd-af0e-531023a191f4",
+              "targetId": ")nXA~S(+kU)bDVinXjm8",
+              "originalTargetId": ")nXA~S(+kU)bDVinXjm8",
+              "blockId": "f3b7c308-d8f7-457e-8f1d-7dddf7f2426c",
+              "opcode": "looks_say"
+            }
+          ],
+          "dropped": 0,
+          "capacity": 100,
+          "bytes": 541,
+          "sequence": 2
+        },
+        "image": {
+          "path": "/path/to/turbowarp-cli/examples/verified-x6oi7M/agent-basic/result.png",
+          "bytes": 12428,
+          "sha256": "986b919dad02f189b0b6a9aaa122221f56b5cc1cf311f48907015336181c781b"
+        }
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 16,
+      "command": "info",
+      "args": []
+    },
+    "reply": {
+      "id": 16,
+      "ok": true,
+      "result": {
+        "file": "/path/to/turbowarp-cli/examples/verified-x6oi7M/agent-basic/demo.sb3",
+        "stage": {
+          "width": 480,
+          "height": 360
+        },
+        "selected": "小猫",
+        "targets": [
+          {
+            "id": "21|6OKN5G}D4%aS#|Ku1",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": ")nXA~S(+kU)bDVinXjm8",
+            "name": "小猫",
+            "isStage": false,
+            "x": -120,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "cat 2",
+                "format": "svg",
+                "md5": "7499cf6ec438d0c7af6f896bc6adc294.svg"
+              }
+            ],
+            "sounds": [
+              {
+                "index": 0,
+                "name": "meow2",
+                "rate": 44100,
+                "samples": 26048
+              }
+            ],
+            "blocks": 5,
+            "variables": []
+          }
+        ],
+        "dirty": false
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 17,
+      "command": "quit",
+      "args": []
+    },
+    "reply": {
+      "id": 17,
+      "ok": true,
+      "result": {
+        "closed": true
+      }
+    }
+  }
+]

@@ -1,0 +1,1752 @@
+[
+  {
+    "argv": [
+      "new",
+      "demo.sb3"
+    ],
+    "exitCode": 0,
+    "result": {
+      "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/demo.sb3",
+      "bytes": 1410,
+      "sha256": "02c09c8fab1dafa74c5d25fc1a452d4dbcdb86192c6f4ebb60aac8626050a99a"
+    }
+  },
+  {
+    "argv": [
+      "script",
+      "demo",
+      "25",
+      "--project",
+      "demo.sb3",
+      "--out",
+      "demo.sb3"
+    ],
+    "exitCode": 0,
+    "result": {
+      "blocks": [
+        "5e9be80f-ccf8-451a-9dd8-55f825fea52a",
+        "ebfbf027-bac5-4464-9306-99d9d91d83ad"
+      ],
+      "distance": 25
+    }
+  },
+  {
+    "argv": [
+      "run",
+      "--project",
+      "demo.sb3",
+      "--frames",
+      "2",
+      "--out",
+      "result.png"
+    ],
+    "exitCode": 0,
+    "result": {
+      "frames": 2,
+      "threads": 0,
+      "questions": [
+        null,
+        null
+      ],
+      "targets": [
+        {
+          "id": "!a?zc(Zv!n~{kc?Rcn{@",
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "size": 100,
+          "direction": 90,
+          "visible": true,
+          "costumes": [
+            {
+              "index": 0,
+              "name": "背景",
+              "format": "svg",
+              "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+            }
+          ],
+          "sounds": [],
+          "blocks": 0,
+          "variables": []
+        },
+        {
+          "id": "#Duym)n_`PMJ*@WCv%+h",
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 25,
+          "y": 0,
+          "size": 100,
+          "direction": 90,
+          "visible": true,
+          "costumes": [
+            {
+              "index": 0,
+              "name": "造型",
+              "format": "svg",
+              "md5": "6af63c492552d450bec7fe06428992d6.svg"
+            }
+          ],
+          "sounds": [],
+          "blocks": 3,
+          "variables": []
+        }
+      ],
+      "noDOM": true,
+      "image": {
+        "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/result.png",
+        "bytes": 2592,
+        "sha256": "79c7a980d5f5ee2f9e92e94750c04b28ea0a0f3d8b9de69c3037a0e0d8a91d2b"
+      }
+    }
+  },
+  {
+    "argv": [
+      "package",
+      "demo.html",
+      "--project",
+      "demo.sb3"
+    ],
+    "exitCode": 0,
+    "result": {
+      "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/demo.html",
+      "bytes": 1827917,
+      "sha256": "5f0e618d3a00caca0e2832e0c0774b65b57a0f64c3c6b20dfda117c42caeb6cf",
+      "target": "html",
+      "mimeType": "text/html",
+      "packagerVersion": "3.13.0",
+      "images": [],
+      "downloads": [],
+      "launched": false,
+      "acceptance": "generated-artifact-only; no browser/Electron/device/platform-playback claim"
+    }
+  },
+  {
+    "argv": [
+      "package",
+      "demo.zip",
+      "--project",
+      "demo.sb3"
+    ],
+    "exitCode": 0,
+    "result": {
+      "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/demo.zip",
+      "bytes": 802456,
+      "sha256": "85c05f5531dfd840ee9f3f8485ee7eb6f463caade956d517f8c9b8fe41aae6b3",
+      "target": "zip",
+      "mimeType": "application/zip",
+      "packagerVersion": "3.13.0",
+      "images": [],
+      "downloads": [],
+      "launched": false,
+      "acceptance": "generated-artifact-only; no browser/Electron/device/platform-playback claim"
+    }
+  },
+  {
+    "argv": [
+      "info",
+      "--project",
+      "demo.sb3"
+    ],
+    "exitCode": 0,
+    "result": {
+      "file": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/demo.sb3",
+      "stage": {
+        "width": 480,
+        "height": 360
+      },
+      "selected": "Sprite1",
+      "targets": [
+        {
+          "id": "!a?zc(Zv!n~{kc?Rcn{@",
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "size": 100,
+          "direction": 90,
+          "visible": true,
+          "costumes": [
+            {
+              "index": 0,
+              "name": "背景",
+              "format": "svg",
+              "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+            }
+          ],
+          "sounds": [],
+          "blocks": 0,
+          "variables": []
+        },
+        {
+          "id": "#Duym)n_`PMJ*@WCv%+h",
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 0,
+          "y": 0,
+          "size": 100,
+          "direction": 90,
+          "visible": true,
+          "costumes": [
+            {
+              "index": 0,
+              "name": "造型",
+              "format": "svg",
+              "md5": "6af63c492552d450bec7fe06428992d6.svg"
+            }
+          ],
+          "sounds": [],
+          "blocks": 3,
+          "variables": []
+        }
+      ],
+      "dirty": false
+    }
+  },
+  {
+    "argv": [
+      "run",
+      "--project",
+      "demo.sb3",
+      "--frames",
+      "2",
+      "--seed",
+      "1234",
+      "--trace",
+      "100"
+    ],
+    "exitCode": 0,
+    "result": {
+      "frames": 2,
+      "threads": 0,
+      "questions": [
+        null,
+        null
+      ],
+      "targets": [
+        {
+          "id": "!a?zc(Zv!n~{kc?Rcn{@",
+          "name": "Stage",
+          "isStage": true,
+          "x": 0,
+          "y": 0,
+          "size": 100,
+          "direction": 90,
+          "visible": true,
+          "costumes": [
+            {
+              "index": 0,
+              "name": "背景",
+              "format": "svg",
+              "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+            }
+          ],
+          "sounds": [],
+          "blocks": 0,
+          "variables": []
+        },
+        {
+          "id": "#Duym)n_`PMJ*@WCv%+h",
+          "name": "Sprite1",
+          "isStage": false,
+          "x": 25,
+          "y": 0,
+          "size": 100,
+          "direction": 90,
+          "visible": true,
+          "costumes": [
+            {
+              "index": 0,
+              "name": "造型",
+              "format": "svg",
+              "md5": "6af63c492552d450bec7fe06428992d6.svg"
+            }
+          ],
+          "sounds": [],
+          "blocks": 3,
+          "variables": []
+        }
+      ],
+      "noDOM": true,
+      "seed": 1234,
+      "trace": {
+        "mode": "interpreter-primitives",
+        "entries": [
+          {
+            "sequence": 1,
+            "type": "block",
+            "frame": 0,
+            "timeMS": 0,
+            "threadId": "#Duym)n_`PMJ*@WCv%+h&5e9be80f-ccf8-451a-9dd8-55f825fea52a",
+            "targetId": "#Duym)n_`PMJ*@WCv%+h",
+            "originalTargetId": "#Duym)n_`PMJ*@WCv%+h",
+            "blockId": "ebfbf027-bac5-4464-9306-99d9d91d83ad",
+            "opcode": "motion_movesteps"
+          }
+        ],
+        "dropped": 0,
+        "capacity": 100,
+        "bytes": 274,
+        "sequence": 1
+      }
+    }
+  },
+  {
+    "argv": [
+      "library",
+      "status"
+    ],
+    "exitCode": 0,
+    "result": {
+      "directory": "/path/to/turbowarp-cli/resources/library",
+      "expected": 1304,
+      "available": 1304,
+      "missing": 0,
+      "invalid": [],
+      "missingAssets": []
+    }
+  },
+  {
+    "argv": [
+      "library",
+      "search",
+      "sprite",
+      "Cat",
+      "--limit",
+      "5"
+    ],
+    "exitCode": 0,
+    "result": {
+      "kind": "sprite",
+      "total": 4,
+      "offset": 0,
+      "items": [
+        {
+          "index": 38,
+          "name": "Cat 2",
+          "tags": [
+            "cat",
+            "kitty",
+            "kitten",
+            "animals",
+            "mammal"
+          ]
+        },
+        {
+          "index": 39,
+          "name": "Catcher",
+          "tags": [
+            "baseball",
+            "sports",
+            "people",
+            "alex eben meyer"
+          ]
+        },
+        {
+          "index": 56,
+          "name": "Dango Cat",
+          "tags": [
+            "food",
+            "animals"
+          ]
+        },
+        {
+          "index": 145,
+          "name": "Lion",
+          "tags": [
+            "cat",
+            "animals",
+            "africa",
+            "savanna",
+            "robert hunter"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "argv": [
+      "library",
+      "load",
+      "sprite",
+      "Cat 2",
+      "--project",
+      "demo.sb3",
+      "--out",
+      "with-cat.sb3"
+    ],
+    "exitCode": 0,
+    "result": {
+      "id": "5AuL0NQEt]:6OVGK~U*e",
+      "name": "Cat 2"
+    }
+  },
+  {
+    "request": {
+      "id": 1,
+      "command": "open",
+      "args": [
+        "demo.sb3"
+      ]
+    },
+    "reply": {
+      "id": 1,
+      "ok": true,
+      "result": {
+        "file": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/demo.sb3",
+        "stage": {
+          "width": 480,
+          "height": 360
+        },
+        "selected": "Sprite1",
+        "targets": [
+          {
+            "id": "!a?zc(Zv!n~{kc?Rcn{@",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": "#Duym)n_`PMJ*@WCv%+h",
+            "name": "Sprite1",
+            "isStage": false,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "造型",
+                "format": "svg",
+                "md5": "6af63c492552d450bec7fe06428992d6.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 3,
+            "variables": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 2,
+      "command": "settings",
+      "args": [
+        "size",
+        "640",
+        "480"
+      ]
+    },
+    "reply": {
+      "id": 2,
+      "ok": true,
+      "result": {
+        "width": 640,
+        "height": 480
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 3,
+      "command": "settings",
+      "args": [
+        "set",
+        "fps",
+        "60"
+      ]
+    },
+    "reply": {
+      "id": 3,
+      "ok": true,
+      "result": {
+        "key": "fps",
+        "value": 60,
+        "persisted": true
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 4,
+      "command": "asset",
+      "args": [
+        "blank",
+        "costume",
+        "drawing",
+        "--mode",
+        "vector",
+        "--width",
+        "100",
+        "--height",
+        "80"
+      ]
+    },
+    "reply": {
+      "id": 4,
+      "ok": true,
+      "result": {
+        "id": "43dcd904-ca39-49d3-9de4-6a7957f8a15d",
+        "index": 1,
+        "name": "drawing",
+        "kind": "costume",
+        "assetId": "aa76a38c490453525c012d8f5a4eae26",
+        "md5": "aa76a38c490453525c012d8f5a4eae26.svg",
+        "format": "svg",
+        "size": [
+          100,
+          80
+        ],
+        "center": [
+          50,
+          40
+        ],
+        "resolution": 1
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 5,
+      "command": "paint",
+      "args": [
+        "rectangle",
+        "drawing",
+        "--spec",
+        "{\"x\":5,\"y\":5,\"width\":30,\"height\":20,\"fill\":\"#00ff00\"}"
+      ]
+    },
+    "reply": {
+      "id": 5,
+      "ok": true,
+      "result": {
+        "costume": "drawing",
+        "assetId": "119fcfdd91b92b060c15d1090daa2de5",
+        "action": "rectangle",
+        "ids": [
+          "node-0fce3045-6a51-4034-9984-3042437530de"
+        ],
+        "costumeId": "43dcd904-ca39-49d3-9de4-6a7957f8a15d"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 6,
+      "command": "asset",
+      "args": [
+        "export",
+        "costume",
+        "drawing",
+        "drawing.svg"
+      ]
+    },
+    "reply": {
+      "id": 6,
+      "ok": true,
+      "result": {
+        "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/drawing.svg",
+        "bytes": 186,
+        "sha256": "2321c8202b7b6002e9907d6cae4e2c72b819800013527bd99eb7a784e9f6d1bc",
+        "asset": {
+          "id": "43dcd904-ca39-49d3-9de4-6a7957f8a15d",
+          "index": 1,
+          "name": "drawing",
+          "kind": "costume",
+          "assetId": "119fcfdd91b92b060c15d1090daa2de5",
+          "md5": "119fcfdd91b92b060c15d1090daa2de5.svg",
+          "format": "svg",
+          "size": [
+            100,
+            80
+          ],
+          "center": [
+            50,
+            40
+          ],
+          "resolution": 1
+        }
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 7,
+      "command": "render",
+      "args": [
+        "drawing.png"
+      ]
+    },
+    "reply": {
+      "id": 7,
+      "ok": true,
+      "result": {
+        "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/drawing.png",
+        "bytes": 2360,
+        "sha256": "2daadac7bc1856de649c21956ea65d7262522dae70c214ebc49860479842cdc3"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 8,
+      "command": "font",
+      "args": [
+        "add-builtin",
+        "Pixel",
+        "MyPixel"
+      ]
+    },
+    "reply": {
+      "id": 8,
+      "ok": true,
+      "result": {
+        "family": "MyPixel",
+        "fallback": "sans-serif",
+        "assetId": "35f896164d1f0840b8409d4d92501cda",
+        "format": "woff2",
+        "bytes": 3772,
+        "md5": "35f896164d1f0840b8409d4d92501cda",
+        "sha256": "b21a730bb241ba8138879f9f8bc91226e3f9da684b53c30b8374c61908338d4c",
+        "tableCount": 11,
+        "names": [],
+        "nativeDecoded": true
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 9,
+      "command": "font",
+      "args": [
+        "measure",
+        "MyPixel",
+        "Hello",
+        "--size",
+        "24"
+      ]
+    },
+    "reply": {
+      "id": 9,
+      "ok": true,
+      "result": {
+        "family": "MyPixel",
+        "text": "Hello",
+        "size": 24,
+        "width": 60,
+        "bounds": {
+          "left": 0,
+          "right": 57,
+          "ascent": 21,
+          "descent": 0
+        },
+        "hostFonts": false
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 10,
+      "command": "font",
+      "args": [
+        "render",
+        "MyPixel",
+        "Hello",
+        "--size",
+        "24",
+        "--width",
+        "200",
+        "--height",
+        "60",
+        "--output",
+        "font.png"
+      ]
+    },
+    "reply": {
+      "id": 10,
+      "ok": true,
+      "result": {
+        "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/font.png",
+        "bytes": 362,
+        "sha256": "b200912b283eb7f9d5b2c12a7c335960638de693fddbe57b7fe2f733189482ef"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 11,
+      "command": "var",
+      "args": [
+        "add",
+        "得分",
+        "5"
+      ]
+    },
+    "reply": {
+      "id": 11,
+      "ok": true,
+      "result": {
+        "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+        "name": "得分"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 12,
+      "command": "monitor",
+      "args": [
+        "add",
+        "得分"
+      ]
+    },
+    "reply": {
+      "id": 12,
+      "ok": true,
+      "result": {
+        "id": "2fb889bb-aef0-4330-9328-39b28c29ecba"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 13,
+      "command": "monitors",
+      "args": [
+        "mode",
+        "得分",
+        "slider"
+      ]
+    },
+    "reply": {
+      "id": 13,
+      "ok": true,
+      "result": {
+        "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+        "mode": "slider"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 14,
+      "command": "monitors",
+      "args": [
+        "range",
+        "得分",
+        "0",
+        "100"
+      ]
+    },
+    "reply": {
+      "id": 14,
+      "ok": true,
+      "result": {
+        "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+        "sliderMin": 0,
+        "sliderMax": 100,
+        "isDiscrete": true
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 15,
+      "command": "input",
+      "args": [
+        "key",
+        "space",
+        "down"
+      ]
+    },
+    "reply": {
+      "id": 15,
+      "ok": true,
+      "result": {
+        "queued": 1,
+        "queueLength": 1,
+        "events": [
+          {
+            "frame": 0,
+            "device": "keyboard",
+            "data": {
+              "key": " ",
+              "isDown": true
+            }
+          }
+        ],
+        "appliedToEditor": false,
+        "timing": "runtime-copy-only; frame is 0-based and applies before its runtime step",
+        "injected": "key"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 16,
+      "command": "device",
+      "args": [
+        "loudness",
+        "64",
+        "--frame",
+        "0"
+      ]
+    },
+    "reply": {
+      "id": 16,
+      "ok": true,
+      "result": {
+        "queued": 1,
+        "queueLength": 2,
+        "events": [
+          {
+            "frame": 0,
+            "device": "loudness",
+            "data": {
+              "value": 64
+            }
+          }
+        ],
+        "appliedToEditor": false,
+        "timing": "runtime-copy-only; frame is 0-based and applies before its runtime step"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 17,
+      "command": "device",
+      "args": [
+        "input-list",
+        "--output",
+        "inputs.jsonl"
+      ]
+    },
+    "reply": {
+      "id": 17,
+      "ok": true,
+      "result": {
+        "events": [
+          {
+            "frame": 0,
+            "device": "keyboard",
+            "data": {
+              "key": " ",
+              "isDown": true
+            }
+          },
+          {
+            "frame": 0,
+            "device": "loudness",
+            "data": {
+              "value": 64
+            }
+          }
+        ],
+        "count": 2,
+        "automaticEnumeration": false,
+        "output": {
+          "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/inputs.jsonl",
+          "bytes": 117,
+          "sha256": "b8713fc4531b1fa5a59aa463145c3c0db2e3704389d940f063efa24298e23b88"
+        }
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 18,
+      "command": "save",
+      "args": [
+        "tutorial.sb3"
+      ]
+    },
+    "reply": {
+      "id": 18,
+      "ok": true,
+      "result": {
+        "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/tutorial.sb3",
+        "bytes": 6296,
+        "sha256": "042fe3a54e720bfac7e3b583dd9e2047b5c3a3fa5de2b7c7bfc0e162a31339d3"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 19,
+      "command": "runtime",
+      "args": [
+        "start",
+        "--paused",
+        "--no-compile",
+        "--seed",
+        "1234",
+        "--trace",
+        "100"
+      ]
+    },
+    "reply": {
+      "id": 19,
+      "ok": true,
+      "result": {
+        "state": "paused",
+        "frame": 0,
+        "timeMS": 0,
+        "stage": {
+          "width": 640,
+          "height": 480
+        },
+        "fps": 60,
+        "compiled": false,
+        "seed": 1234,
+        "maxFrames": 100000,
+        "threads": [
+          {
+            "id": "#Duym)n_`PMJ*@WCv%+h&5e9be80f-ccf8-451a-9dd8-55f825fea52a",
+            "targetId": "#Duym)n_`PMJ*@WCv%+h",
+            "topBlock": "5e9be80f-ccf8-451a-9dd8-55f825fea52a",
+            "blockId": "ebfbf027-bac5-4464-9306-99d9d91d83ad",
+            "status": 0,
+            "compiled": false,
+            "stack": [
+              "ebfbf027-bac5-4464-9306-99d9d91d83ad"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "id": "!a?zc(Zv!n~{kc?Rcn{@",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": "#Duym)n_`PMJ*@WCv%+h",
+            "name": "Sprite1",
+            "isStage": false,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "造型",
+                "format": "svg",
+                "md5": "6af63c492552d450bec7fe06428992d6.svg"
+              },
+              {
+                "index": 1,
+                "name": "drawing",
+                "format": "svg",
+                "md5": "119fcfdd91b92b060c15d1090daa2de5.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 3,
+            "variables": [
+              {
+                "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+                "name": "得分",
+                "type": "",
+                "value": 5,
+                "cloud": false
+              }
+            ]
+          }
+        ],
+        "cloneCount": 0,
+        "pendingQuestion": null,
+        "answerQueue": 0,
+        "breakpoint": null,
+        "permissions": {
+          "network": "deny",
+          "executableExtensions": "deny",
+          "liveDevices": "deny"
+        },
+        "noDOM": true
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 20,
+      "command": "runtime",
+      "args": [
+        "step",
+        "--frames",
+        "2"
+      ]
+    },
+    "reply": {
+      "id": 20,
+      "ok": true,
+      "result": {
+        "state": "paused",
+        "frame": 2,
+        "timeMS": 16.666666666666668,
+        "stage": {
+          "width": 640,
+          "height": 480
+        },
+        "fps": 60,
+        "compiled": false,
+        "seed": 1234,
+        "maxFrames": 100000,
+        "threads": [],
+        "targets": [
+          {
+            "id": "!a?zc(Zv!n~{kc?Rcn{@",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": "#Duym)n_`PMJ*@WCv%+h",
+            "name": "Sprite1",
+            "isStage": false,
+            "x": 25,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "造型",
+                "format": "svg",
+                "md5": "6af63c492552d450bec7fe06428992d6.svg"
+              },
+              {
+                "index": 1,
+                "name": "drawing",
+                "format": "svg",
+                "md5": "119fcfdd91b92b060c15d1090daa2de5.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 3,
+            "variables": [
+              {
+                "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+                "name": "得分",
+                "type": "",
+                "value": 5,
+                "cloud": false
+              }
+            ]
+          }
+        ],
+        "cloneCount": 0,
+        "pendingQuestion": null,
+        "answerQueue": 0,
+        "breakpoint": null,
+        "permissions": {
+          "network": "deny",
+          "executableExtensions": "deny",
+          "liveDevices": "deny"
+        },
+        "noDOM": true,
+        "steppedFrames": 2
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 21,
+      "command": "runtime",
+      "args": [
+        "status"
+      ]
+    },
+    "reply": {
+      "id": 21,
+      "ok": true,
+      "result": {
+        "state": "paused",
+        "frame": 2,
+        "timeMS": 16.666666666666668,
+        "stage": {
+          "width": 640,
+          "height": 480
+        },
+        "fps": 60,
+        "compiled": false,
+        "seed": 1234,
+        "maxFrames": 100000,
+        "threads": [],
+        "targets": [
+          {
+            "id": "!a?zc(Zv!n~{kc?Rcn{@",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": "#Duym)n_`PMJ*@WCv%+h",
+            "name": "Sprite1",
+            "isStage": false,
+            "x": 25,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "造型",
+                "format": "svg",
+                "md5": "6af63c492552d450bec7fe06428992d6.svg"
+              },
+              {
+                "index": 1,
+                "name": "drawing",
+                "format": "svg",
+                "md5": "119fcfdd91b92b060c15d1090daa2de5.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 3,
+            "variables": [
+              {
+                "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+                "name": "得分",
+                "type": "",
+                "value": 5,
+                "cloud": false
+              }
+            ]
+          }
+        ],
+        "cloneCount": 0,
+        "pendingQuestion": null,
+        "answerQueue": 0,
+        "breakpoint": null,
+        "permissions": {
+          "network": "deny",
+          "executableExtensions": "deny",
+          "liveDevices": "deny"
+        },
+        "noDOM": true
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 22,
+      "command": "runtime",
+      "args": [
+        "trace",
+        "get",
+        "--limit",
+        "20"
+      ]
+    },
+    "reply": {
+      "id": 22,
+      "ok": true,
+      "result": {
+        "enabled": true,
+        "mode": "interpreter-primitives",
+        "entries": [
+          {
+            "sequence": 1,
+            "type": "block",
+            "frame": 0,
+            "timeMS": 0,
+            "threadId": "#Duym)n_`PMJ*@WCv%+h&5e9be80f-ccf8-451a-9dd8-55f825fea52a",
+            "targetId": "#Duym)n_`PMJ*@WCv%+h",
+            "blockId": "ebfbf027-bac5-4464-9306-99d9d91d83ad",
+            "originalTargetId": "#Duym)n_`PMJ*@WCv%+h",
+            "opcode": "motion_movesteps"
+          }
+        ],
+        "dropped": 0,
+        "capacity": 100,
+        "bytes": 274,
+        "sequence": 1
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 23,
+      "command": "runtime",
+      "args": [
+        "stop"
+      ]
+    },
+    "reply": {
+      "id": 23,
+      "ok": true,
+      "result": {
+        "state": "stopped",
+        "frame": 2,
+        "timeMS": 16.666666666666668,
+        "stage": {
+          "width": 640,
+          "height": 480
+        },
+        "fps": 60,
+        "compiled": false,
+        "seed": 1234,
+        "maxFrames": 100000,
+        "threads": [],
+        "targets": [
+          {
+            "id": "!a?zc(Zv!n~{kc?Rcn{@",
+            "name": "Stage",
+            "isStage": true,
+            "x": 0,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "背景",
+                "format": "svg",
+                "md5": "f97f92aadf4fcbfdd3132244e7748b13.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 0,
+            "variables": []
+          },
+          {
+            "id": "#Duym)n_`PMJ*@WCv%+h",
+            "name": "Sprite1",
+            "isStage": false,
+            "x": 25,
+            "y": 0,
+            "size": 100,
+            "direction": 90,
+            "visible": true,
+            "costumes": [
+              {
+                "index": 0,
+                "name": "造型",
+                "format": "svg",
+                "md5": "6af63c492552d450bec7fe06428992d6.svg"
+              },
+              {
+                "index": 1,
+                "name": "drawing",
+                "format": "svg",
+                "md5": "119fcfdd91b92b060c15d1090daa2de5.svg"
+              }
+            ],
+            "sounds": [],
+            "blocks": 3,
+            "variables": [
+              {
+                "id": "2fb889bb-aef0-4330-9328-39b28c29ecba",
+                "name": "得分",
+                "type": "",
+                "value": 5,
+                "cloud": false
+              }
+            ]
+          }
+        ],
+        "cloneCount": 0,
+        "pendingQuestion": null,
+        "answerQueue": 0,
+        "breakpoint": null,
+        "permissions": {
+          "network": "deny",
+          "executableExtensions": "deny",
+          "liveDevices": "deny"
+        },
+        "noDOM": true
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 24,
+      "command": "pack",
+      "args": [
+        "set",
+        "app.windowTitle",
+        "Tutorial Game"
+      ]
+    },
+    "reply": {
+      "id": 24,
+      "ok": true,
+      "result": {
+        "action": "set",
+        "settings": {
+          "turbo": false,
+          "interpolation": false,
+          "framerate": 30,
+          "highQualityPen": false,
+          "maxClones": 300,
+          "fencing": true,
+          "miscLimits": true,
+          "stageWidth": 480,
+          "stageHeight": 360,
+          "resizeMode": "preserve-ratio",
+          "autoplay": false,
+          "username": "player####",
+          "closeWhenStopped": false,
+          "projectId": "",
+          "custom": {
+            "css": "",
+            "js": ""
+          },
+          "appearance": {
+            "background": "#000000",
+            "foreground": "#ffffff",
+            "accent": "#ff4c4c"
+          },
+          "loadingScreen": {
+            "progressBar": true,
+            "text": "",
+            "imageMode": "normal",
+            "image": null
+          },
+          "controls": {
+            "greenFlag": {
+              "enabled": false
+            },
+            "stopAll": {
+              "enabled": false
+            },
+            "fullscreen": {
+              "enabled": false
+            },
+            "pause": {
+              "enabled": false
+            }
+          },
+          "monitors": {
+            "editableLists": false,
+            "variableColor": "#ff8c1a",
+            "listColor": "#fc662c"
+          },
+          "compiler": {
+            "enabled": true,
+            "warpTimer": false
+          },
+          "packagedRuntime": true,
+          "target": "html",
+          "app": {
+            "icon": null,
+            "packageName": "packaged-project",
+            "windowTitle": "Tutorial Game",
+            "windowMode": "window",
+            "version": "1.0.0",
+            "escapeBehavior": "unfullscreen-only",
+            "windowControls": "default",
+            "backgroundThrottling": false
+          },
+          "chunks": {
+            "gamepad": false,
+            "pointerlock": false
+          },
+          "cloudVariables": {
+            "mode": "local",
+            "cloudHost": "",
+            "custom": {},
+            "specialCloudBehaviors": false,
+            "unsafeCloudBehaviors": false
+          },
+          "cursor": {
+            "type": "auto",
+            "custom": null,
+            "center": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "steamworks": {
+            "appId": "480",
+            "onError": "warning"
+          },
+          "extensions": [],
+          "bakeExtensions": true,
+          "maxTextureDimension": 2048
+        },
+        "projectChanged": false,
+        "grantsPersisted": false
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 25,
+      "command": "pack",
+      "args": [
+        "build",
+        "tutorial.html"
+      ]
+    },
+    "reply": {
+      "id": 25,
+      "ok": true,
+      "result": {
+        "path": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/tutorial.html",
+        "bytes": 1833826,
+        "sha256": "786d0e12f3781e7d29b2893a2dbaef6fd399819f63912ed3eeb03740375c4e31",
+        "target": "html",
+        "mimeType": "text/html",
+        "packagerVersion": "3.13.0",
+        "images": [],
+        "downloads": [],
+        "launched": false,
+        "acceptance": "generated-artifact-only; no browser/Electron/device/platform-playback claim"
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 26,
+      "command": "record",
+      "args": [
+        "start",
+        "recorded-frames",
+        "--duration",
+        "0.2",
+        "--fps",
+        "10",
+        "--projectaudio",
+        "false"
+      ]
+    },
+    "reply": {
+      "id": 26,
+      "ok": true,
+      "result": {
+        "directory": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/recorded-frames",
+        "manifest": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/recorded-frames/manifest.json",
+        "format": "frames",
+        "frames": 2,
+        "duration": 0.2,
+        "stopReason": "duration",
+        "noDOM": true,
+        "projectChanged": false,
+        "audio": null,
+        "memory": {
+          "limitBytes": 536870912,
+          "sampledPeakRSSBytes": 162086912,
+          "peakRSSBytes": 162136064,
+          "hostFontDiscovery": false,
+          "canvasBootstrapFontFamilies": 0,
+          "phases": [
+            {
+              "phase": "bootstrap",
+              "rssBytes": 47202304,
+              "heapUsedBytes": 5285320,
+              "externalBytes": 1958724,
+              "arrayBufferBytes": 137679,
+              "peakRSSBytes": 103333888
+            },
+            {
+              "phase": "canvas-require",
+              "rssBytes": 57671680,
+              "heapUsedBytes": 6056992,
+              "externalBytes": 2329700,
+              "arrayBufferBytes": 143823,
+              "peakRSSBytes": 103333888
+            },
+            {
+              "phase": "modules-loaded",
+              "rssBytes": 101761024,
+              "heapUsedBytes": 17077424,
+              "externalBytes": 2690664,
+              "arrayBufferBytes": 157575,
+              "peakRSSBytes": 103333888,
+              "fontFamilies": 0
+            },
+            {
+              "phase": "archive-preflight-before",
+              "rssBytes": 102023168,
+              "heapUsedBytes": 17200480,
+              "externalBytes": 2692954,
+              "arrayBufferBytes": 159863,
+              "peakRSSBytes": 103333888
+            },
+            {
+              "phase": "archive-preflight-after",
+              "rssBytes": 105775104,
+              "heapUsedBytes": 17734520,
+              "externalBytes": 4064106,
+              "arrayBufferBytes": 1197232,
+              "peakRSSBytes": 105807872
+            },
+            {
+              "phase": "native-audio-decoded",
+              "rssBytes": 112263168,
+              "heapUsedBytes": 27148392,
+              "externalBytes": 4358827,
+              "arrayBufferBytes": 546799,
+              "peakRSSBytes": 112263168
+            },
+            {
+              "phase": "project-load-before",
+              "rssBytes": 112263168,
+              "heapUsedBytes": 27150440,
+              "externalBytes": 4358827,
+              "arrayBufferBytes": 546799,
+              "peakRSSBytes": 112263168
+            },
+            {
+              "phase": "native-fonts-0-before",
+              "rssBytes": 125091840,
+              "heapUsedBytes": 24641488,
+              "externalBytes": 5781694,
+              "arrayBufferBytes": 1969666,
+              "peakRSSBytes": 125091840,
+              "fontFamilies": 0
+            },
+            {
+              "phase": "native-fonts-0-after",
+              "rssBytes": 130072576,
+              "heapUsedBytes": 24758904,
+              "externalBytes": 7486816,
+              "arrayBufferBytes": 3674786,
+              "peakRSSBytes": 130072576,
+              "fontFamilies": 14
+            },
+            {
+              "phase": "native-fonts-1-before",
+              "rssBytes": 130301952,
+              "heapUsedBytes": 24923208,
+              "externalBytes": 7488422,
+              "arrayBufferBytes": 3674786,
+              "peakRSSBytes": 130301952,
+              "fontFamilies": 14
+            },
+            {
+              "phase": "native-fonts-1-after",
+              "rssBytes": 131497984,
+              "heapUsedBytes": 25000560,
+              "externalBytes": 8785252,
+              "arrayBufferBytes": 4970010,
+              "peakRSSBytes": 131497984,
+              "fontFamilies": 14
+            },
+            {
+              "phase": "project-load-after",
+              "rssBytes": 138723328,
+              "heapUsedBytes": 25635320,
+              "externalBytes": 10262058,
+              "arrayBufferBytes": 5707610,
+              "peakRSSBytes": 138723328,
+              "fontFamilies": 14
+            },
+            {
+              "phase": "project-load-gc",
+              "rssBytes": 140967936,
+              "heapUsedBytes": 22046640,
+              "externalBytes": 10263664,
+              "arrayBufferBytes": 760266,
+              "peakRSSBytes": 140967936
+            },
+            {
+              "phase": "input-replay-prepared",
+              "rssBytes": 141033472,
+              "heapUsedBytes": 22123496,
+              "externalBytes": 10263664,
+              "arrayBufferBytes": 760266,
+              "peakRSSBytes": 141033472
+            },
+            {
+              "phase": "frame-before",
+              "frame": 0,
+              "rssBytes": 141033472,
+              "heapUsedBytes": 22126040,
+              "externalBytes": 10263664,
+              "arrayBufferBytes": 760266,
+              "peakRSSBytes": 141033472
+            },
+            {
+              "phase": "frame-native-png",
+              "frame": 0,
+              "rssBytes": 150536192,
+              "heapUsedBytes": 22409592,
+              "externalBytes": 8998846,
+              "arrayBufferBytes": 3218058,
+              "peakRSSBytes": 150536192
+            },
+            {
+              "phase": "frame-verified",
+              "frame": 0,
+              "rssBytes": 153157632,
+              "heapUsedBytes": 22557968,
+              "externalBytes": 10227646,
+              "arrayBufferBytes": 3218058,
+              "peakRSSBytes": 153157632
+            },
+            {
+              "phase": "frame-after-release",
+              "frame": 0,
+              "rssBytes": 153157632,
+              "heapUsedBytes": 22590448,
+              "externalBytes": 10228062,
+              "arrayBufferBytes": 3218474,
+              "peakRSSBytes": 153157632
+            },
+            {
+              "phase": "frame-before",
+              "frame": 1,
+              "rssBytes": 153157632,
+              "heapUsedBytes": 22592936,
+              "externalBytes": 10228062,
+              "arrayBufferBytes": 3218474,
+              "peakRSSBytes": 153157632
+            },
+            {
+              "phase": "frame-native-png",
+              "frame": 1,
+              "rssBytes": 158138368,
+              "heapUsedBytes": 22620144,
+              "externalBytes": 13916822,
+              "arrayBufferBytes": 5676074,
+              "peakRSSBytes": 158138368
+            },
+            {
+              "phase": "frame-verified",
+              "frame": 1,
+              "rssBytes": 161923072,
+              "heapUsedBytes": 22724232,
+              "externalBytes": 15145622,
+              "arrayBufferBytes": 5676074,
+              "peakRSSBytes": 161923072
+            },
+            {
+              "phase": "frame-after-release",
+              "frame": 1,
+              "rssBytes": 162037760,
+              "heapUsedBytes": 22190840,
+              "externalBytes": 15146038,
+              "arrayBufferBytes": 760874,
+              "peakRSSBytes": 162037760
+            },
+            {
+              "phase": "output-ready",
+              "rssBytes": 162054144,
+              "heapUsedBytes": 22217144,
+              "externalBytes": 15146038,
+              "arrayBufferBytes": 760874,
+              "peakRSSBytes": 162054144
+            },
+            {
+              "phase": "native-fonts-2-before",
+              "rssBytes": 162070528,
+              "heapUsedBytes": 22254744,
+              "externalBytes": 15146038,
+              "arrayBufferBytes": 760874,
+              "peakRSSBytes": 162070528,
+              "fontFamilies": 14
+            },
+            {
+              "phase": "native-fonts-2-after",
+              "rssBytes": 162086912,
+              "heapUsedBytes": 22320632,
+              "externalBytes": 7840852,
+              "arrayBufferBytes": 2056098,
+              "peakRSSBytes": 162086912,
+              "fontFamilies": 14
+            },
+            {
+              "phase": "disposed",
+              "rssBytes": 160628736,
+              "heapUsedBytes": 22073744,
+              "externalBytes": 7842458,
+              "arrayBufferBytes": 281126,
+              "peakRSSBytes": 162136064,
+              "fontFamilies": 0
+            }
+          ]
+        },
+        "warnings": [
+          "GUI defaults differ: duration=1 (GUI=30), projectaudio=false (GUI=true). Whole-project audio is NOT_YET_SUPPORTED.",
+          "Frozen source/digital output tests are not a real GUI MediaRecorder differential. OS capture is denied."
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "id": 27,
+      "command": "quit",
+      "args": []
+    },
+    "reply": {
+      "id": 27,
+      "ok": true,
+      "result": {
+        "closed": true
+      }
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "scope":"Independent read-only repair review of fifteen original census findings, not full coverage or implementation acceptance",
+  "records":1202,
+  "desktopActualActions":1170,
+  "staticRepairPassed":["R01","R02","R03","R04","R05","R06","R07","R08","R09","R10","R11","R12","R14","R15"],
+  "candidateDispositionPassed":["R13"],
+  "unconfirmedExecution":["extension.embed-dom-execution"],
+  "remainingOriginalRepairFindings":0,
+  "coverageComplete":false,
+  "implementationStatus":"pending",
+  "acceptanceStatus":"pending",
+  "evidence":"Original reviewer iteratively rechecked exact source paths, event chains, minified anchors, branch deduplication and recorder timeout semantics; final R09 verdict verifies actual timeout-before-start condition, 975 ms integer delay and intentional CLI deviation.",
+  "runtimeExecuted":false,
+  "guiLaunched":false
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "Experimental source-only public tree",
+  "license": "GPL-3.0-only",
+  "excluded": [
+    "node_modules",
+    "games",
+    "generated example media",
+    "parent Git history",
+    "local credentials"
+  ],
+  "pathRedactedFiles": 50,
+  "sourceSnapshot": "working files on 2026-10-03",
+  "note": "Historical evidence paths were redacted in this public copy; original workspace records remain intact."
+}

@@ -1,0 +1,11 @@
+{
+  "frozenBaselineVerified": true,
+  "complete": true,
+  "extensionFiles": 301,
+  "addons": 81,
+  "libraryAssets": {
+    "expected": 1304,
+    "missing": 0
+  },
+  "errors": []
+}

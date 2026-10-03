@@ -1,0 +1,56 @@
+{
+  "name": "tw-cli",
+  "version": "0.1.0",
+  "description": "Experimental pure command-line TurboWarp over a frozen upstream baseline; full GUI parity is not yet accepted.",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": "24.x"
+  },
+  "bin": {
+    "tw": "./bin/tw.js"
+  },
+  "scripts": {
+    "example:basic": "node scripts/node24.js scripts/agent-example.js basic",
+    "example:input": "node scripts/node24.js scripts/agent-example.js input",
+    "example:debug": "node scripts/node24.js scripts/agent-example.js debug",
+    "test": "node scripts/node24.js --require ./src/native-environment.js --test test/*.js",
+    "baseline:check": "node scripts/node24.js scripts/check-baseline.js",
+    "tutorial:smoke": "node scripts/node24.js scripts/tutorial-smoke.js",
+    "resources:check": "node scripts/node24.js scripts/check-resources.js",
+    "release:check": "node scripts/node24.js scripts/release-check.js",
+    "docs:commands": "node scripts/node24.js scripts/command-reference.js",
+    "delivery:check": "node scripts/node24.js scripts/delivery-check.js"
+  },
+  "dependencies": {
+    "@fiahfy/icns": "0.0.7",
+    "scratch-sb1-converter": "0.2.7",
+    "@napi-rs/canvas": "1.0.10",
+    "@resvg/resvg-js": "2.6.2",
+    "@turbowarp/jszip": "3.12.0",
+    "@turbowarp/packager": "3.13.0",
+    "@turbowarp/scratch-storage": "2.0.0",
+    "@turbowarp/scratch-svg-renderer": "1.1.0",
+    "dom-serializer": "0.2.2",
+    "htmlparser2": "3.10.0",
+    "node-gles-webgl2": "0.5.0",
+    "node-web-audio-api": "2.2.0",
+    "scratch-audio": "github:TurboWarp/scratch-audio#aba00cd02e36d95407effafa03f3678e4c669b30",
+    "scratch-blocks": "github:TurboWarp/scratch-blocks#d3d1c2c89c0c63d3c16434ba063accd881d487c2",
+    "scratch-parser": "github:TurboWarp/scratch-parser#fb65ba09d78ab6a0d19ce908d64b72d1a122312f",
+    "scratch-render": "github:TurboWarp/scratch-render#a67f7c9c07d459582c227d4fd3fae8f59d8fc9ce",
+    "scratch-render-fonts": "github:TurboWarp/scratch-render-fonts#7b6768fc6dfef6b343a06f992587b74807043961",
+    "scratch-vm": "github:TurboWarp/scratch-vm#43f13efd1883eeef8f82616faf69380ff75ab068",
+    "semver": "^7.7.3",
+    "twgl.js": "4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FloraAurella/turbowarp-cli.git"
+  },
+  "homepage": "https://github.com/FloraAurella/turbowarp-cli#readme",
+  "bugs": {
+    "url": "https://github.com/FloraAurella/turbowarp-cli/issues"
+  }
+}

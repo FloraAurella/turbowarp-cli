@@ -1,0 +1,942 @@
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/addon-config.test.js (531.551625ms)
+✖ agent basic example discovers, authors, reloads and verifies a real project (489.9005ms)
+✖ agent input example discovers, authors, reloads and verifies a real project (523.554125ms)
+✖ agent debug example discovers, authors, reloads and verifies a real project (618.658334ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/agent-interface.test.js (531.175542ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/asset-tools.test.js (529.860709ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/block-tools.test.js (529.870375ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/commands.test.js (528.386208ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/core-boundaries.test.js (527.073625ms)
+✖ module contract counts exclude action; IO never pretends to be SB3 persistence (175.669917ms)
+✔ fixed/PCM/WAV loudness reaches actual sensing reporter and hat, not live microphone (314.635666ms)
+✔ video frames reach frozen optical flow and real reporter, mirror/resize and no polling (213.062583ms)
+✔ gamepad buttons/axes reach VM registered reporters and keyboard mapping, releases preserve other pads (24.621875ms)
+✔ key/mouse/wheel/userData/cloud use real VM IO, and JSONL frame order changes script results (42.281ms)
+✔ append is atomic, single-owner, cumulative-bounded and restores offline guards on disposal (56.742625ms)
+✔ D5 denies device enumeration, permission escalation, URLs, symlinks/FIFO/device paths and oversized data (33.072542ms)
+✔ PNG/JPEG header bombs, malformed samples/WAV, noncanonical base64 and queue memory limits fail closed (163.545708ms)
+✔ explicit pipes are bounded, timeout-controlled and do not execute JavaScript fixtures (23.289084ms)
+✔ file/pipe commands export JSONL, validate-only avoids mutation and failed exports retain VM state (403.523416ms)
+✖ device cloud and replay are queue-only: clean editor exports 1 while actual runtime/watch receives 99 (6.916ms)
+✖ all device events only queue: keys/mouse/wheel/mappings neither change editor IO nor start hats/threads (1.916ms)
+✖ device capture/restore retains recorded sensors and controller mappings across undo/rollback without editor providers (2.236792ms)
+✖ typed mapping changes real VM keys/mouse hats and frame-time cursor, without OS polling (9.566917ms)
+✖ CLI JSONL worker replay reads sensor events at frame boundaries and survives project save/reload (722.269292ms)
+✖ persistent runtime append keeps one media provider and exposes actual voice/gamepad reporters after frame steps (406.439834ms)
+✔ default guards never access media/gamepad/network callbacks during media load or mock (585.594875ms)
+✔ ScratchLink mock implements fixed factory/JSON-RPC messages with no WebSocket or real BLE claims (5.3825ms)
+✔ safe media builtin factories load, save, reload and execute blocks without browser/capture globals (400.478125ms)
+✔ unified frozen permission enumeration includes all D5 categories and records unsupported/default-deny reasons (2.276833ms)
+✔ exact grants reject wildcard/prototype/ambiguous paths, credentials, URLs and implicit fs authorizations (195.45125ms)
+✔ freeze gallery/offline metadata, enumerate every builtin and render docs only as safe plain text (132.59125ms)
+✔ custom file/text/URL JS execution stays explicitly unsupported even with every relevant grant (38.217792ms)
+✖ pen/music load real native builtin opcodes and serialize no-block load through undo/redo/save/open (219.844209ms)
+✖ safe videoSensing/Gamepad factories really load/reload, persist history, and missing package conversion fails closed (2.84975ms)
+✔ controlled host request is isolated; default TCP/UDP/fetch deny remains during and after download (105.184833ms)
+✔ permission log is bounded with explicit truncation count, not silent unlimited growth (0.559375ms)
+✖ Node24 CLI exposes frozen extension list and fail-closed custom loader (514.838417ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/fonts.test.js (423.943667ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/gamepad-mapping.test.js (435.18225ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/m2-audio.test.js (373.191ms)
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+STEPS input wired: true | shadow id: numInput
+NUM field after changeBlock: 25
+serialized block entries: 1 (shadow inlined as primitive by tw-compress)
+motion block present: true
+STEPS input serialized: [1,[6,"25"]]
+NUM value survived serialization: true
+uncompressed ids preserved: true
+blocks after delete: []
+✔ test/m2-blocks-api.js (262.171166ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/m2-packager.test.js (420.932792ms)
+✔ interleaved native renderers survive peer disposal and repeated disposal without handle aliasing (456.269667ms)
+✔ asymmetric bitmap fixture checks every PNG pixel, resolution, position and integer scaling (85.059292ms)
+✔ cardinal rotations and mirrored bitmap scaling preserve asymmetric pixel placement (63.675417ms)
+✔ premultiplied textures blend correctly; transparent PNG output is straight alpha (89.494833ms)
+✔ snapshot reads the completed framebuffer once without recursively drawing (47.489333ms)
+✔ SVG viewBox determines logical size/offset; zoom uses rerasterized power-of-two MIPs (111.275709ms)
+✔ zoomed SVG image matches a fresh high-resolution native raster, not a stretched 1x bitmap (44.504416ms)
+✔ SVG rejects encoded external/executable resources but accepts local paint references and raster data (79.234041ms)
+✔ pen line, stamp, clear and CPU/GPU touching-color use the same asymmetric pixels (62.072917ms)
+✔ transparent holes, visibility and ghost obey frozen Scratch collision and mask semantics (63.213125ms)
+✔ bubble rerasterization preserves logical size and matches its frozen canvas geometry (133.588209ms)
+✔ pen skin resize/disposal releases native textures, framebuffers and attribute buffers (51.206333ms)
+✔ query framebuffer has real stencil storage and client-space picking has finite coordinates (34.233709ms)
+✔ project hydration and save/reload preserve explicit SVG rotation centers (207.167417ms)
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume
+✔ renderer-free VM preserves SVG bytes and metadata but loses relative layer ordering (222.524167ms)
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+original bytes: 1605
+resaved bytes: 805
+byte-identical roundtrip: NO
+[90mvm[0m [33mwarn[0m Central dispatch replacing existing service provider for runtime
+[90mvm[0m [33mwarn[0m Central dispatch replacing existing service provider for extensions
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+[90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+targets after roundtrip: Sprite1,Stage
+sprite variable preserved: 0
+✔ test/m2-sb3-roundtrip.js (365.169625ms)
+✔ native GLES3 compiles every frozen Scratch shader mode/effect combination (1594.561ms)
+✔ native SVG pixels render through frozen Scratch Drawable transforms and sprite shader (119.97625ms)
+✔ frozen Scratch background shader draws expected pixels offscreen (10.143833ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/module-routing.test.js (484.154583ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/monitors.test.js (511.793875ms)
+✔ production native bootstrap prevents host-font discovery before first canvas import (1860.556208ms)
+✔ pinned renderer registers and releases only seven frozen faces plus their aliases (279.509416ms)
+✔ Node24, module contract and all actual defaults/ledger paths are covered (30.01825ms)
+✔ every default leaf supports strict set/get, nested config, export/import and reset (279.936541ms)
+✔ eight frozen GUI partial reset groups clear only bound fields, including image state, and cursor center decodes pixels (26.523583ms)
+✖ malformed types, enums, prototype keys, dangerous paths and imports fail atomically (191.729667ms)
+✖ missing or poisoned source assets cannot trigger implicit upstream networking (5.853834ms)
+✖ independent custom JS/CSS/extensions/cloud/unsafe and device grants are not persisted (9.908709ms)
+✖ authorized custom JS/CSS only embed in the actual artifact and never execute in CLI (6.110584ms)
+✖ extension baking requires independent code/host grant and fails closed instead of fallback remote URL (9.026292ms)
+✖ real html: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles (6.789375ms)
+✖ real zip: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles (6.782875ms)
+✖ real zip-one-asset: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles (11.9065ms)
+✖ icon/cursor/loadingScreen use safe Packager.Image files, never URL/prototype/data payloads (3.531709ms)
+✖ all official targets deny network/cache omission, use fixed directory cache hashes and never execute (4.036375ms)
+✔ native macOS adapters operate only on files, escape plist, and encode ICNS without DOM (13.730583ms)
+✖ project preflight denies traversal/invalid configuration before core opens or replaces a session (6.721125ms)
+✖ CLI routes pack settings/HTML output with --output not --out under Node24 (3.579917ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/paint-tools.test.js (376.750666ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/project-io.test.js (394.418875ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/recording.test.js (280.494791ms)
+✔ bundled resource inventory verifies all 1304 assets and 301 extensions without desktop paths (2128.372833ms)
+✔ missing resource inventory fails closed rather than using sibling desktop files (12.488917ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/runtime-control.test.js (328.63925ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/script-recipes.test.js (300.259708ms)
+✔ default network policy rejects TCP, UDP and fetch (60.085ms)
+✔ SVG rejects active/external XML resources without a DOM shim (217.736667ms)
+✖ CLI fails closed on sanitized ZIP traversal and executable extensions without losing the open project (353.436125ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/settings.test.js (326.607292ms)
+✔ embedded PNG SVG rasterization preserves opaque and translucent pixel colors (3.860666ms)
+✔ embedded PNG skin is visible in actual ANGLE stage output (239.294542ms)
+/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10
+const editing = [...common, 'target', 'frame'];
+                ^
+
+ReferenceError: common is not defined
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+    at Object..js (node:internal/modules/cjs/loader:2002:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12)
+    at require (node:internal/modules/helpers:153:16)
+    at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+    at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+Node.js v24.18.0
+✖ test/targets.test.js (308.9175ms)
+ℹ tests 95
+ℹ suites 0
+ℹ pass 50
+ℹ fail 45
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4482.56175
+
+✖ failing tests:
+
+test at test/addon-config.test.js:1:1
+✖ test/addon-config.test.js (531.551625ms)
+  'test failed'
+
+test at test/agent-examples.test.js:6:49
+✖ agent basic example discovers, authors, reloads and verifies a real project (489.9005ms)
+  AssertionError [ERR_ASSERTION]: tw: common is not defined
+  查看 stderr 诊断信息；不要自动重试会产生写入的命令。
+  
+  
+  true !== false
+  
+      at request (/path/to/turbowarp-cli/scripts/agent-example.js:30:14)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async runExample (/path/to/turbowarp-cli/scripts/agent-example.js:39:18)
+      at async TestContext.<anonymous> (/path/to/turbowarp-cli/test/agent-examples.test.js:7:18)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/agent-examples.test.js:6:49
+✖ agent input example discovers, authors, reloads and verifies a real project (523.554125ms)
+  AssertionError [ERR_ASSERTION]: tw: common is not defined
+  查看 stderr 诊断信息；不要自动重试会产生写入的命令。
+  
+  
+  true !== false
+  
+      at request (/path/to/turbowarp-cli/scripts/agent-example.js:30:14)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async runExample (/path/to/turbowarp-cli/scripts/agent-example.js:39:18)
+      at async TestContext.<anonymous> (/path/to/turbowarp-cli/test/agent-examples.test.js:7:18)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/agent-examples.test.js:6:49
+✖ agent debug example discovers, authors, reloads and verifies a real project (618.658334ms)
+  AssertionError [ERR_ASSERTION]: tw: common is not defined
+  查看 stderr 诊断信息；不要自动重试会产生写入的命令。
+  
+  
+  true !== false
+  
+      at request (/path/to/turbowarp-cli/scripts/agent-example.js:30:14)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async runExample (/path/to/turbowarp-cli/scripts/agent-example.js:39:18)
+      at async TestContext.<anonymous> (/path/to/turbowarp-cli/test/agent-examples.test.js:7:18)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/agent-interface.test.js:1:1
+✖ test/agent-interface.test.js (531.175542ms)
+  'test failed'
+
+test at test/asset-tools.test.js:1:1
+✖ test/asset-tools.test.js (529.860709ms)
+  'test failed'
+
+test at test/block-tools.test.js:1:1
+✖ test/block-tools.test.js (529.870375ms)
+  'test failed'
+
+test at test/commands.test.js:1:1
+✖ test/commands.test.js (528.386208ms)
+  'test failed'
+
+test at test/core-boundaries.test.js:1:1
+✖ test/core-boundaries.test.js (527.073625ms)
+  'test failed'
+
+test at test/device-adapters.test.js:108:1
+✖ module contract counts exclude action; IO never pretends to be SB3 persistence (175.669917ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/device-adapters.test.js:323:1
+✖ device cloud and replay are queue-only: clean editor exports 1 while actual runtime/watch receives 99 (6.916ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/device-adapters.test.js:368:1
+✖ all device events only queue: keys/mouse/wheel/mappings neither change editor IO nor start hats/threads (1.916ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/device-adapters.test.js:412:1
+✖ device capture/restore retains recorded sensors and controller mappings across undo/rollback without editor providers (2.236792ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/device-adapters.test.js:473:1
+✖ typed mapping changes real VM keys/mouse hats and frame-time cursor, without OS polling (9.566917ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at normalizeInput (/path/to/turbowarp-cli/src/device-adapters.js:257:31)
+      at /path/to/turbowarp-cli/src/device-adapters.js:287:19
+
+test at test/device-adapters.test.js:508:1
+✖ CLI JSONL worker replay reads sensor events at frame boundaries and survives project save/reload (722.269292ms)
+  AssertionError [ERR_ASSERTION]: tw: common is not defined
+  查看 stderr 诊断信息；不要自动重试会产生写入的命令。
+  
+  
+  1 !== 0
+  
+      at /path/to/turbowarp-cli/test/device-adapters.test.js:526:10
+      at async withDirectory (/path/to/turbowarp-cli/test/device-adapters.test.js:64:8)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/device-adapters.test.js:546:1
+✖ persistent runtime append keeps one media provider and exposes actual voice/gamepad reporters after frame steps (406.439834ms)
+  AssertionError [ERR_ASSERTION]: tw: common is not defined
+  查看 stderr 诊断信息；不要自动重试会产生写入的命令。
+  
+  
+  1 !== 0
+  
+      at /path/to/turbowarp-cli/test/device-adapters.test.js:563:10
+      at async withDirectory (/path/to/turbowarp-cli/test/device-adapters.test.js:64:8)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/extension-policy.test.js:108:1
+✖ pen/music load real native builtin opcodes and serialize no-block load through undo/redo/save/open (219.844209ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/extension-policy.test.js:133:1
+✖ safe videoSensing/Gamepad factories really load/reload, persist history, and missing package conversion fails closed (2.84975ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/extension-policy.test.js:191:1
+✖ Node24 CLI exposes frozen extension list and fail-closed custom loader (514.838417ms)
+  AssertionError [ERR_ASSERTION]: tw: common is not defined
+  查看 stderr 诊断信息；不要自动重试会产生写入的命令。
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (/path/to/turbowarp-cli/test/extension-policy.test.js:195:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/fonts.test.js:1:1
+✖ test/fonts.test.js (423.943667ms)
+  'test failed'
+
+test at test/gamepad-mapping.test.js:1:1
+✖ test/gamepad-mapping.test.js (435.18225ms)
+  'test failed'
+
+test at test/m2-audio.test.js:1:1
+✖ test/m2-audio.test.js (373.191ms)
+  'test failed'
+
+test at test/m2-packager.test.js:1:1
+✖ test/m2-packager.test.js (420.932792ms)
+  'test failed'
+
+test at test/module-routing.test.js:1:1
+✖ test/module-routing.test.js (484.154583ms)
+  'test failed'
+
+test at test/monitors.test.js:1:1
+✖ test/monitors.test.js (511.793875ms)
+  'test failed'
+
+test at test/package-options.test.js:150:1
+✖ malformed types, enums, prototype keys, dangerous paths and imports fail atomically (191.729667ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:186:1
+✖ missing or poisoned source assets cannot trigger implicit upstream networking (5.853834ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:199:1
+✖ independent custom JS/CSS/extensions/cloud/unsafe and device grants are not persisted (9.908709ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:216:1
+✖ authorized custom JS/CSS only embed in the actual artifact and never execute in CLI (6.110584ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:226:1
+✖ extension baking requires independent code/host grant and fails closed instead of fallback remote URL (9.026292ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:243:56
+✖ real html: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles (6.789375ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:243:56
+✖ real zip: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles (6.782875ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:243:56
+✖ real zip-one-asset: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles (11.9065ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:269:1
+✖ icon/cursor/loadingScreen use safe Packager.Image files, never URL/prototype/data payloads (3.531709ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:292:1
+✖ all official targets deny network/cache omission, use fixed directory cache hashes and never execute (4.036375ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:334:1
+✖ project preflight denies traversal/invalid configuration before core opens or replaces a session (6.721125ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/package-options.test.js:344:1
+✖ CLI routes pack settings/HTML output with --output not --out under Node24 (3.579917ms)
+  ReferenceError: common is not defined
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/gamepad-mapping-commands.js:10:17)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+      at Object..js (node:internal/modules/cjs/loader:2002:10)
+      at Module.load (node:internal/modules/cjs/loader:1594:32)
+      at Module._load (node:internal/modules/cjs/loader:1396:12)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+      at Module.require (node:internal/modules/cjs/loader:1617:12)
+      at require (node:internal/modules/helpers:153:16)
+      at Object.<anonymous> (/path/to/turbowarp-cli/src/command-modules.js:28:26)
+      at Module._compile (node:internal/modules/cjs/loader:1871:14)
+
+test at test/paint-tools.test.js:1:1
+✖ test/paint-tools.test.js (376.750666ms)
+  'test failed'
+
+test at test/project-io.test.js:1:1
+✖ test/project-io.test.js (394.418875ms)
+  'test failed'
+
+test at test/recording.test.js:1:1
+✖ test/recording.test.js (280.494791ms)
+  'test failed'
+
+test at test/runtime-control.test.js:1:1
+✖ test/runtime-control.test.js (328.63925ms)
+  'test failed'
+
+test at test/script-recipes.test.js:1:1
+✖ test/script-recipes.test.js (300.259708ms)
+  'test failed'
+
+test at test/security.test.js:33:1
+✖ CLI fails closed on sanitized ZIP traversal and executable extensions without losing the open project (353.436125ms)
+  AssertionError [ERR_ASSERTION]: tw: common is not defined
+  查看 stderr 诊断信息；不要自动重试会产生写入的命令。
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (/path/to/turbowarp-cli/test/security.test.js:49:12)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/settings.test.js:1:1
+✖ test/settings.test.js (326.607292ms)
+  'test failed'
+
+test at test/targets.test.js:1:1
+✖ test/targets.test.js (308.9175ms)
+  'test failed'

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "scope": "Agent/script CLI usability; full GUI parity not accepted",
+  "finishedAt": "2026-10-03T02:26:43.532976+00:00",
+  "runtime": {
+    "current": {
+      "path": "/opt/homebrew/Cellar/node/26.5.0/bin/node",
+      "version": "26.5.0"
+    },
+    "selected": {
+      "requestedPath": "/path/to/node24/bin/node",
+      "path": "/path/to/node24/bin/node",
+      "version": "24.18.0",
+      "compatible": true
+    },
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "fullTests": {
+    "tests": 297,
+    "pass": 297,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "durationMS": 63644.968375,
+    "exitCode": 0,
+    "log": "agent-full-tests.log",
+    "stderr": "agent-full-tests.stderr.log"
+  },
+  "sourceSnapshot": {
+    "files": 96,
+    "unchangedDuringFinalTests": true,
+    "changedFiles": [],
+    "before": "agent-sources-before.json"
+  },
+  "commandCatalog": {
+    "families": 52,
+    "entries": 394,
+    "sharedWithValidation": true
+  },
+  "tutorial": {
+    "directory": "/path/to/turbowarp-cli/examples/verified-Rn9fo5",
+    "commands": 37,
+    "agentExamples": [
+      {
+        "schemaVersion": 1,
+        "mode": "basic",
+        "directory": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/agent-basic",
+        "verified": true,
+        "commands": 17,
+        "expectedErrors": 0,
+        "image": {
+          "format": "png",
+          "width": 480,
+          "height": 360,
+          "bytes": 12428,
+          "sha256": "986b919dad02f189b0b6a9aaa122221f56b5cc1cf311f48907015336181c781b",
+          "pixelsSha256": "19dea4c607368f07f06d08d773d8732ec2f1afa6c4da3bd385bc94ed59ac07d8",
+          "pixels": 172800
+        },
+        "files": [
+          "demo.sb3",
+          "result.png",
+          "transcript.json",
+          "verification.json",
+          "stderr.log"
+        ]
+      },
+      {
+        "schemaVersion": 1,
+        "mode": "input",
+        "directory": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/agent-input",
+        "verified": true,
+        "commands": 21,
+        "expectedErrors": 0,
+        "image": {
+          "format": "png",
+          "width": 480,
+          "height": 360,
+          "bytes": 9698,
+          "sha256": "35f711ea70ad8e5168653aad5923a2b9cf350df8df18a0c880f80757f5bc1c6a",
+          "pixelsSha256": "91438fa11b366d52b41d15c8be0c99990961b32b72a381a124d27d821f57768a",
+          "pixels": 172800
+        },
+        "files": [
+          "demo.sb3",
+          "result.png",
+          "transcript.json",
+          "verification.json",
+          "stderr.log"
+        ]
+      },
+      {
+        "schemaVersion": 1,
+        "mode": "debug",
+        "directory": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/agent-debug",
+        "verified": true,
+        "commands": 27,
+        "expectedErrors": 1,
+        "image": {
+          "format": "png",
+          "width": 480,
+          "height": 360,
+          "bytes": 12428,
+          "sha256": "986b919dad02f189b0b6a9aaa122221f56b5cc1cf311f48907015336181c781b",
+          "pixelsSha256": "19dea4c607368f07f06d08d773d8732ec2f1afa6c4da3bd385bc94ed59ac07d8",
+          "pixels": 172800
+        },
+        "files": [
+          "demo.sb3",
+          "result.png",
+          "transcript.json",
+          "verification.json",
+          "stderr.log"
+        ]
+      }
+    ],
+    "targetXAfterRun": 25,
+    "editorXAfterRun": 0,
+    "traceEntries": 1,
+    "libraryAssets": 1304,
+    "noDOM": true,
+    "recordingFrames": 2,
+    "files": [
+      "demo.sb3",
+      "result.png",
+      "demo.html",
+      "demo.zip",
+      "with-cat.sb3",
+      "drawing.svg",
+      "drawing.png",
+      "font.png",
+      "inputs.jsonl",
+      "tutorial.sb3",
+      "tutorial.html",
+      "recorded-frames/manifest.json"
+    ],
+    "exitCode": 0
+  },
+  "resources": {
+    "complete": true,
+    "directory": "/path/to/turbowarp-cli/resources",
+    "manifestSha256": "e70eb3fcf7049df08ebc1572cad080396e04c8d14b4b0421ed340f82efd2aa1f",
+    "checkedFiles": 1610,
+    "totalBytes": 45869820,
+    "extensionFiles": 301,
+    "library": {
+      "expected": 1304,
+      "available": 1304,
+      "missing": 0,
+      "invalid": 0
+    },
+    "errors": [],
+    "exitCode": 0
+  },
+  "baseline": {
+    "frozenBaselineVerified": true,
+    "complete": true,
+    "extensionFiles": 301,
+    "addons": 81,
+    "libraryAssets": {
+      "expected": 1304,
+      "missing": 0
+    },
+    "errors": [],
+    "exitCode": 0
+  },
+  "release": {
+    "releaseReady": false,
+    "noDOM": true,
+    "census": {
+      "coverageComplete": false,
+      "records": 1202,
+      "actualActions": 1170,
+      "pending": 1202,
+      "sha256": "fc06625dfd8a34ded74da4d83e209d1fc087ffa5c7ca5e1a80e1f8893fdbd90f"
+    },
+    "addons": {
+      "count": 81,
+      "fullyDispositioned": false,
+      "pending": 81
+    },
+    "library": {
+      "expected": 1304,
+      "available": 1304,
+      "missing": 0,
+      "invalid": 0
+    },
+    "resources": {
+      "complete": true,
+      "checkedFiles": 1610,
+      "extensionFiles": 301,
+      "errors": []
+    },
+    "missingAcceptanceGates": [
+      "imageDifferential",
+      "audioDifferential",
+      "platforms",
+      "performance",
+      "permissions",
+      "devices"
+    ],
+    "note": "Command existence, ledger structure, and passing unit tests do not by themselves prove full GUI parity.",
+    "missingFiles": [],
+    "invalidCommandSchemas": [],
+    "commandFamilies": 52,
+    "exitCode": 2
+  },
+  "diffCheck": {
+    "exitCode": 0
+  },
+  "priorFailures": [
+    {
+      "log": "agent-full-tests.initial.log",
+      "cause": "Unused Gamepad definition referenced a removed common constant; fixed."
+    },
+    {
+      "log": "agent-full-tests.compatibility-failure.log",
+      "tests": 297,
+      "pass": 296,
+      "fail": 1,
+      "cause": "Gamepad --empty requires a string value, not a boolean switch; restored and regression tested."
+    }
+  ],
+  "limitations": [
+    "Recipe procedures use existing proc / blocks procedure-* commands",
+    "Unknown help semantics/defaults remain explicit null",
+    "Native environment validated on macOS arm64",
+    "Full GUI parity/releaseReady gate unchanged"
+  ]
+}

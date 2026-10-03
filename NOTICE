@@ -1,0 +1,20 @@
+TurboWarp CLI (tw-cli), 0.1.0 experimental source release
+Copyright (C) 2026 tw-cli contributors.
+
+The CLI-specific source and documentation are licensed under GPL-3.0-only.
+This software is provided without warranty; see LICENSE sections 15 and 16.
+You may redistribute and modify it under the terms of that license.
+
+Modification notice, 2026-10-03: this independent project provides a
+command-line workflow for project editing, native offscreen rendering,
+offline audio, declarative block recipes, JSONL automation and packaging.
+It incorporates frozen upstream components identified in baseline.json.
+Copied upstream files retain their original licenses, authors and notices.
+
+Scratch is developed by the Lifelong Kindergarten Group at the MIT Media
+Lab. See http://scratch.mit.edu.
+
+This project is not an official TurboWarp or Scratch product. No rights
+to upstream trademarks or endorsement are granted by the code licenses.
+Third-party code, extensions, fonts and artwork are described in
+THIRD_PARTY_NOTICES.md and LICENSES/; they are not relicensed as GPL.

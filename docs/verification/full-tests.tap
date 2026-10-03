@@ -1,0 +1,2470 @@
+TAP version 13
+# Subtest: addon module exposes project/config classification and every frozen manifest/setting/default/preset
+ok 1 - addon module exposes project/config classification and every frozen manifest/setting/default/preset
+  ---
+  duration_ms: 79.965291
+  type: 'test'
+  ...
+# Subtest: all81 enabled state and148 settings persist across processes in an explicit config; reset/presets validated
+ok 2 - all81 enabled state and148 settings persist across processes in an explicit config; reset/presets validated
+  ---
+  duration_ms: 12587.490208
+  type: 'test'
+  ...
+# Subtest: type/range/color/select/text/prototype validation and config write refusal are safe with no fake DOM activation
+ok 3 - type/range/color/select/text/prototype validation and config write refusal are safe with no fake DOM activation
+  ---
+  duration_ms: 93.611708
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: shared addon config reads reject leaf/parent symlinks, size overflow and recursive prototype keys without project/history changes
+ok 4 - shared addon config reads reject leaf/parent symlinks, size overflow and recursive prototype keys without project/history changes
+  ---
+  duration_ms: 432.1015
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# Subtest: equivalence index records concrete commands for counts/find/rename/position/layer/variables and all pending4
+ok 5 - equivalence index records concrete commands for counts/find/rename/position/layer/variables and all pending4
+  ---
+  duration_ms: 181.264291
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# Subtest: broadcast rename/merge updates ID+name on every target and survives real SB3 reload execution and undo
+ok 6 - broadcast rename/merge updates ID+name on every target and survives real SB3 reload execution and undo
+  ---
+  duration_ms: 1612.253833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# Subtest: pending swap-local-global keeps values, IDs, references and monitor state; refuses unsafe cross-target/local/cloud conversion
+ok 7 - pending swap-local-global keeps values, IDs, references and monitor state; refuses unsafe cross-target/local/cloud conversion
+  ---
+  duration_ms: 1691.579
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: pending devtools replaces references, cleans unused locals/orphans only with flags, copy/cut/paste and undo
+ok 8 - pending devtools replaces references, cleans unused locals/orphans only with flags, copy/cut/paste and undo
+  ---
+  duration_ms: 804.722041
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: variable manager newline list/scalar edits and rename preserve all references and are rollback-safe
+ok 9 - variable manager newline list/scalar edits and rename preserve all references and are rollback-safe
+  ---
+  duration_ms: 122.591709
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: pending paint-snap delegates reviewed move/scale with config threshold and persists SVG through SB3 reload
+ok 10 - pending paint-snap delegates reviewed move/scale with config threshold and persists SVG through SB3 reload
+  ---
+  duration_ms: 192.235791
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected reverse: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 11 - selected reverse: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 609.618416
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected louder: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 12 - selected louder: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 426.536125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected softer: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 13 - selected softer: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 229.273458
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected faster: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 14 - selected faster: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 377.105459
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected slower: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 15 - selected slower: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 315.525584
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected echo: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 16 - selected echo: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 259.920542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected robot: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 17 - selected robot: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 354.411875
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected fade-in: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 18 - selected fade-in: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 254.277375
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected fade-out: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 19 - selected fade-out: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 227.484666
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: selected mute: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+ok 20 - selected mute: numeric PCM differential against frozen GUI graph and undo/redo/SB3
+  ---
+  duration_ms: 218.455583
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  renamed
+# Subtest: asset ID survives rename/content edits/reorder/reload; duplicate resources have unique persistent UUIDs and independent players
+ok 21 - asset ID survives rename/content edits/reorder/reload; duplicate resources have unique persistent UUIDs and independent players
+  ---
+  duration_ms: 242.215333
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  paint
+# Subtest: asset size/center and SVG/PNG conversion preserve stage dimensions and real colors, not vector tracing
+ok 22 - asset size/center and SVG/PNG conversion preserve stage dimensions and real colors, not vector tracing
+  ---
+  duration_ms: 184.743208
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  alpha
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  alpha
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  alpha
+# Subtest: embedded bitmap SVG alpha/layer order is numerically visible on stage and survives SB3/undo/redo
+ok 23 - embedded bitmap SVG alpha/layer order is numerically visible on stage and survives SB3/undo/redo
+  ---
+  duration_ms: 514.720417
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: sound copy/render/select/trim/delete/keep/paste/copy-to-new have sample-exact GUI slicing and mono channel-zero semantics
+ok 24 - sound copy/render/select/trim/delete/keep/paste/copy-to-new have sample-exact GUI slicing and mono channel-zero semantics
+  ---
+  duration_ms: 574.402792
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: sound paste resamples across rates with frozen OfflineAudioContext graph and convert changes rate/length
+ok 25 - sound paste resamples across rates with frozen OfflineAudioContext graph and convert changes rate/length
+  ---
+  duration_ms: 151.050625
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: invalid effects/ranges/files/refused outputs roll back PCM, asset IDs, dirty state and history
+ok 26 - invalid effects/ranges/files/refused outputs roll back PCM, asset IDs, dirty state and history
+  ---
+  duration_ms: 345.252542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: asset filesystem sound clipboard symlinks and oversized media fail closed without PCM/history changes
+ok 27 - asset filesystem sound clipboard symlinks and oversized media fail closed without PCM/history changes
+  ---
+  duration_ms: 204.44325
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: asset filesystem linked-parent sound outputs fail closed and project output rollback preserves PCM/session
+ok 28 - asset filesystem linked-parent sound outputs fail closed and project output rollback preserves PCM/session
+  ---
+  duration_ms: 162.818833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: native submit applies frozen 10MB downsample threshold once, and history states its actual shared capacity
+ok 29 - native submit applies frozen 10MB downsample threshold once, and history states its actual shared capacity
+  ---
+  duration_ms: 240.533375
+  type: 'test'
+  ...
+# Subtest: module exports complete registry contract, excludes subcommand from positional bounds
+ok 30 - module exports complete registry contract, excludes subcommand from positional bounds
+  ---
+  duration_ms: 1.28025
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: real checked-in SB3 inspect/count/find, duplicate fresh IDs, reload and execute twice
+ok 31 - real checked-in SB3 inspect/count/find, duplicate fresh IDs, reload and execute twice
+  ---
+  duration_ms: 2294.36575
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: complex SB3 procedure mutation, boolean arguments, obscured shadows and comments roundtrip in clipboard
+ok 32 - complex SB3 procedure mutation, boolean arguments, obscured shadows and comments roundtrip in clipboard
+  ---
+  duration_ms: 1661.509625
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# Subtest: share remaps local variables and process argument IDs, keeps broadcasts global; conflicts have explicit policies
+ok 33 - share remaps local variables and process argument IDs, keeps broadcasts global; conflicts have explicit policies
+  ---
+  duration_ms: 1364.360375
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: connect/disconnect healing, single delete, cleanup and cycle/shape failure are graph-safe and undoable
+ok 34 - connect/disconnect healing, single delete, cleanup and cycle/shape failure are graph-safe and undoable
+  ---
+  duration_ms: 935.878792
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: opcode switching remaps inputs, splits real branches, changes shadows, validates field/resource menus
+ok 35 - opcode switching remaps inputs, splits real branches, changes shadows, validates field/resource menus
+  ---
+  duration_ms: 1709.223833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: mutation changes are DOM-shaped, signatures synchronize calls and delete blocks used externally is refused
+ok 36 - mutation changes are DOM-shaped, signatures synchronize calls and delete blocks used externally is refused
+  ---
+  duration_ms: 1163.112834
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: reporter return mutations, signature reorder and clipboard dependencies execute after SB3 reload
+ok 37 - reporter return mutations, signature reorder and clipboard dependencies execute after SB3 reload
+  ---
+  duration_ms: 2812.847333
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: menu resource references and sensing OBJECT/PROPERTY linkage survive serialize, while readonly target does not prune broadcasts
+ok 38 - menu resource references and sensing OBJECT/PROPERTY linkage survive serialize, while readonly target does not prune broadcasts
+  ---
+  duration_ms: 126.556542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: shared clipboard reads reject leaf/parent symlinks, oversized files and prototype keys without changing project/history
+ok 39 - shared clipboard reads reject leaf/parent symlinks, oversized files and prototype keys without changing project/history
+  ---
+  duration_ms: 442.470791
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: clipboard hostile imports and output overwrite failures leave project/history intact; cut heals only single
+ok 40 - clipboard hostile imports and output overwrite failures leave project/history intact; cut heals only single
+  ---
+  duration_ms: 276.09925
+  type: 'test'
+  ...
+# Subtest: tokenizer preserves quoted unicode names and JSON
+ok 41 - tokenizer preserves quoted unicode names and JSON
+  ---
+  duration_ms: 1.927542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: commands create/save/reopen, preserve layers/assets, undo/redo and rollback
+ok 42 - commands create/save/reopen, preserve layers/assets, undo/redo and rollback
+  ---
+  duration_ms: 589.342042
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# Subtest: isolated runtime interprets and compiles green-flag motion without changing editor
+ok 43 - isolated runtime interprets and compiles green-flag motion without changing editor
+  ---
+  duration_ms: 1772.835334
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: parameterized procedures accept named values and argument reporter inputs
+ok 44 - parameterized procedures accept named values and argument reporter inputs
+  ---
+  duration_ms: 1503.771833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: keyboard input events reach isolated runtime copy
+ok 45 - keyboard input events reach isolated runtime copy
+  ---
+  duration_ms: 776.58075
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: frame-clock wait, say bubbles and pen rendering stay DOM-free
+ok 46 - frame-clock wait, say bubbles and pen rendering stay DOM-free
+  ---
+  duration_ms: 2986.734125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# Subtest: commands import/export bitmap and WAV, render PCM and package HTML/ZIP
+ok 47 - commands import/export bitmap and WAV, render PCM and package HTML/ZIP
+  ---
+  duration_ms: 1174.299959
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: lists, broadcasts, comments, monitors, procedures and bitmap edits survive save
+ok 48 - lists, broadcasts, comments, monitors, procedures and bitmap edits survive save
+  ---
+  duration_ms: 1590.8965
+  type: 'test'
+  ...
+# Subtest: explicit preferences file preserves v2 schema and migrates legacy data
+ok 49 - explicit preferences file preserves v2 schema and migrates legacy data
+  ---
+  duration_ms: 64.392833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: local cloud state shares values between isolated runtime and another session
+ok 50 - local cloud state shares values between isolated runtime and another session
+  ---
+  duration_ms: 833.039167
+  type: 'test'
+  ...
+# Subtest: custom extension fail-closed and atomic output refuses overwrite by default
+ok 51 - custom extension fail-closed and atomic output refuses overwrite by default
+  ---
+  duration_ms: 32.802167
+  type: 'test'
+  ...
+# Subtest: CLI JSONL keeps stdout machine-readable and returns request-scoped errors
+ok 52 - CLI JSONL keeps stdout machine-readable and returns request-scoped errors
+  ---
+  duration_ms: 673.3335
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: CLI validates command-specific options, arity and duplicates before side effects
+ok 53 - CLI validates command-specific options, arity and duplicates before side effects
+  ---
+  duration_ms: 884.653875
+  type: 'test'
+  ...
+# Subtest: CLI one-shot new --out persists, while unsaved edits and EOF return exit code 2
+ok 54 - CLI one-shot new --out persists, while unsaved edits and EOF return exit code 2
+  ---
+  duration_ms: 3875.029291
+  type: 'test'
+  ...
+# Subtest: JSONL rejects malformed envelopes and quit arguments without terminating or corrupting stdout
+ok 55 - JSONL rejects malformed envelopes and quit arguments without terminating or corrupting stdout
+  ---
+  duration_ms: 649.4875
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: failed edit output rolls back project, selection, dirty state and history
+ok 56 - failed edit output rolls back project, selection, dirty state and history
+  ---
+  duration_ms: 631.446167
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: stable target IDs disambiguate names and selection survives rollback and undo/redo
+ok 57 - stable target IDs disambiguate names and selection survives rollback and undo/redo
+  ---
+  duration_ms: 632.089167
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: corrupt and denied SB3 opens preserve previous unsaved project, history and save path
+ok 58 - corrupt and denied SB3 opens preserve previous unsaved project, history and save path
+  ---
+  duration_ms: 1113.441416
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: cloud validation rejects invalid adds before external writes and preserves attachment on failure
+ok 59 - cloud validation rejects invalid adds before external writes and preserves attachment on failure
+  ---
+  duration_ms: 638.769334
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: seeded runtime and per-frame variable watch reproduce Scratch random in interpreter and compiler
+ok 60 - seeded runtime and per-frame variable watch reproduce Scratch random in interpreter and compiler
+  ---
+  duration_ms: 6064.659125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: failed runtime watch is request-scoped and a subsequent run remains isolated
+ok 61 - failed runtime watch is request-scoped and a subsequent run remains isolated
+  ---
+  duration_ms: 1762.491917
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: undo/redo output failures preserve history and actual persisted SB3
+ok 62 - undo/redo output failures preserve history and actual persisted SB3
+  ---
+  duration_ms: 1177.771209
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: cloud writes cannot grow beyond 2 MiB or leave an unpersisted editor value
+ok 63 - cloud writes cannot grow beyond 2 MiB or leave an unpersisted editor value
+  ---
+  duration_ms: 80.961875
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: two VM sessions load approved extensions independently and dispose all native targets
+ok 64 - two VM sessions load approved extensions independently and dispose all native targets
+  ---
+  duration_ms: 587.949959
+  type: 'test'
+  ...
+# Subtest: Node version guard runs before loading native addons
+ok 65 - Node version guard runs before loading native addons
+  ---
+  duration_ms: 340.976
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: failed new output keeps prior unsaved work, history and cloud binding
+ok 66 - failed new output keeps prior unsaved work, history and cloud binding
+  ---
+  duration_ms: 1076.33925
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: cloud variable count, value and name boundaries are enforced without stray writes
+ok 67 - cloud variable count, value and name boundaries are enforced without stray writes
+  ---
+  duration_ms: 1176.816334
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: watch list samples are value snapshots and target/global selection is deterministic
+ok 68 - watch list samples are value snapshots and target/global selection is deterministic
+  ---
+  duration_ms: 1478.920959
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: session dispose terminates an in-flight native worker and rejects its unfinished run
+ok 69 - session dispose terminates an in-flight native worker and rejects its unfinished run
+  ---
+  duration_ms: 101.937416
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: block move refuses to overwrite occupied links or create cycles; persisted graph still runs
+ok 70 - block move refuses to overwrite occupied links or create cycles; persisted graph still runs
+  ---
+  duration_ms: 1056.638084
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: late SB3 asset rejection and malformed identity metadata preserve selection, cloud and undo history
+ok 71 - late SB3 asset rejection and malformed identity metadata preserve selection, cloud and undo history
+  ---
+  duration_ms: 634.068041
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: real 30-second runtime deadline kills the worker and JSONL accepts the next run
+ok 72 - real 30-second runtime deadline kills the worker and JSONL accepts the next run
+  ---
+  duration_ms: 31039.879958
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: renaming a cloud variable to its existing name never deletes the shared value
+ok 73 - renaming a cloud variable to its existing name never deletes the shared value
+  ---
+  duration_ms: 1018.1345
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: invalid cloud metadata in imported SB3 fails closed rather than becoming local or escaping limits
+ok 74 - invalid cloud metadata in imported SB3 fails closed rather than becoming local or escaping limits
+  ---
+  duration_ms: 529.164625
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: cloud reads enforce regular-file and size limits after attachment; outputs refuse symlinks
+ok 75 - cloud reads enforce regular-file and size limits after attachment; outputs refuse symlinks
+  ---
+  duration_ms: 953.391333
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: core imports refuse symlink files and retain the current project
+ok 76 - core imports refuse symlink files and retain the current project
+  ---
+  duration_ms: 510.017917
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: --project semantic failure restores file identity, history and session settings
+ok 77 - --project semantic failure restores file identity, history and session settings
+  ---
+  duration_ms: 518.069583
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: preferences and monitor list imports use bounded no-symlink files
+ok 78 - preferences and monitor list imports use bounded no-symlink files
+  ---
+  duration_ms: 182.789083
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  cat 2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  cat 2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  cat 2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: one-shot library load persists its actual sprite through --out and rejected output restores the original VM
+ok 79 - one-shot library load persists its actual sprite through --out and rejected output restores the original VM
+  ---
+  duration_ms: 771.23525
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: simple package alias uses shared safe options and refuses missing data-provider conversion
+ok 80 - simple package alias uses shared safe options and refuses missing data-provider conversion
+  ---
+  duration_ms: 205.069375
+  type: 'test'
+  ...
+# Subtest: module contract counts exclude action; IO never pretends to be SB3 persistence
+ok 81 - module contract counts exclude action; IO never pretends to be SB3 persistence
+  ---
+  duration_ms: 272.589125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: fixed/PCM/WAV loudness reaches actual sensing reporter and hat, not live microphone
+ok 82 - fixed/PCM/WAV loudness reaches actual sensing reporter and hat, not live microphone
+  ---
+  duration_ms: 225.255084
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: video frames reach frozen optical flow and real reporter, mirror/resize and no polling
+ok 83 - video frames reach frozen optical flow and real reporter, mirror/resize and no polling
+  ---
+  duration_ms: 155.886542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: gamepad buttons/axes reach VM registered reporters and keyboard mapping, releases preserve other pads
+ok 84 - gamepad buttons/axes reach VM registered reporters and keyboard mapping, releases preserve other pads
+  ---
+  duration_ms: 7.177083
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: key/mouse/wheel/userData/cloud use real VM IO, and JSONL frame order changes script results
+ok 85 - key/mouse/wheel/userData/cloud use real VM IO, and JSONL frame order changes script results
+  ---
+  duration_ms: 19.685833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: append is atomic, single-owner, cumulative-bounded and restores offline guards on disposal
+ok 86 - append is atomic, single-owner, cumulative-bounded and restores offline guards on disposal
+  ---
+  duration_ms: 66.223375
+  type: 'test'
+  ...
+# Subtest: D5 denies device enumeration, permission escalation, URLs, symlinks/FIFO/device paths and oversized data
+ok 87 - D5 denies device enumeration, permission escalation, URLs, symlinks/FIFO/device paths and oversized data
+  ---
+  duration_ms: 43.115292
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: PNG/JPEG header bombs, malformed samples/WAV, noncanonical base64 and queue memory limits fail closed
+ok 88 - PNG/JPEG header bombs, malformed samples/WAV, noncanonical base64 and queue memory limits fail closed
+  ---
+  duration_ms: 171.92275
+  type: 'test'
+  ...
+# Subtest: explicit pipes are bounded, timeout-controlled and do not execute JavaScript fixtures
+ok 89 - explicit pipes are bounded, timeout-controlled and do not execute JavaScript fixtures
+  ---
+  duration_ms: 97.313042
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: file/pipe commands export JSONL, validate-only avoids mutation and failed exports retain VM state
+ok 90 - file/pipe commands export JSONL, validate-only avoids mutation and failed exports retain VM state
+  ---
+  duration_ms: 479.722625
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: device cloud and replay are queue-only: clean editor exports 1 while actual runtime/watch receives 99
+ok 91 - device cloud and replay are queue-only: clean editor exports 1 while actual runtime/watch receives 99
+  ---
+  duration_ms: 3239.624666
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: all device events only queue: keys/mouse/wheel/mappings neither change editor IO nor start hats/threads
+ok 92 - all device events only queue: keys/mouse/wheel/mappings neither change editor IO nor start hats/threads
+  ---
+  duration_ms: 104.88125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: device capture/restore retains recorded sensors and controller mappings across undo/rollback without editor providers
+ok 93 - device capture/restore retains recorded sensors and controller mappings across undo/rollback without editor providers
+  ---
+  duration_ms: 376.689166
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: typed mapping changes real VM keys/mouse hats and frame-time cursor, without OS polling
+ok 94 - typed mapping changes real VM keys/mouse hats and frame-time cursor, without OS polling
+  ---
+  duration_ms: 13.388542
+  type: 'test'
+  ...
+# Subtest: CLI JSONL worker replay reads sensor events at frame boundaries and survives project save/reload
+ok 95 - CLI JSONL worker replay reads sensor events at frame boundaries and survives project save/reload
+  ---
+  duration_ms: 4100.683417
+  type: 'test'
+  ...
+# Subtest: persistent runtime append keeps one media provider and exposes actual voice/gamepad reporters after frame steps
+ok 96 - persistent runtime append keeps one media provider and exposes actual voice/gamepad reporters after frame steps
+  ---
+  duration_ms: 1537.573959
+  type: 'test'
+  ...
+# Subtest: default guards never access media/gamepad/network callbacks during media load or mock
+ok 97 - default guards never access media/gamepad/network callbacks during media load or mock
+  ---
+  duration_ms: 778.406375
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: ScratchLink mock implements fixed factory/JSON-RPC messages with no WebSocket or real BLE claims
+ok 98 - ScratchLink mock implements fixed factory/JSON-RPC messages with no WebSocket or real BLE claims
+  ---
+  duration_ms: 9.466917
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: safe media builtin factories load, save, reload and execute blocks without browser/capture globals
+ok 99 - safe media builtin factories load, save, reload and execute blocks without browser/capture globals
+  ---
+  duration_ms: 836.259084
+  type: 'test'
+  ...
+# Subtest: unified frozen permission enumeration includes all D5 categories and records unsupported/default-deny reasons
+ok 100 - unified frozen permission enumeration includes all D5 categories and records unsupported/default-deny reasons
+  ---
+  duration_ms: 7.023167
+  type: 'test'
+  ...
+# Subtest: exact grants reject wildcard/prototype/ambiguous paths, credentials, URLs and implicit fs authorizations
+ok 101 - exact grants reject wildcard/prototype/ambiguous paths, credentials, URLs and implicit fs authorizations
+  ---
+  duration_ms: 236.563625
+  type: 'test'
+  ...
+# Subtest: freeze gallery/offline metadata, enumerate every builtin and render docs only as safe plain text
+ok 102 - freeze gallery/offline metadata, enumerate every builtin and render docs only as safe plain text
+  ---
+  duration_ms: 72.324083
+  type: 'test'
+  ...
+# Subtest: custom file/text/URL JS execution stays explicitly unsupported even with every relevant grant
+ok 103 - custom file/text/URL JS execution stays explicitly unsupported even with every relevant grant
+  ---
+  duration_ms: 12.32325
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: pen/music load real native builtin opcodes and serialize no-block load through undo/redo/save/open
+ok 104 - pen/music load real native builtin opcodes and serialize no-block load through undo/redo/save/open
+  ---
+  duration_ms: 1133.79025
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: safe videoSensing/Gamepad factories really load/reload, persist history, and missing package conversion fails closed
+ok 105 - safe videoSensing/Gamepad factories really load/reload, persist history, and missing package conversion fails closed
+  ---
+  duration_ms: 264.755
+  type: 'test'
+  ...
+# Subtest: controlled host request is isolated; default TCP/UDP/fetch deny remains during and after download
+ok 106 - controlled host request is isolated; default TCP/UDP/fetch deny remains during and after download
+  ---
+  duration_ms: 84.504375
+  type: 'test'
+  ...
+# Subtest: permission log is bounded with explicit truncation count, not silent unlimited growth
+ok 107 - permission log is bounded with explicit truncation count, not silent unlimited growth
+  ---
+  duration_ms: 0.688
+  type: 'test'
+  ...
+# Subtest: Node24 CLI exposes frozen extension list and fail-closed custom loader
+ok 108 - Node24 CLI exposes frozen extension list and fail-closed custom loader
+  ---
+  duration_ms: 535.394792
+  type: 'test'
+  ...
+# Subtest: pinned builtin WOFF2 binary hashes decode without evaluating DOM/base64-loader font entry
+ok 109 - pinned builtin WOFF2 binary hashes decode without evaluating DOM/base64-loader font entry
+  ---
+  duration_ms: 81.844708
+  type: 'test'
+  ...
+# Subtest: binary validator rejects type lies, malformed table bounds and decompression size bombs
+ok 110 - binary validator rejects type lies, malformed table bounds and decompression size bombs
+  ---
+  duration_ms: 3.258416
+  type: 'test'
+  ...
+# Subtest: CSS parser only accepts validated canonical binary font data; executable/external/nested content fails
+ok 111 - CSS parser only accepts validated canonical binary font data; executable/external/nested content fails
+  ---
+  duration_ms: 22.787792
+  type: 'test'
+  ...
+# Subtest: builtin fonts produce real distinct glyph metrics and native preview pixels with exact geometry
+ok 112 - builtin fonts produce real distinct glyph metrics and native preview pixels with exact geometry
+  ---
+  duration_ms: 184.256959
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: custom font command serializes exact real SB3 assets/ID and reload registers before SVG hydration
+ok 113 - custom font command serializes exact real SB3 assets/ID and reload registers before SVG hydration
+  ---
+  duration_ms: 491.017583
+  type: 'test'
+  ...
+# Subtest: existing SVG MIPs invalidate on font updates/reset and alias isolation survives peer disposal
+ok 114 - existing SVG MIPs invalidate on font updates/reset and alias isolation survives peer disposal
+  ---
+  duration_ms: 80.304792
+  type: 'test'
+  ...
+# Subtest: text SVG mixed with embedded bitmap retains native custom glyphs with Resvg system fonts disabled
+ok 115 - text SVG mixed with embedded bitmap retains native custom glyphs with Resvg system fonts disabled
+  ---
+  duration_ms: 55.392292
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: bad/missing/font-hash/fallback SB3 cannot silently substitute fonts or alter current project
+ok 116 - bad/missing/font-hash/fallback SB3 cannot silently substitute fonts or alter current project
+  ---
+  duration_ms: 260.404083
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: system font metadata, load/reset and explicit PNG output follow module transaction/option semantics
+ok 117 - system font metadata, load/reset and explicit PNG output follow module transaction/option semantics
+  ---
+  duration_ms: 204.01875
+  type: 'test'
+  ...
+# Subtest: command contracts counts exclude action and gamepad --target is controller, not sprite
+ok 118 - command contracts counts exclude action and gamepad --target is controller, not sprite
+  ---
+  duration_ms: 1.530708
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: generated mappings and export transforms match actual frozen gamepadlib pure functions
+ok 119 - generated mappings and export transforms match actual frozen gamepadlib pure functions
+  ---
+  duration_ms: 321.354125
+  type: 'test'
+  ...
+# Subtest: typed JSON rejects executable/prototype/nonfinite and wrong-type mapping fields
+ok 120 - typed JSON rejects executable/prototype/nonfinite and wrong-type mapping fields
+  ---
+  duration_ms: 0.54475
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: session-only create/set/controller switch never dirty; store writes stage magic comment and real parser/save/reload preserves it
+ok 121 - session-only create/set/controller switch never dirty; store writes stage magic comment and real parser/save/reload preserves it
+  ---
+  duration_ms: 427.226166
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: frozen first-comment and exact suffix parsing boundary is preserved without evaluating data
+ok 122 - frozen first-comment and exact suffix parsing boundary is preserved without evaluating data
+  ---
+  duration_ms: 97.886292
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: reset unchecks auto-store but leaves frozen comment; disabling store removes only first magic comment
+ok 123 - reset unchecks auto-store but leaves frozen comment; disabling store removes only first magic comment
+  ---
+  duration_ms: 100.973875
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: invalid mutations/export refusal are atomic and mapping events reach real replay key/mouse IO
+ok 124 - invalid mutations/export refusal are atomic and mapping events reach real replay key/mouse IO
+  ---
+  duration_ms: 180.502583
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: capture/restore hooks preserve controller and store state across failed core transaction, with no custom history
+ok 125 - capture/restore hooks preserve controller and store state across failed core transaction, with no custom history
+  ---
+  duration_ms: 196.766291
+  type: 'test'
+  ...
+# Subtest: native offline Scratch audio: volume=100, pan=0
+ok 126 - native offline Scratch audio: volume=100, pan=0
+  ---
+  duration_ms: 100.009083
+  type: 'test'
+  ...
+# Subtest: native offline Scratch audio: volume=50, pan=0
+ok 127 - native offline Scratch audio: volume=50, pan=0
+  ---
+  duration_ms: 26.758416
+  type: 'test'
+  ...
+# Subtest: native offline Scratch audio: volume=100, pan=-100
+ok 128 - native offline Scratch audio: volume=100, pan=-100
+  ---
+  duration_ms: 3.66225
+  type: 'test'
+  ...
+# Subtest: native offline Scratch audio: volume=100, pan=100
+ok 129 - native offline Scratch audio: volume=100, pan=100
+  ---
+  duration_ms: 6.602459
+  type: 'test'
+  ...
+# Subtest: native offline Scratch pitch +120 doubles playback rate and halves sound duration
+ok 130 - native offline Scratch pitch +120 doubles playback rate and halves sound duration
+  ---
+  duration_ms: 2.302
+  type: 'test'
+  ...
+# Subtest: vendored GUI audio sources match manifest and frozen desktop bytes
+ok 131 - vendored GUI audio sources match manifest and frozen desktop bytes
+  ---
+  duration_ms: 1.7485
+  type: 'test'
+  ...
+# Subtest: editor reverse: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 132 - editor reverse: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 16.468875
+  type: 'test'
+  ...
+# Subtest: editor louder: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 133 - editor louder: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 11.76475
+  type: 'test'
+  ...
+# Subtest: editor softer: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 134 - editor softer: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 5.175333
+  type: 'test'
+  ...
+# Subtest: editor faster: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 135 - editor faster: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 4.867292
+  type: 'test'
+  ...
+# Subtest: editor slower: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 136 - editor slower: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 4.122416
+  type: 'test'
+  ...
+# Subtest: editor echo: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 137 - editor echo: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 11.00275
+  type: 'test'
+  ...
+# Subtest: editor robot: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 138 - editor robot: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 10.736917
+  type: 'test'
+  ...
+# Subtest: editor fade-in: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 139 - editor fade-in: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 7.978583
+  type: 'test'
+  ...
+# Subtest: editor fade-out: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 140 - editor fade-out: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 7.797041
+  type: 'test'
+  ...
+# Subtest: editor mute: waveform matches frozen GUI graph, preserving input and encoding samples
+ok 141 - editor mute: waveform matches frozen GUI graph, preserving input and encoding samples
+  ---
+  duration_ms: 7.117208
+  type: 'test'
+  ...
+# Subtest: editor stereo effects and trim use channel zero, not an implicit stereo downmix
+ok 142 - editor stereo effects and trim use channel zero, not an implicit stereo downmix
+  ---
+  duration_ms: 4.787917
+  type: 'test'
+  ...
+# Subtest: editor rejects a sub-sample trim and keeps one-sample GUI effects as no-ops
+ok 143 - editor rejects a sub-sample trim and keeps one-sample GUI effects as no-ops
+  ---
+  duration_ms: 2.090667
+  type: 'test'
+  ...
+# Subtest: echo impulse train has exact delay/decay/tail plus explicitly native compressor lookahead
+ok 144 - echo impulse train has exact delay/decay/tail plus explicitly native compressor lookahead
+  ---
+  duration_ms: 25.209833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: sound commands preserve PCM through edit/undo/redo/reload and render real volume/pan/pitch samples
+ok 145 - sound commands preserve PCM through edit/undo/redo/reload and render real volume/pan/pitch samples
+  ---
+  duration_ms: 660.434458
+  type: 'test'
+  ...
+# Subtest: editor rendering promise failures reject immediately rather than leaking or timing out
+ok 146 - editor rendering promise failures reject immediately rather than leaking or timing out
+  ---
+  duration_ms: 2.122667
+  type: 'test'
+  ...
+# Subtest: PCM16 WAV headers, clipping and stereo interleaving match GUI wav-encoder byte-for-byte
+ok 147 - PCM16 WAV headers, clipping and stereo interleaving match GUI wav-encoder byte-for-byte
+  ---
+  duration_ms: 2.072833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# STEPS input wired: true | shadow id: numInput
+# NUM field after changeBlock: 25
+# serialized block entries: 1 (shadow inlined as primitive by tw-compress)
+# motion block present: true
+# STEPS input serialized: [1,[6,"25"]]
+# NUM value survived serialization: true
+# uncompressed ids preserved: true
+# blocks after delete: []
+# Subtest: /path/to/turbowarp-cli/test/m2-blocks-api.js
+ok 11 - /path/to/turbowarp-cli/test/m2-blocks-api.js
+  ---
+  duration_ms: 215.63725
+  type: 'test'
+  ...
+# Subtest: packager 3.13.0 generates html with no DOM or network
+ok 149 - packager 3.13.0 generates html with no DOM or network
+  ---
+  duration_ms: 188.310666
+  type: 'test'
+  ...
+# Subtest: packager 3.13.0 generates zip with no DOM or network
+ok 150 - packager 3.13.0 generates zip with no DOM or network
+  ---
+  duration_ms: 344.362541
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# Subtest: package command preserves edited SB3 semantics/assets in HTML and ZIP, safely escaping the output title
+ok 151 - package command preserves edited SB3 semantics/assets in HTML and ZIP, safely escaping the output title
+  ---
+  duration_ms: 1384.164375
+  type: 'test'
+  ...
+# Subtest: interleaved native renderers survive peer disposal and repeated disposal without handle aliasing
+ok 152 - interleaved native renderers survive peer disposal and repeated disposal without handle aliasing
+  ---
+  duration_ms: 334.242417
+  type: 'test'
+  ...
+# Subtest: asymmetric bitmap fixture checks every PNG pixel, resolution, position and integer scaling
+ok 153 - asymmetric bitmap fixture checks every PNG pixel, resolution, position and integer scaling
+  ---
+  duration_ms: 56.15475
+  type: 'test'
+  ...
+# Subtest: cardinal rotations and mirrored bitmap scaling preserve asymmetric pixel placement
+ok 154 - cardinal rotations and mirrored bitmap scaling preserve asymmetric pixel placement
+  ---
+  duration_ms: 103.198417
+  type: 'test'
+  ...
+# Subtest: premultiplied textures blend correctly; transparent PNG output is straight alpha
+ok 155 - premultiplied textures blend correctly; transparent PNG output is straight alpha
+  ---
+  duration_ms: 82.0055
+  type: 'test'
+  ...
+# Subtest: snapshot reads the completed framebuffer once without recursively drawing
+ok 156 - snapshot reads the completed framebuffer once without recursively drawing
+  ---
+  duration_ms: 65.511542
+  type: 'test'
+  ...
+# Subtest: SVG viewBox determines logical size/offset; zoom uses rerasterized power-of-two MIPs
+ok 157 - SVG viewBox determines logical size/offset; zoom uses rerasterized power-of-two MIPs
+  ---
+  duration_ms: 61.586167
+  type: 'test'
+  ...
+# Subtest: zoomed SVG image matches a fresh high-resolution native raster, not a stretched 1x bitmap
+ok 158 - zoomed SVG image matches a fresh high-resolution native raster, not a stretched 1x bitmap
+  ---
+  duration_ms: 93.414041
+  type: 'test'
+  ...
+# Subtest: SVG rejects encoded external/executable resources but accepts local paint references and raster data
+ok 159 - SVG rejects encoded external/executable resources but accepts local paint references and raster data
+  ---
+  duration_ms: 82.000333
+  type: 'test'
+  ...
+# Subtest: pen line, stamp, clear and CPU/GPU touching-color use the same asymmetric pixels
+ok 160 - pen line, stamp, clear and CPU/GPU touching-color use the same asymmetric pixels
+  ---
+  duration_ms: 419.869416
+  type: 'test'
+  ...
+# Subtest: transparent holes, visibility and ghost obey frozen Scratch collision and mask semantics
+ok 161 - transparent holes, visibility and ghost obey frozen Scratch collision and mask semantics
+  ---
+  duration_ms: 176.12975
+  type: 'test'
+  ...
+# Subtest: bubble rerasterization preserves logical size and matches its frozen canvas geometry
+ok 162 - bubble rerasterization preserves logical size and matches its frozen canvas geometry
+  ---
+  duration_ms: 160.913916
+  type: 'test'
+  ...
+# Subtest: pen skin resize/disposal releases native textures, framebuffers and attribute buffers
+ok 163 - pen skin resize/disposal releases native textures, framebuffers and attribute buffers
+  ---
+  duration_ms: 60.2305
+  type: 'test'
+  ...
+# Subtest: query framebuffer has real stencil storage and client-space picking has finite coordinates
+ok 164 - query framebuffer has real stencil storage and client-space picking has finite coordinates
+  ---
+  duration_ms: 50.43325
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: project hydration and save/reload preserve explicit SVG rotation centers
+ok 165 - project hydration and save/reload preserve explicit SVG rotation centers
+  ---
+  duration_ms: 368.490584
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume
+# Subtest: renderer-free VM preserves SVG bytes and metadata but loses relative layer ordering
+ok 166 - renderer-free VM preserves SVG bytes and metadata but loses relative layer ordering
+  ---
+  duration_ms: 129.897917
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# original bytes: 1605
+# resaved bytes: 805
+# byte-identical roundtrip: NO
+# [90mvm[0m [33mwarn[0m Central dispatch replacing existing service provider for runtime
+# [90mvm[0m [33mwarn[0m Central dispatch replacing existing service provider for extensions
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# targets after roundtrip: Sprite1,Stage
+# sprite variable preserved: 0
+# Subtest: /path/to/turbowarp-cli/test/m2-sb3-roundtrip.js
+ok 15 - /path/to/turbowarp-cli/test/m2-sb3-roundtrip.js
+  ---
+  duration_ms: 223.395209
+  type: 'test'
+  ...
+# Subtest: native GLES3 compiles every frozen Scratch shader mode/effect combination
+ok 168 - native GLES3 compiles every frozen Scratch shader mode/effect combination
+  ---
+  duration_ms: 1749.019166
+  type: 'test'
+  ...
+# Subtest: native SVG pixels render through frozen Scratch Drawable transforms and sprite shader
+ok 169 - native SVG pixels render through frozen Scratch Drawable transforms and sprite shader
+  ---
+  duration_ms: 200.571667
+  type: 'test'
+  ...
+# Subtest: frozen Scratch background shader draws expected pixels offscreen
+ok 170 - frozen Scratch background shader draws expected pixels offscreen
+  ---
+  duration_ms: 11.571416
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: registered module rules reject unknown options before mutating a session
+ok 171 - registered module rules reject unknown options before mutating a session
+  ---
+  duration_ms: 370.815209
+  type: 'test'
+  ...
+# Subtest: history keeps 99 small snapshots and bounds total retained bytes
+ok 172 - history keeps 99 small snapshots and bounds total retained bytes
+  ---
+  duration_ms: 1.529042
+  type: 'test'
+  ...
+# Subtest: project output and external resource output options are distinct
+ok 173 - project output and external resource output options are distinct
+  ---
+  duration_ms: 0.346458
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: monitor ranges, modes, positions and list CSV survive project reload and undo
+ok 174 - monitor ranges, modes, positions and list CSV survive project reload and undo
+  ---
+  duration_ms: 578.222333
+  type: 'test'
+  ...
+# Subtest: production native bootstrap prevents host-font discovery before first canvas import
+ok 175 - production native bootstrap prevents host-font discovery before first canvas import
+  ---
+  duration_ms: 2207.418125
+  type: 'test'
+  ...
+# Subtest: pinned renderer registers and releases only seven frozen faces plus their aliases
+ok 176 - pinned renderer registers and releases only seven frozen faces plus their aliases
+  ---
+  duration_ms: 320.782625
+  type: 'test'
+  ...
+# Subtest: Node24, module contract and all actual defaults/ledger paths are covered
+ok 177 - Node24, module contract and all actual defaults/ledger paths are covered
+  ---
+  duration_ms: 38.659
+  type: 'test'
+  ...
+# Subtest: every default leaf supports strict set/get, nested config, export/import and reset
+ok 178 - every default leaf supports strict set/get, nested config, export/import and reset
+  ---
+  duration_ms: 578.265667
+  type: 'test'
+  ...
+# Subtest: eight frozen GUI partial reset groups clear only bound fields, including image state, and cursor center decodes pixels
+ok 179 - eight frozen GUI partial reset groups clear only bound fields, including image state, and cursor center decodes pixels
+  ---
+  duration_ms: 62.77325
+  type: 'test'
+  ...
+# Subtest: malformed types, enums, prototype keys, dangerous paths and imports fail atomically
+ok 180 - malformed types, enums, prototype keys, dangerous paths and imports fail atomically
+  ---
+  duration_ms: 303.81575
+  type: 'test'
+  ...
+# Subtest: missing or poisoned source assets cannot trigger implicit upstream networking
+ok 181 - missing or poisoned source assets cannot trigger implicit upstream networking
+  ---
+  duration_ms: 58.631959
+  type: 'test'
+  ...
+# Subtest: independent custom JS/CSS/extensions/cloud/unsafe and device grants are not persisted
+ok 182 - independent custom JS/CSS/extensions/cloud/unsafe and device grants are not persisted
+  ---
+  duration_ms: 287.5805
+  type: 'test'
+  ...
+# Subtest: authorized custom JS/CSS only embed in the actual artifact and never execute in CLI
+ok 183 - authorized custom JS/CSS only embed in the actual artifact and never execute in CLI
+  ---
+  duration_ms: 129.42825
+  type: 'test'
+  ...
+# Subtest: extension baking requires independent code/host grant and fails closed instead of fallback remote URL
+ok 184 - extension baking requires independent code/host grant and fails closed instead of fallback remote URL
+  ---
+  duration_ms: 166.352583
+  type: 'test'
+  ...
+# Subtest: real html: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles
+ok 185 - real html: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles
+  ---
+  duration_ms: 264.126042
+  type: 'test'
+  ...
+# Subtest: real zip: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles
+ok 186 - real zip: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles
+  ---
+  duration_ms: 619.3375
+  type: 'test'
+  ...
+# Subtest: real zip-one-asset: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles
+ok 187 - real zip-one-asset: offline output, parsing, asset bytes+MD5+SHA256, local cloud and safe titles
+  ---
+  duration_ms: 559.102584
+  type: 'test'
+  ...
+# Subtest: icon/cursor/loadingScreen use safe Packager.Image files, never URL/prototype/data payloads
+ok 188 - icon/cursor/loadingScreen use safe Packager.Image files, never URL/prototype/data payloads
+  ---
+  duration_ms: 155.223959
+  type: 'test'
+  ...
+# Subtest: all official targets deny network/cache omission, use fixed directory cache hashes and never execute
+ok 189 - all official targets deny network/cache omission, use fixed directory cache hashes and never execute
+  ---
+  duration_ms: 204.16825
+  type: 'test'
+  ...
+# Subtest: native macOS adapters operate only on files, escape plist, and encode ICNS without DOM
+ok 190 - native macOS adapters operate only on files, escape plist, and encode ICNS without DOM
+  ---
+  duration_ms: 12.140125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: project preflight denies traversal/invalid configuration before core opens or replaces a session
+ok 191 - project preflight denies traversal/invalid configuration before core opens or replaces a session
+  ---
+  duration_ms: 315.878667
+  type: 'test'
+  ...
+# Subtest: CLI routes pack settings/HTML output with --output not --out under Node24
+ok 192 - CLI routes pack settings/HTML output with --output not --out under Node24
+  ---
+  duration_ms: 1030.302292
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: paint contract validates min/max without counting action and read-only exports do not dirty history
+ok 193 - paint contract validates min/max without counting action and read-only exports do not dirty history
+  ---
+  duration_ms: 474.698042
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: vector multi-selection group/order/ungroup, world transforms and clipboard survive reload and undo/redo
+ok 194 - vector multi-selection group/order/ungroup, world transforms and clipboard survive reload and undo/redo
+  ---
+  duration_ms: 434.917458
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: explicit clipboard is a snapshot and eyedropper applies sampled RGBA to selected vector nodes
+ok 195 - explicit clipboard is a snapshot and eyedropper applies sampled RGBA to selected vector nodes
+  ---
+  duration_ms: 212.829041
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: point-delete selection keeps neighbor handles; double-click adjustment scales them by frozen HANDLE_RATIO
+ok 196 - point-delete selection keeps neighbor handles; double-click adjustment scales them by frozen HANDLE_RATIO
+  ---
+  duration_ms: 150.410292
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: vector align/distribute/rotate/skew and clones produce exact geometric deltas
+ok 197 - vector align/distribute/rotate/skew and clones produce exact geometric deltas
+  ---
+  duration_ms: 130.005542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: vector segment insertion preserves cubic curve geometry; IDs, handles and deletion are persistent
+ok 198 - vector segment insertion preserves cubic curve geometry; IDs, handles and deletion are persistent
+  ---
+  duration_ms: 145.20225
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: legacy vector add returns original shape tags and text empty commit removes node
+ok 199 - legacy vector add returns original shape tags and text empty commit removes node
+  ---
+  duration_ms: 173.95425
+  type: 'test'
+  ...
+# Subtest: path parser supports relative/smooth/quadratic/arcs and rejects incomplete commands
+ok 200 - path parser supports relative/smooth/quadratic/arcs and rejects incomplete commands
+  ---
+  duration_ms: 0.771666
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: vector style/alpha/HSV/gradient and swap change actual pixels; eraser performs path subtraction
+ok 201 - vector style/alpha/HSV/gradient and swap change actual pixels; eraser performs path subtraction
+  ---
+  duration_ms: 303.114583
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: bitmap primitives, flood mask, gradients, brush, eraser, text and color alpha alter real pixels
+ok 202 - bitmap primitives, flood mask, gradients, brush, eraser, text and color alpha alter real pixels
+  ---
+  duration_ms: 253.995875
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: bitmap rect crop/copy/cut/paste, selected move, resize/rotate/flip preserve numeric pixels and centers
+ok 203 - bitmap rect crop/copy/cut/paste, selected move, resize/rotate/flip preserve numeric pixels and centers
+  ---
+  duration_ms: 448.335167
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: drawing failures and refused project/clipboard outputs roll back actual assets, selection and history
+ok 204 - drawing failures and refused project/clipboard outputs roll back actual assets, selection and history
+  ---
+  duration_ms: 234.208667
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: paint filesystem rejects symlink config inputs and enforces config limits without session changes
+ok 205 - paint filesystem rejects symlink config inputs and enforces config limits without session changes
+  ---
+  duration_ms: 231.295666
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: paint filesystem rejects symlink clipboards and legacy SVG source plus oversize inputs with real asset rollback
+ok 206 - paint filesystem rejects symlink clipboards and legacy SVG source plus oversize inputs with real asset rollback
+  ---
+  duration_ms: 282.535917
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas2
+# Subtest: paint filesystem parent-symlink outputs are rejected before cut/defaults/project writes and preserve session state
+ok 207 - paint filesystem parent-symlink outputs are rejected before cut/defaults/project writes and preserve session state
+  ---
+  duration_ms: 256.617208
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: vector forward/backward ignores XML whitespace and rejected composited ungroup preserves original appearance
+ok 208 - vector forward/backward ignores XML whitespace and rejected composited ungroup preserves original appearance
+  ---
+  duration_ms: 129.007166
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  canvas
+# Subtest: snap uses frozen priority, strict thresholds/zoom and size-first scale without recursive peers
+ok 209 - snap uses frozen priority, strict thresholds/zoom and size-first scale without recursive peers
+  ---
+  duration_ms: 195.850542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  a667dfd1d8b5527992b4527bbb29b5e4.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  a667dfd1d8b5527992b4527bbb29b5e4.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  bitmap
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83a9787d4cb6f3b7632b4ddfebf74367.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83a9787d4cb6f3b7632b4ddfebf74367.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83a9787d4cb6f3b7632b4ddfebf74367.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83a9787d4cb6f3b7632b4ddfebf74367.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# Subtest: real binary SB, frozen SB2/nested-SB2 and SB3 import offline; bytes and converted state survive reload
+ok 210 - real binary SB, frozen SB2/nested-SB2 and SB3 import offline; bytes and converted state survive reload
+  ---
+  duration_ms: 1258.803583
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83a9787d4cb6f3b7632b4ddfebf74367.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: project import/export integrates as an undoable edit, never changes save path and validates before replacement
+ok 211 - project import/export integrates as an undoable edit, never changes save path and validates before replacement
+  ---
+  duration_ms: 256.371833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83a9787d4cb6f3b7632b4ddfebf74367.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# Subtest: legacy layer order follows children, independent of target pane order; duplicate names do not collapse SB3 layers
+ok 212 - legacy layer order follows children, independent of target pane order; duplicate names do not collapse SB3 layers
+  ---
+  duration_ms: 260.577083
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  backdrop1
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83a9787d4cb6f3b7632b4ddfebf74367.wav
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume2
+# [90mvm[0m [33mwarn[0m No audio engine present; cannot load sound asset:  83c36d806dc92327b9e7049a565c6bff.wav
+# Subtest: missing/hash-mismatched assets, traversal, invalid stable asset IDs and legacy executable extensions fail closed
+ok 213 - missing/hash-mismatched assets, traversal, invalid stable asset IDs and legacy executable extensions fail closed
+  ---
+  duration_ms: 189.084083
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: sprite3 export/import writes positional/output paths, exact assets and graph; main transaction provides undo
+ok 214 - sprite3 export/import writes positional/output paths, exact assets and graph; main transaction provides undo
+  ---
+  duration_ms: 245.217083
+  type: 'test'
+  ...
+# Subtest: frozen library categories/search are local; missing materials report exact path and explicit fetch
+ok 215 - frozen library categories/search are local; missing materials report exact path and explicit fetch
+  ---
+  duration_ms: 157.865375
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: atomic backpack persists every type across sessions and restore points preserve selected ID/monitor/asset IDs
+ok 216 - atomic backpack persists every type across sessions and restore points preserve selected ID/monitor/asset IDs
+  ---
+  duration_ms: 665.440541
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: approved loaded extensions persist in private metadata without unused-extension JSON hacks
+ok 217 - approved loaded extensions persist in private metadata without unused-extension JSON hacks
+  ---
+  duration_ms: 165.614083
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: Project safely reloads exact offline videoSensing/Gamepad reporter fixtures without DOM or capture
+ok 218 - Project safely reloads exact offline videoSensing/Gamepad reporter fixtures without DOM or capture
+  ---
+  duration_ms: 138.932042
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: library reads genuine frozen WAV bytes from an explicit cache and sound load survives project save
+ok 219 - library reads genuine frozen WAV bytes from an explicit cache and sound load survives project save
+  ---
+  duration_ms: 615.832542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-a
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-b
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-c
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-d
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  Abby-a
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-a
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-b
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-c
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  abby-d
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  Arctic
+# Subtest: installed frozen library loads sprite/costume/sound/backdrop with exact assets and reopen semantics
+ok 220 - installed frozen library loads sprite/costume/sound/backdrop with exact assets and reopen semantics
+  ---
+  duration_ms: 1340.302292
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: store payload checksum, malicious block graph and prototype keys cannot mutate a project
+ok 221 - store payload checksum, malicious block graph and prototype keys cannot mutate a project
+  ---
+  duration_ms: 228.599333
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: router recognizes project/library/backpack specs and output is not project persistence
+ok 222 - router recognizes project/library/backpack specs and output is not project persistence
+  ---
+  duration_ms: 122.905042
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  duplicate bytes
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  renamed
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  duplicate bytes
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  renamed
+# Subtest: stable asset metadata survives rename/reorder/duplicate bytes and rejects cardinality corruption
+ok 223 - stable asset metadata survives rename/reorder/duplicate bytes and rejects cardinality corruption
+  ---
+  duration_ms: 187.507416
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: project fetch defaults deny and uses the shared downloader with exact grants, bounds and atomic verified output
+ok 224 - project fetch defaults deny and uses the shared downloader with exact grants, bounds and atomic verified output
+  ---
+  duration_ms: 148.629291
+  type: 'test'
+  ...
+# Subtest: shared downloader loopback denies unauthorized redirect host without process-wide network enable
+ok 225 - shared downloader loopback denies unauthorized redirect host without process-wide network enable
+  ---
+  duration_ms: 234.641334
+  type: 'test'
+  ...
+# Subtest: standalone resource mode is selected before dev fallback without changing frozen validation
+ok 226 - standalone resource mode is selected before dev fallback without changing frozen validation
+  ---
+  duration_ms: 42.411792
+  type: 'test'
+  ...
+# Subtest: fetch script rejects unbounded settings, arbitrary hosts/paths and network stays denied in normal imports
+ok 227 - fetch script rejects unbounded settings, arbitrary hosts/paths and network stays denied in normal imports
+  ---
+  duration_ms: 664.664875
+  type: 'test'
+  ...
+# Subtest: six explicit option semantics and timer-before-delay match frozen source boundary
+ok 228 - six explicit option semantics and timer-before-delay match frozen source boundary
+  ---
+  duration_ms: 32.3575
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: actual offscreen PNG frame sequence/header/pixels manifest clock advances an independent non-dirty copy
+ok 229 - actual offscreen PNG frame sequence/header/pixels manifest clock advances an independent non-dirty copy
+  ---
+  duration_ms: 2327.582875
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: waitflag/delay/stopOnStop/endstop semantics use clock frames, not wall sleeps or exhausted threads
+ok 230 - waitflag/delay/stopOnStop/endstop semantics use clock frames, not wall sleeps or exhausted threads
+  ---
+  duration_ms: 4424.940833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: actual native preRecorded decoding/sample-clock WAV mix including delay crop, source offset and microphone replacement
+ok 231 - actual native preRecorded decoding/sample-clock WAV mix including delay crop, source offset and microphone replacement
+  ---
+  duration_ms: 755.751
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: projectaudio gaps/unsupported formats/no overlap fail closed, never produce success silent fallback or capture OS mic
+ok 232 - projectaudio gaps/unsupported formats/no overlap fail closed, never produce success silent fallback or capture OS mic
+  ---
+  duration_ms: 1071.184208
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: safe gamepad-mapping/device input replay participates in actual offscreen recording copy
+ok 233 - safe gamepad-mapping/device input replay participates in actual offscreen recording copy
+  ---
+  duration_ms: 616.926
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: exact filenames defaultsafe executable grants, symlink/input/prototype/header/pixels and no overwrite are enforced
+ok 234 - exact filenames defaultsafe executable grants, symlink/input/prototype/header/pixels and no overwrite are enforced
+  ---
+  duration_ms: 611.70275
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: REAL system ffmpeg + ffprobe encode MP4 and WebM and verify frame count and non-silent decoded digital audio
+ok 235 - REAL system ffmpeg + ffprobe encode MP4 and WebM and verify frame count and non-silent decoded digital audio
+  ---
+  duration_ms: 1899.366166
+  type: 'test'
+  ...
+# Subtest: bounded memory trace refuses an injected over-cap byte sample without relaxing the 512 MiB ceiling
+ok 236 - bounded memory trace refuses an injected over-cap byte sample without relaxing the 512 MiB ceiling
+  ---
+  duration_ms: 0.840917
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: repeat long frames and MP4/WebM stress keeps native peak bounded through fonts, frame allocation and disposal
+ok 237 - repeat long frames and MP4/WebM stress keeps native peak bounded through fonts, frame allocation and disposal
+  ---
+  duration_ms: 18092.263667
+  type: 'test'
+  ...
+# fixed native allocation stress [{"format":"frames","frames":240,"loadMiB":134.69,"frameFinalMiB":208.25,"disposedMiB":206.56,"peakMiB":208.39},{"format":"frames","frames":240,"loadMiB":132.94,"frameFinalMiB":206.91,"disposedMiB":205.23,"peakMiB":207.06},{"format":"mp4","frames":30,"loadMiB":136.14,"frameFinalMiB":182.08,"disposedMiB":184.44,"peakMiB":185.94},{"format":"webm","frames":30,"loadMiB":134.25,"frameFinalMiB":189.92,"disposedMiB":192.59,"peakMiB":194.06},{"format":"mp4","frames":30,"loadMiB":136.64,"frameFinalMiB":191.03,"disposedMiB":194.95,"peakMiB":196.44},{"format":"webm","frames":30,"loadMiB":134.2,"frameFinalMiB":181.56,"disposedMiB":185.47,"peakMiB":187.59}]
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: bounded process deadline kills its process group and dispose terminates in-flight recording children
+ok 238 - bounded process deadline kills its process group and dispose terminates in-flight recording children
+  ---
+  duration_ms: 152.437125
+  type: 'test'
+  ...
+# Subtest: bundled resource inventory verifies all 1304 assets and 301 extensions without desktop paths
+ok 239 - bundled resource inventory verifies all 1304 assets and 301 extensions without desktop paths
+  ---
+  duration_ms: 3494.586625
+  type: 'test'
+  ...
+# Subtest: missing resource inventory fails closed rather than using sibling desktop files
+ok 240 - missing resource inventory fails closed rather than using sibling desktop files
+  ---
+  duration_ms: 19.654125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: runtime contract routes through real CommandSession and block steps mutate only fork copy
+ok 241 - runtime contract routes through real CommandSession and block steps mutate only fork copy
+  ---
+  duration_ms: 1765.81075
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: block-ID breakpoints pause before execution, record hits and bypass once on stepping/resume
+ok 242 - block-ID breakpoints pause before execution, record hits and bypass once on stepping/resume
+  ---
+  duration_ms: 761.312125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: pause freezes virtual frames and waits, resume progresses without editing shared VM
+ok 243 - pause freezes virtual frames and waits, resume progresses without editing shared VM
+  ---
+  duration_ms: 874.590125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: scheduled keyboard/mouse input occurs at exact frames, request errors leave runtime usable
+ok 244 - scheduled keyboard/mouse input occurs at exact frames, request errors leave runtime usable
+  ---
+  duration_ms: 648.642333
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: ask blocks remain pending until immediate or frame-scheduled answer and trace shows reporter boundaries
+ok 245 - ask blocks remain pending until immediate or frame-scheduled answer and trace shows reporter boundaries
+  ---
+  duration_ms: 1041.361833
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: compiled runtime supports pause/frame step but explicitly rejects block stepping, breakpoints and primitive trace
+ok 246 - compiled runtime supports pause/frame step but explicitly rejects block stepping, breakpoints and primitive trace
+  ---
+  duration_ms: 1000.504541
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: trace/watch bounded rings retain immutable samples, clones are reported and stop removes them
+ok 247 - trace/watch bounded rings retain immutable samples, clones are reported and stop removes them
+  ---
+  duration_ms: 576.917375
+  type: 'test'
+  ...
+# Subtest: runtime startup fails closed on denied extensions and IPC death/timeout disposes a real worker
+ok 248 - runtime startup fails closed on denied extensions and IPC death/timeout disposes a real worker
+  ---
+  duration_ms: 1173.080334
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: controller sync dispose kills fork, lifetime expires even when paused and limits reject unsafe commands
+ok 249 - controller sync dispose kills fork, lifetime expires even when paused and limits reject unsafe commands
+  ---
+  duration_ms: 1580.745542
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: reporter block breakpoints and single steps preserve cached operands without re-running random reporters
+ok 250 - reporter block breakpoints and single steps preserve cached operands without re-running random reporters
+  ---
+  duration_ms: 535.806792
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: block stepping through waits and loops advances virtual frames instead of getting stuck on a yielded block
+ok 251 - block stepping through waits and loops advances virtual frames instead of getting stuck on a yielded block
+  ---
+  duration_ms: 561.669584
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: continuous resume reaches a real breakpoint, pause is stable and repeated loop hits are recorded
+ok 252 - continuous resume reaches a real breakpoint, pause is stable and repeated loop hits are recorded
+  ---
+  duration_ms: 731.805417
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: persistent seeded random runs reproduce exact samples and bounded watch rings retire old frames
+ok 253 - persistent seeded random runs reproduce exact samples and bounded watch rings retire old frames
+  ---
+  duration_ms: 1930.24625
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: JSONL runtime errors are request-scoped, batch protocols stay separate and quit disposes persistent worker
+ok 254 - JSONL runtime errors are request-scoped, batch protocols stay separate and quit disposes persistent worker
+  ---
+  duration_ms: 999.53225
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: custom procedure calls, branches and repeated waits retain interpreter stack across single steps
+ok 255 - custom procedure calls, branches and repeated waits retain interpreter stack across single steps
+  ---
+  duration_ms: 499.526917
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: clone execution hits original block breakpoint with clone identity and stop frees all clones
+ok 256 - clone execution hits original block breakpoint with clone identity and stop frees all clones
+  ---
+  duration_ms: 527.789584
+  type: 'test'
+  ...
+# Subtest: automatic heartbeat kills an unresponsive worker without waiting for the next user command
+ok 257 - automatic heartbeat kills an unresponsive worker without waiting for the next user command
+  ---
+  duration_ms: 638.127291
+  type: 'test'
+  ...
+# Subtest: runtime fork drops inherited preload flags and queued dispose rejects pending operations
+ok 258 - runtime fork drops inherited preload flags and queued dispose rejects pending operations
+  ---
+  duration_ms: 423.630292
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: worker rejects over-capacity answer and watch requests without abandoning paused runtime
+ok 259 - worker rejects over-capacity answer and watch requests without abandoning paused runtime
+  ---
+  duration_ms: 566.199458
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: trace resizing preserves monotonic cursors and validation does not mutate existing debug state
+ok 260 - trace resizing preserves monotonic cursors and validation does not mutate existing debug state
+  ---
+  duration_ms: 499.84775
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: compiled virtual wait survives wall-clock pause
+ok 261 - compiled virtual wait survives wall-clock pause
+  ---
+  duration_ms: 652.9715
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: batch run --trace records exact interpreter primitive locations and preserves untraced seed/watch results
+ok 262 - batch run --trace records exact interpreter primitive locations and preserves untraced seed/watch results
+  ---
+  duration_ms: 1974.409709
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: batch trace validates capacities and refuses explicit or inherited compiled mode without damaging session
+ok 263 - batch trace validates capacities and refuses explicit or inherited compiled mode without damaging session
+  ---
+  duration_ms: 990.942583
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: batch trace identifies scheduled key hat threads and clone primitive targets accurately
+ok 264 - batch trace identifies scheduled key hat threads and clone primitive targets accurately
+  ---
+  duration_ms: 511.709791
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: batch trace byte budget evicts oversized accumulated locations and total response fails closed at 8 MiB
+ok 265 - batch trace byte budget evicts oversized accumulated locations and total response fails closed at 8 MiB
+  ---
+  duration_ms: 2013.649458
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: runtime start preflight rejects live-copy conflicts and invalid options before --project replaces editor state
+ok 266 - runtime start preflight rejects live-copy conflicts and invalid options before --project replaces editor state
+  ---
+  duration_ms: 527.0645
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: legacy batch run and per-frame scheduled input stay compatible with persistent worker protocol
+ok 267 - legacy batch run and per-frame scheduled input stay compatible with persistent worker protocol
+  ---
+  duration_ms: 974.825167
+  type: 'test'
+  ...
+# Subtest: default network policy rejects TCP, UDP and fetch
+ok 268 - default network policy rejects TCP, UDP and fetch
+  ---
+  duration_ms: 71.543208
+  type: 'test'
+  ...
+# Subtest: SVG rejects active/external XML resources without a DOM shim
+ok 269 - SVG rejects active/external XML resources without a DOM shim
+  ---
+  duration_ms: 280.567709
+  type: 'test'
+  ...
+# Subtest: CLI fails closed on sanitized ZIP traversal and executable extensions without losing the open project
+ok 270 - CLI fails closed on sanitized ZIP traversal and executable extensions without losing the open project
+  ---
+  duration_ms: 834.801125
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: settings changes use VM project-options comment and survive SB3 reload
+ok 271 - settings changes use VM project-options comment and survive SB3 reload
+  ---
+  duration_ms: 607.966375
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# Subtest: settings validates types and editor compiler stays disabled
+ok 272 - settings validates types and editor compiler stays disabled
+  ---
+  duration_ms: 214.634458
+  type: 'test'
+  ...
+# Subtest: embedded PNG SVG rasterization preserves opaque and translucent pixel colors
+ok 273 - embedded PNG SVG rasterization preserves opaque and translucent pixel colors
+  ---
+  duration_ms: 4.183
+  type: 'test'
+  ...
+# Subtest: embedded PNG skin is visible in actual ANGLE stage output
+ok 274 - embedded PNG skin is visible in actual ANGLE stage output
+  ---
+  duration_ms: 316.548458
+  type: 'test'
+  ...
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  背景
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  造型
+# [90mvm[0m [33mwarn[0m No rendering module present; cannot load costume:  costume1
+# Subtest: sprite-pane order, folders, draggable property and layer order remain distinct
+ok 275 - sprite-pane order, folders, draggable property and layer order remain distinct
+  ---
+  duration_ms: 556.181166
+  type: 'test'
+  ...
+1..275
+# tests 275
+# suites 0
+# pass 275
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 70172.821459

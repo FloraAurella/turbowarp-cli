@@ -1,0 +1,98 @@
+{
+  "directory": "/path/to/turbowarp-cli/examples/verified-QfNBUD",
+  "commands": 37,
+  "agentExamples": [
+    {
+      "schemaVersion": 1,
+      "mode": "basic",
+      "directory": "/path/to/turbowarp-cli/examples/verified-QfNBUD/agent-basic",
+      "verified": true,
+      "commands": 17,
+      "expectedErrors": 0,
+      "image": {
+        "format": "png",
+        "width": 480,
+        "height": 360,
+        "bytes": 12428,
+        "sha256": "986b919dad02f189b0b6a9aaa122221f56b5cc1cf311f48907015336181c781b",
+        "pixelsSha256": "19dea4c607368f07f06d08d773d8732ec2f1afa6c4da3bd385bc94ed59ac07d8",
+        "pixels": 172800
+      },
+      "files": [
+        "demo.sb3",
+        "result.png",
+        "transcript.json",
+        "verification.json",
+        "stderr.log"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "mode": "input",
+      "directory": "/path/to/turbowarp-cli/examples/verified-QfNBUD/agent-input",
+      "verified": true,
+      "commands": 21,
+      "expectedErrors": 0,
+      "image": {
+        "format": "png",
+        "width": 480,
+        "height": 360,
+        "bytes": 9698,
+        "sha256": "35f711ea70ad8e5168653aad5923a2b9cf350df8df18a0c880f80757f5bc1c6a",
+        "pixelsSha256": "91438fa11b366d52b41d15c8be0c99990961b32b72a381a124d27d821f57768a",
+        "pixels": 172800
+      },
+      "files": [
+        "demo.sb3",
+        "result.png",
+        "transcript.json",
+        "verification.json",
+        "stderr.log"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "mode": "debug",
+      "directory": "/path/to/turbowarp-cli/examples/verified-QfNBUD/agent-debug",
+      "verified": true,
+      "commands": 27,
+      "expectedErrors": 1,
+      "image": {
+        "format": "png",
+        "width": 480,
+        "height": 360,
+        "bytes": 12428,
+        "sha256": "986b919dad02f189b0b6a9aaa122221f56b5cc1cf311f48907015336181c781b",
+        "pixelsSha256": "19dea4c607368f07f06d08d773d8732ec2f1afa6c4da3bd385bc94ed59ac07d8",
+        "pixels": 172800
+      },
+      "files": [
+        "demo.sb3",
+        "result.png",
+        "transcript.json",
+        "verification.json",
+        "stderr.log"
+      ]
+    }
+  ],
+  "targetXAfterRun": 25,
+  "editorXAfterRun": 0,
+  "traceEntries": 1,
+  "libraryAssets": 1304,
+  "noDOM": true,
+  "recordingFrames": 2,
+  "files": [
+    "demo.sb3",
+    "result.png",
+    "demo.html",
+    "demo.zip",
+    "with-cat.sb3",
+    "drawing.svg",
+    "drawing.png",
+    "font.png",
+    "inputs.jsonl",
+    "tutorial.sb3",
+    "tutorial.html",
+    "recorded-frames/manifest.json"
+  ]
+}

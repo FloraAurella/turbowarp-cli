@@ -1,0 +1,31 @@
+{
+  "scope":"Full GUI capability parity gates over the frozen desktop baseline; partial native tests and source structure do not establish these gates",
+  "imageDifferential":{
+    "verified":false,
+    "reason":"Native RGBA, SVG, pen, collision, bubble and font fixtures pass, but no explicitly authorized GUI/browser oracle has been run. Paper geometry, missing glyphs, antialiasing and monitor overlay remain incomplete.",
+    "partialEvidence":["test/m2-renderer.test.js","test/paint-tools.test.js","test/fonts.test.js","docs/verification/pinned-font-rendering.tap"]
+  },
+  "audioDifferential":{
+    "verified":false,
+    "reason":"Frozen GUI graph is exercised on the native DSP, PCM/WAV and encoder audio samples are tested; independent browser waveforms, full decode surface and whole-project audio scheduling are not accepted.",
+    "partialEvidence":["test/m2-audio.test.js","test/asset-tools.test.js","test/recording.test.js"]
+  },
+  "platforms":{
+    "verified":false,
+    "reason":"Only macOS arm64 / Node24.18.0 was executed. No Windows/Linux install+runtime fixture or packaged-player platform playback acceptance exists. GUI applications were not launched."
+  },
+  "performance":{
+    "verified":false,
+    "reason":"Bounded recording memory pressure is measured, but startup/load/frame-step comparisons against the frozen desktop baseline are not complete."
+  },
+  "permissions":{
+    "verified":false,
+    "reason":"Exact per-command grants, fail-closed network and three independent security repair probes pass; complete frozen extension/security callback behavior and an OS-confined custom extension execution environment are still incomplete. Capability checks are not an OS sandbox.",
+    "partialEvidence":["test/security.test.js","test/extension-policy.test.js","test/package-options.test.js","docs/verification/security-recheck.json"]
+  },
+  "devices":{
+    "verified":false,
+    "reason":"Recorded media/gamepad/cloud/keyboard/mouse input and frozen BLE/BT message parsers are tested. Six hardware families, real HID/rumble and physical connection/output tests are not accepted. D7 permits prerecorded camera/microphone replacements only.",
+    "partialEvidence":["test/device-adapters.test.js","test/gamepad-mapping.test.js","docs/device-usage.md"]
+  }
+}

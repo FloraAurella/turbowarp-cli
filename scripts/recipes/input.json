@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "scripts": [
+    [
+      {"opcode": "event_whenkeypressed", "fields": {"KEY_OPTION": "space"}},
+      {"opcode": "motion_changeyby", "inputs": {"DY": 40}}
+    ]
+  ]
+}

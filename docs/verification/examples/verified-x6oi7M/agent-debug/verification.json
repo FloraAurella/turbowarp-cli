@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "mode": "debug",
+  "directory": "/path/to/turbowarp-cli/examples/verified-x6oi7M/agent-debug",
+  "verified": true,
+  "commands": 26,
+  "expectedErrors": 1,
+  "files": [
+    "demo.sb3",
+    "result.png",
+    "transcript.json",
+    "verification.json"
+  ]
+}

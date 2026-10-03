@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/TurboWarp/scratch-gui",
+  "commit": "b37cb1df4a9e3a3011de04f5d04063a63bdf0c0c",
+  "license": "GPL-3.0",
+  "sourcePath": "src/lib/audio",
+  "sha256": {
+    "audio-effects.js": "63d60152d9c57d6537d37b5e5561fc201a7aae8d66b66e4d0595c14b225dbfb1",
+    "effects/echo-effect.js": "9fd9bb9eef0a5b7c37ade5158aaa60a9225d3cf8030f8b5161d978e4ebe54a4a",
+    "effects/volume-effect.js": "640c1eb71a5556fb4022ac837baeeaddd7bcac83a509468cd1789e5db1683911",
+    "effects/mute-effect.js": "ee417e92884c83ec25b398e6f2e22b3ef804d780f1d3b611a522c93b870b850e",
+    "effects/robot-effect.js": "c9d914e5942699c355364cfc113474775aa34c1507ea9638d015c48fa08b3c68",
+    "effects/fade-effect.js": "a69bf96469e01503b951a515aa9a08946cdbc201796e22758bd4f421fa11031b"
+  }
+}

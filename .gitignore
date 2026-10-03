@@ -1,0 +1,16 @@
+# Dependencies and generated artifacts
+node_modules/
+examples/verified-*/
+my-first-project/
+releases/
+.open-source/
+coverage/
+*.tgz
+.DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key

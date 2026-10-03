@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "mode": "debug",
+  "directory": "/path/to/turbowarp-cli/examples/verified-Rn9fo5/agent-debug",
+  "verified": true,
+  "commands": 27,
+  "expectedErrors": 1,
+  "image": {
+    "format": "png",
+    "width": 480,
+    "height": 360,
+    "bytes": 12428,
+    "sha256": "986b919dad02f189b0b6a9aaa122221f56b5cc1cf311f48907015336181c781b",
+    "pixelsSha256": "19dea4c607368f07f06d08d773d8732ec2f1afa6c4da3bd385bc94ed59ac07d8",
+    "pixels": 172800
+  },
+  "files": [
+    "demo.sb3",
+    "result.png",
+    "transcript.json",
+    "verification.json",
+    "stderr.log"
+  ]
+}

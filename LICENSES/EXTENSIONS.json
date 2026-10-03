@@ -1,0 +1,1629 @@
+{
+  "source": "https://github.com/TurboWarp/extensions/tree/90192c38ce9128c5eb828ad0957e0a968de9babd",
+  "note": "Metadata transcribed without relicensing. Empty header means consult exact upstream source and its historical MIT default; nested and embedded notices remain in each file. Full source archive is supplied in upstream/.",
+  "entries": [
+    {
+      "file": "resources/extensions/-SIPC-/consoles.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "-SIPC-"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Consoles\n// ID: sipcconsole\n// Description: Blocks that interact with the JavaScript console built in to your browser's developer tools.\n// By: -SIPC-\n// License: MIT\n",
+      "expandedSha256": "6d38fda8af6a60c9ce8ed03a755f5c2a1158a796a11f8cf6b336fc4e5d64640b"
+    },
+    {
+      "file": "resources/extensions/-SIPC-/recording.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "900b11e6cdd8c5cb2674d086f98cdd10f4b1fec1a5c07c28a5dcb15caaffb77e"
+    },
+    {
+      "file": "resources/extensions/-SIPC-/time.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "-SIPC-",
+        "SharkPool <https://scratch.mit.edu/users/DemonX5/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Time\n// ID: sipctime\n// Description: Blocks for times, dates, and time zones.\n// By: -SIPC-\n// By: SharkPool <https://scratch.mit.edu/users/DemonX5/>\n// License: MIT\n\n// If you're curious, the default dates are from the first commits of forkphorus & TurboWarp:\n// https://github.com/forkphorus/forkphorus/commit/632d3432a8a98abd627b1309f6c85f47dcc6d428\n// https://github.com/TurboWarp/scratch-vm/commit/4a93dab4fa3704ab7a1374b9794026b3330f3433\n",
+      "expandedSha256": "d6f9fa74ad5746d367dab4e603d92f3de897ed786e731e87358986eea0b86967"
+    },
+    {
+      "file": "resources/extensions/0832/rxFS.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "7fbd477aed22fd57ee17d8691aac29a2f9362d1be64bee95f0a0133d39838778"
+    },
+    {
+      "file": "resources/extensions/0832/rxFS2.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "0832"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: rxFS\n// ID: 0832rxfs2\n// Description: Blocks for interacting with a virtual in-memory filesystem.\n// By: 0832\n// License: MIT\n",
+      "expandedSha256": "7181f46a3cf6f96b19c7ad762a0ea439c84657f021a2362612817bc6c45594ef"
+    },
+    {
+      "file": "resources/extensions/Alestore/nfcwarp.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "Alestore Games <https://scratch.mit.edu/users/aleb2005/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: NFCWarp\n// ID: alestorenfc\n// Description: Allows reading data from NFC (NDEF) devices. Only works in Chrome on Android.\n// By: Alestore Games <https://scratch.mit.edu/users/aleb2005/>\n// Context: NFC stands for \"Near-field communication\". Ideally check a real phone in your language to see how they translated it.\n// License: MIT\n",
+      "expandedSha256": "6fda9ef24c2abdc60c2db58946bb4ae79a8e49aaa35c79f424408b8028c724a0"
+    },
+    {
+      "file": "resources/extensions/CST1229/images.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [],
+      "originalAuthors": [
+        "CST1229 <https://scratch.mit.edu/users/CST1229/>"
+      ],
+      "header": "// Name: Images\n// ID: images\n// Description: Some blocks for working with images.\n// Original: CST1229 <https://scratch.mit.edu/users/CST1229/>\n// License: MIT\n",
+      "expandedSha256": "39233ec7f54b37650dde1d5dd6233bf66ebfd295e71b1b7a878393a66d84b485"
+    },
+    {
+      "file": "resources/extensions/CST1229/zip.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [
+        "CST1229 <https://scratch.mit.edu/users/CST1229/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Zip\n// ID: cst1229zip\n// Description: Create and edit .zip format files, including .sb3 files.\n// By: CST1229 <https://scratch.mit.edu/users/CST1229/>\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "7142f45f10fe94004113f8bc9ea7f4547c6cac3a97639680a807e6e61037be79"
+    },
+    {
+      "file": "resources/extensions/Clay/htmlEncode.js.br",
+      "license": [
+        "MIT\r"
+      ],
+      "authors": [
+        "clay-rip\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: HTML Encode\r\n// ID: clayhtmlencode\r\n// Description: Escape untrusted text to safely include in HTML.\r\n// By: clay-rip\r\n// License: MIT\r\n\r",
+      "expandedSha256": "994271314d5368014dfa2dbfac8cf7177989948fbe2d5e7306fc0aebc88f7143"
+    },
+    {
+      "file": "resources/extensions/CubesterYT/KeySimulation.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [
+        "CubesterYT <https://scratch.mit.edu/users/CubesterYT/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Key Simulation\n// ID: cubesterKeySimulation\n// Description: Simulate key presses and mouse clicks.\n// By: CubesterYT <https://scratch.mit.edu/users/CubesterYT/>\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "bb8eb5e427f0c15199afa3f99838c75b1eadeb41b733ef3e8fef401df5be6f5c"
+    },
+    {
+      "file": "resources/extensions/CubesterYT/TurboHook.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "CubesterYT <https://scratch.mit.edu/users/CubesterYT/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: TurboHook\n// ID: cubesterTurboHook\n// Description: Allows you to use webhooks.\n// By: CubesterYT <https://scratch.mit.edu/users/CubesterYT/>\n// License: MIT\n",
+      "expandedSha256": "bd80e7877f04782d53803b0b2e42b2cb3b231ef3d8ce78dc0b17decfc4238c03"
+    },
+    {
+      "file": "resources/extensions/CubesterYT/Webhooks.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [
+        "CubesterYT <https://scratch.mit.edu/users/CubesterYT/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Webhooks\n// ID: cubesterWebhooks\n// Description: A modern, very capable Webhook extension.\n// By: CubesterYT <https://scratch.mit.edu/users/CubesterYT/>\n// License: MPL-2.0\n\n// Version V.1.0.0\n",
+      "expandedSha256": "df9a0340df388c990d672afb6c7fae16fb2b428e8a67ec3980df3619a773578d"
+    },
+    {
+      "file": "resources/extensions/CubesterYT/WindowControls.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "CubesterYT <https://scratch.mit.edu/users/CubesterYT/>"
+      ],
+      "originalAuthors": [
+        "BlueDome77"
+      ],
+      "header": "// Name: Window Controls\n// ID: cubesterWindowControls\n// Description: Move, resize, rename the window, enter fullscreen, get screen size, and more.\n// By: CubesterYT <https://scratch.mit.edu/users/CubesterYT/>\n// Original: BlueDome77\n// License: MIT\n\n// Version V.1.0.0\n",
+      "expandedSha256": "fddb271768997cec69f68b7d9642b0af0b50c45844771e12fdbbf11b139cbbca"
+    },
+    {
+      "file": "resources/extensions/DNin/wake-lock.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "D-ScratchNinja <https://scratch.mit.edu/users/D-ScratchNinja/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Wake Lock\n// ID: dninwakelock\n// Description: Prevent the computer from falling asleep.\n// By: D-ScratchNinja <https://scratch.mit.edu/users/D-ScratchNinja/>\n// License: MIT\n",
+      "expandedSha256": "985874ed9c32dfeb6c78f7493883b2ea18ab51227f4f717dfe0cb110d1a17682"
+    },
+    {
+      "file": "resources/extensions/DT/cameracontrols.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "DT"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Camera V1\n// ID: DTcameracontrols\n// Description: Move the visible part of the stage.\n// By: DT\n// License: MIT\n",
+      "expandedSha256": "7becbcdce44ef6c93f510f48c55df33b05f6b21ed9aa342d6d3a6ca1559250b8"
+    },
+    {
+      "file": "resources/extensions/DogeisCut/FormatNumbers.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "DogeisCut <https://scratch.mit.edu/users/dogeiscut/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Format Numbers\n// ID: dogeiscutformatnumbers\n// Description: Format large numbers into AD standard, fixed decimal, comma separated, or scientific notation.\n// By: DogeisCut <https://scratch.mit.edu/users/dogeiscut/>\n// License: MIT\n\n// Version V.2.0.2\n\n// TODO:\n// - Editor Icon\n// - BigInt Support\n// - Time notation, decimal count defines how many milliseconds show.\n",
+      "expandedSha256": "3b37b503652915a6b92f0feb00ae99e7d251a841ed460e45cb3be2976dc3d1c9"
+    },
+    {
+      "file": "resources/extensions/JeremyGamer13/tween.js.br",
+      "license": [
+        "MIT\r"
+      ],
+      "authors": [
+        "JeremyGamer13 <https://scratch.mit.edu/users/JeremyGamer13/>\r",
+        "Fath11 <https://scratch.mit.edu/users/Fath11/>\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Tween\r\n// ID: jeremygamerTweening\r\n// Description: Easing methods for smooth animations.\r\n// By: JeremyGamer13 <https://scratch.mit.edu/users/JeremyGamer13/>\r\n// By: Fath11 <https://scratch.mit.edu/users/Fath11/>\r\n// License: MIT\r\n\r",
+      "expandedSha256": "01a1ef81d442950826f08819d0d421b2e3181f60d7fe08b1e8e3a6326717f33d"
+    },
+    {
+      "file": "resources/extensions/Lily/AllMenus.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: All Menus\n// ID: lmsAllMenus\n// Description: Special category with every menu from every Scratch category and extensions.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n// Scratch-compatible: true\n",
+      "expandedSha256": "b7602df66c82383d8b90ac2696324c7590658ab8beff63118e544ca02a3e0e48"
+    },
+    {
+      "file": "resources/extensions/Lily/Assets.js.br",
+      "license": [
+        "MIT AND LGPL-3.0\r"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r",
+        "Mio <https://scratch.mit.edu/users/0znzw/>\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Asset Manager\r\n// ID: lmsAssets\r\n// Description: Add, remove, and get data from various types of assets.\r\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r\n// By: Mio <https://scratch.mit.edu/users/0znzw/>\r\n// License: MIT AND LGPL-3.0\r\n\r\n// TheShovel is so epic and cool and awesome\r\n\r",
+      "expandedSha256": "52529ce1a35cb8379861ed3a41da3562dfa37c85b3c93891cd98ea5a480fbc90"
+    },
+    {
+      "file": "resources/extensions/Lily/Cast.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Cast\n// ID: lmsCast\n// Description: Convert values between types.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "25314d0937a813a2bd98dd21752276499fe0b150ffb6cd9f65b6f3b603356743"
+    },
+    {
+      "file": "resources/extensions/Lily/ClonesPlus.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Clones Plus\n// ID: lmsclonesplus\n// Description: Expansion of Scratch's clone features.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "fbf8188d94ca51d59c4eeeed0d4f44238e9e2f2e65f4823cdc01538c3202f035"
+    },
+    {
+      "file": "resources/extensions/Lily/CommentBlocks.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Comment Blocks\n// ID: lmscomments\n// Description: Annotate your scripts.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "7ffecc2527ec87b0dab21fb4a0e1361107a5b0b10c19ad555f22ca84cfd6b9f3"
+    },
+    {
+      "file": "resources/extensions/Lily/HackedBlocks.js.br",
+      "license": [
+        "MIT AND LGPL-3.0\r"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r",
+        "pumpkinhasapatch\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Hidden Block Collection\r\n// ID: lmsHackedBlocks\r\n// Description: Various \"hacked blocks\" that work in Scratch but are not visible in the palette.\r\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r\n// By: pumpkinhasapatch\r\n// License: MIT AND LGPL-3.0\r\n// Scratch-compatible: true\r\n\r",
+      "expandedSha256": "f73c7c9f46d2b2e080df5c1fb3f1eba0226af52f6011d8d37f0ee3a56ad294b6"
+    },
+    {
+      "file": "resources/extensions/Lily/ListTools.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: List Tools\n// ID: lmsListTools\n// Description: An assortment of new ways to interact with lists.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n\n// (It's getting harder and harder to think of original descriptions now)\n",
+      "expandedSha256": "4327d430af8443c7ee0389afd8a46a6206ca6b1e69748ba9a34fa05f08c02427"
+    },
+    {
+      "file": "resources/extensions/Lily/LooksPlus.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Looks Plus\n// ID: lmsLooksPlus\n// Description: Expands upon the looks category, allowing you to show/hide, get costume data and edit SVG skins on sprites.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "74e07803c5d783163d59f7aa3cc3ffd83e490a8c67f287e41e37f407a41dced8"
+    },
+    {
+      "file": "resources/extensions/Lily/McUtils.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: McUtils\n// ID: lmsmcutils\n// Description: Helpful utilities for any fast food employee.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// Context: Joke extension based on McDonalds, a fast food chain.\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "496e9956a398239f29884c83ac09ca9cfc78071299fe59bc869bbace8b1d5b3d"
+    },
+    {
+      "file": "resources/extensions/Lily/MoreEvents.js.br",
+      "license": [
+        "MIT AND LGPL-3.0\r"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: More Events\r\n// ID: lmsMoreEvents\r\n// Description: Start your scripts in new ways.\r\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r\n// License: MIT AND LGPL-3.0\r\n\r",
+      "expandedSha256": "c1e773048da0939a40377b29d9e9ab505d60f66baaa3c7df4202d205b697d21e"
+    },
+    {
+      "file": "resources/extensions/Lily/MoreTimers.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: More Timers\n// ID: lmsTimers\n// Description: Control several timers at once.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "d71047f8773666dceb4a1b1c3bc2edfe0fe92376bfb9892bda85fbf8ef58dafd"
+    },
+    {
+      "file": "resources/extensions/Lily/Skins.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Skins\n// ID: lmsSkins\n// Description: Have your sprites render as other images or costumes.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "4aae26f98091f5e6d36c83d9089819178c72205ac1a8d7267e41c31eb4bf472a"
+    },
+    {
+      "file": "resources/extensions/Lily/SoundExpanded.js.br",
+      "license": [
+        "MIT AND LGPL-3.0\r"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Sound Expanded\r\n// Description: Adds more sound-related blocks.\r\n// ID: lmsSoundExpanded\r\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r\n// License: MIT AND LGPL-3.0\r\n\r",
+      "expandedSha256": "c293a5f5be4d4bf348b21f86a19f02f0939e0e679ff55a55dab6d46907b6d4c2"
+    },
+    {
+      "file": "resources/extensions/Lily/TempVariables.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "c28a6a666fbb75974ca1b786e6b666fe5db9fb5d50d8b709ec75a52566a19a24"
+    },
+    {
+      "file": "resources/extensions/Lily/TempVariables2.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>",
+        "Mio <https://scratch.mit.edu/users/0znzw/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Temporary Variables\n// ID: lmsTempVars2\n// Description: Create disposable runtime or thread variables.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// By: Mio <https://scratch.mit.edu/users/0znzw/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "2b3441cb2d66e68507ffc465b2eacf77c9333584da87859c2f79e454c105b950"
+    },
+    {
+      "file": "resources/extensions/Lily/Video.js.br",
+      "license": [
+        "MIT AND LGPL-3.0\r"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r",
+        "SharkPool\r",
+        "Fath11 <https://scratch.mit.edu/users/fath11/>\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Video\r\n// ID: lmsVideo\r\n// Description: Play videos from URLs.\r\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\r\n// By: SharkPool\r\n// By: Fath11 <https://scratch.mit.edu/users/fath11/>\r\n// License: MIT AND LGPL-3.0\r\n\r\n// Attribution is not required, but greatly appreciated.\r\n\r",
+      "expandedSha256": "1b9c52cd24e5b5a3632dde3ed656c5a42651cdd83d601cd66129101ba0847888"
+    },
+    {
+      "file": "resources/extensions/Lily/lmsutils.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Lily's Toolbox\n// ID: lmsutilsblocks\n// Description: Previously called LMS Utilities.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "40b9506e84c30bd2a6b22fab54fc1cb1c21b3ce1a1b237231ca89cd1a27c1d8c"
+    },
+    {
+      "file": "resources/extensions/Longboost/color_channels.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: RGB Channels\n// ID: lbdrawtest\n// Description: Only render or stamp certain RGB channels.\n// License: MIT\n",
+      "expandedSha256": "6fb94f44b7364c2c227dd459c2837dbb815a1fb1676d6bbaaf779864f057a802"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/ClonesPlus.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Clones Plus\n// ID: lmsclonesplus\n// Description: Expansion of Scratch's clone features.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "fbf8188d94ca51d59c4eeeed0d4f44238e9e2f2e65f4823cdc01538c3202f035"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/CommentBlocks.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Comment Blocks\n// ID: lmscomments\n// Description: Annotate your scripts.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "7ffecc2527ec87b0dab21fb4a0e1361107a5b0b10c19ad555f22ca84cfd6b9f3"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/LooksPlus.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Looks Plus\n// ID: lmsLooksPlus\n// Description: Expands upon the looks category, allowing you to show/hide, get costume data and edit SVG skins on sprites.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "74e07803c5d783163d59f7aa3cc3ffd83e490a8c67f287e41e37f407a41dced8"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/McUtils.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: McUtils\n// ID: lmsmcutils\n// Description: Helpful utilities for any fast food employee.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// Context: Joke extension based on McDonalds, a fast food chain.\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "496e9956a398239f29884c83ac09ca9cfc78071299fe59bc869bbace8b1d5b3d"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/MoreTimers.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: More Timers\n// ID: lmsTimers\n// Description: Control several timers at once.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "d71047f8773666dceb4a1b1c3bc2edfe0fe92376bfb9892bda85fbf8ef58dafd"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/TempVariables.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "c28a6a666fbb75974ca1b786e6b666fe5db9fb5d50d8b709ec75a52566a19a24"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/TempVariables2.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>",
+        "Mio <https://scratch.mit.edu/users/0znzw/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Temporary Variables\n// ID: lmsTempVars2\n// Description: Create disposable runtime or thread variables.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// By: Mio <https://scratch.mit.edu/users/0znzw/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "2b3441cb2d66e68507ffc465b2eacf77c9333584da87859c2f79e454c105b950"
+    },
+    {
+      "file": "resources/extensions/LukeManiaStudios/lmsutils.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Lily's Toolbox\n// ID: lmsutilsblocks\n// Description: Previously called LMS Utilities.\n// By: LilyMakesThings <https://scratch.mit.edu/users/LilyMakesThings/>\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "40b9506e84c30bd2a6b22fab54fc1cb1c21b3ce1a1b237231ca89cd1a27c1d8c"
+    },
+    {
+      "file": "resources/extensions/Medericoder/textcase.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "dced01869585a0d4b75c6628f944a4bf692b16e3aa75d5dcd4e5f92a0b55da15"
+    },
+    {
+      "file": "resources/extensions/NOname-awa/cn-number.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "e1b3e159fb51fe0828850e9180baa6ec516b3ae6946444a1b732f9b9e3bc08d4"
+    },
+    {
+      "file": "resources/extensions/NOname-awa/global-coordinate.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "b8671ed128d915c039f6a1d47192ebbf92808fd06e78059b6187fec5ff246f69"
+    },
+    {
+      "file": "resources/extensions/NOname-awa/graphics2d.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "NOname-awa"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Graphics 2D\n// ID: nonameawagraph\n// Description: Blocks to compute lengths, angles, and areas in two dimensions.\n// By: NOname-awa\n// License: MIT\n",
+      "expandedSha256": "25ab070242c758e077f619fd06a0dcba5705adfefe7b72d03ec24d725f70593d"
+    },
+    {
+      "file": "resources/extensions/NOname-awa/math-and-string.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "4af8ab2aa78def7dbaaa37121444dc6af42c0335bd7d625824b17d0ff2c5b143"
+    },
+    {
+      "file": "resources/extensions/NOname-awa/more-comparisons.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "NOname-awa"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: More Comparisons\n// ID: nonameawacomparisons\n// Description: More comparison blocks.\n// By: NOname-awa\n// License: MIT\n",
+      "expandedSha256": "976d130026a3db73b050eff1cef47edbf7ee31d01d2dc2650fb9d11a9dc3635b"
+    },
+    {
+      "file": "resources/extensions/NOname-awa/regular-expression.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "a47f4a4e00168cfaa2675590097c0ffe0cfe8c3974ee161ebfb03e85b5acb466"
+    },
+    {
+      "file": "resources/extensions/NOname-awa/sort-unique-words.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "c958c499ed877101fef115c568194fb0e0a0483b4cd96ca256fbb81ea8007496"
+    },
+    {
+      "file": "resources/extensions/NexusKitten/controlcontrols.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "NamelessCat <https://scratch.mit.edu/users/NexusKitten/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Control Controls\n// ID: nkcontrols\n// Description: Show and hide the project's controls.\n// By: NamelessCat <https://scratch.mit.edu/users/NexusKitten/>\n// License: MIT\n",
+      "expandedSha256": "36711d7656ebae22b851127a004aad02c19321cd515723484d1506d7dae0ed07"
+    },
+    {
+      "file": "resources/extensions/NexusKitten/moremotion.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "NamelessCat <https://scratch.mit.edu/users/NamelessCat/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: More Motion\n// ID: nkmoremotion\n// Description: More motion-related blocks.\n// By: NamelessCat <https://scratch.mit.edu/users/NamelessCat/>\n// License: MIT\n",
+      "expandedSha256": "7cd46461cde3f525ad5b99c1f16aa8b6a9399e758b3a85e60af56a533788f8b1"
+    },
+    {
+      "file": "resources/extensions/NexusKitten/sgrab.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "NamelessCat <https://scratch.mit.edu/users/NamelessCat/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: S-Grab\n// ID: nexuskittensgrab\n// Description: Get information about Scratch projects and Scratch users.\n// By: NamelessCat <https://scratch.mit.edu/users/NamelessCat/>\n// License: MIT\n",
+      "expandedSha256": "888eb0fd7cd81da3819a9b68a72f3a85b21f8f89ec8be0fda30f83ff85f3d3e4"
+    },
+    {
+      "file": "resources/extensions/NishiOwO/dectalk.js.br",
+      "license": [
+        "BSD-3-Clause"
+      ],
+      "authors": [
+        "NishiOwO"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: DECtalk Text to Speech\n// ID: nishiowoDectalk\n// Description: Text to speech powered by DECtalk. Does not use an internet connection, so it works offline. English only.\n// By: NishiOwO\n// License: BSD-3-Clause\n// Context: Don't translate \"DECtalk\" - it's the name of the text-to-speech library.\n\n// Repository is at https://github.com/dectalk/tw-dectalk\n",
+      "expandedSha256": "91b240208faeccc1ad7abe735b6903cca56a0d3189f636067fe2538262ba9c98"
+    },
+    {
+      "file": "resources/extensions/PwLDev/vibration.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [
+        "PwLDev <https://scratch.mit.edu/users/PwLDev/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Vibration\n// ID: pwldevvibration\n// Description: Control the device's vibration. Only works on Chrome for Android.\n// By: PwLDev <https://scratch.mit.edu/users/PwLDev/>\n// License: MPL-2.0\n",
+      "expandedSha256": "9c5484e73aeaa39fe570699fb130ad43f6ea18e0948769c55083bfb6c81497ac"
+    },
+    {
+      "file": "resources/extensions/SharkPool/Camera.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "SharkPool"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Camera V2\n// ID: SPcamera\n// Description: Move the visible part of the stage.\n// By: SharkPool\n// License: MIT\n\n// Version V.1.0.2\n",
+      "expandedSha256": "72dc1048a62eba189ec2715e51b238600e523bdf67a0e9f44207288229a1d109"
+    },
+    {
+      "file": "resources/extensions/SharkPool/Font-Manager.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "SharkPool",
+        "Mio <https://scratch.mit.edu/users/0znzw/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Font Manager\n// ID: SPASfontManager\n// Description: Add, delete, and manage fonts.\n// By: SharkPool\n// By: Mio <https://scratch.mit.edu/users/0znzw/>\n// License: MIT\n\n// Version V.1.1.0\n",
+      "expandedSha256": "0f8bb8c70f21c28adeaf1635a01b226119cfd737f9bcd2027e8e091d28164a5a"
+    },
+    {
+      "file": "resources/extensions/SharkPool/Tune-Shark-V3.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "SharkPool"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Tune Shark V3\n// ID: SPtuneShark3\n// Description: An advanced audio engine, providing complex sound control.\n// By: SharkPool\n// License: MIT AND LGPL-3.0\n\n// Version V.3.5.23\n",
+      "expandedSha256": "a41026cf9780a7a7ea336c89ee1dce765ca2b6b2ab002e66490889e4887a0565"
+    },
+    {
+      "file": "resources/extensions/Skyhigh173/bigint.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "Skyhigh173 <https://scratch.mit.edu/users/Skyhigh173/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: BigInt\n// ID: skyhigh173BigInt\n// Description: Math blocks that work on infinitely large integers (no decimals).\n// By: Skyhigh173 <https://scratch.mit.edu/users/Skyhigh173/>\n// License: MIT\n// Context: BigInt is short for \"Big Integer\" which can be infinitely big. \"number\" refers to normal numbers that have limits.\n",
+      "expandedSha256": "9d8fa15a3af4e53be296365f61ce30789cf7e55d08f919fcb62a66308673f1f1"
+    },
+    {
+      "file": "resources/extensions/Skyhigh173/json.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "Skyhigh173 <https://scratch.mit.edu/users/Skyhigh173/>",
+        "Mio <https://scratch.mit.edu/users/0znzw/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: JSON\n// ID: skyhigh173JSON\n// Description: Handle JSON strings and arrays.\n// By: Skyhigh173 <https://scratch.mit.edu/users/Skyhigh173/>\n// By: Mio <https://scratch.mit.edu/users/0znzw/>\n// License: MIT\n",
+      "expandedSha256": "ba294f2b7e002fe24c6cf344af042a456660f6cada498c732ef68b4ed4854078"
+    },
+    {
+      "file": "resources/extensions/TheShovel/CanvasEffects.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TheShovel",
+        "SharkPool <https://scratch.mit.edu/users/DemonX5/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Canvas Effects\n// ID: theshovelcanvaseffects\n// Description: Apply visual effects to the entire stage.\n// By: TheShovel\n// By: SharkPool <https://scratch.mit.edu/users/DemonX5/>\n// License: MIT\n",
+      "expandedSha256": "336e1710b94451bcb15e183b3f9c7d583c4c204063eb9e79ced0a242cf30f4d2"
+    },
+    {
+      "file": "resources/extensions/TheShovel/ColorPicker.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TheShovel"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Color Picker\n// ID: shovelColorPicker\n// Description: Access your system's color picker.\n// By: TheShovel\n// License: MIT\n",
+      "expandedSha256": "d76163ea17d005fe0cd4c804ea5cf0344aca6c989ed26aa0cdfd2b4b7260f932"
+    },
+    {
+      "file": "resources/extensions/TheShovel/CustomStyles.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TheShovel"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Custom Styles\n// ID: shovelcss\n// Description: Customize the appearance of variable monitors and prompts in your project.\n// By: TheShovel\n// License: MIT\n\n// Thanks LilyMakesThings for the awesome banner!",
+      "expandedSha256": "e3207af958e1390b5f362de946b63dde0154ba1b17b94b83a0ed80e48a97d004"
+    },
+    {
+      "file": "resources/extensions/TheShovel/LZ-String.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: LZ Compress\n// ID: shovellzcompress\n// Description: Compress and decompress text using lz-string.\n// License: MIT\n",
+      "expandedSha256": "b6cc1d49cd109c5639d22d082df7d8963ce0ac95a2f5dcb0b1d144dfe4713061"
+    },
+    {
+      "file": "resources/extensions/TheShovel/ShovelUtils.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TheShovel",
+        "Mio <https://scratch.mit.edu/users/0znzw/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: ShovelUtils\n// ID: ShovelUtils\n// Description: A bunch of miscellaneous blocks.\n// By: TheShovel\n// By: Mio <https://scratch.mit.edu/users/0znzw/>\n// License: MIT\n",
+      "expandedSha256": "871374ad406c93043beb5c9fbb22884af75f3e85f87b6ea013582dccf8c5f0d1"
+    },
+    {
+      "file": "resources/extensions/TheShovel/profanity.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "9c9b2093c8fbac7955766ec05c671c251b9284ee0754db5539feee0bba2e4757"
+    },
+    {
+      "file": "resources/extensions/TheShovel/profanityAPI.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "8e4b81c92f043bf072642a7fe6ea0eb289cbbf0c837b8ca5b442736fb04a78f8"
+    },
+    {
+      "file": "resources/extensions/WP-Studio01/text2speech.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "950df5e4739b511f2b5c80ac470a9c224a873562e735f6c6992b422252d3af8a"
+    },
+    {
+      "file": "resources/extensions/Xeltalliv/clippingblending.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "Vadik1 <https://scratch.mit.edu/users/Vadik1/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Clipping & Blending\n// ID: xeltallivclipblend\n// Description: Clipping outside of a specified rectangular area and different color blending modes.\n// By: Vadik1 <https://scratch.mit.edu/users/Vadik1/>\n// License: MIT\n",
+      "expandedSha256": "1bf53e884cbbdd7946b5fed9ce1c54c3a4b00429f5a749245614b4fda659ea12"
+    },
+    {
+      "file": "resources/extensions/Xeltalliv/simple3D.js.br",
+      "license": [
+        "MPL-2.0 AND BSD-3-Clause"
+      ],
+      "authors": [
+        "Vadik1 <https://scratch.mit.edu/users/Vadik1/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Simple 3D\n// ID: xeltallivSimple3D\n// Description: Make GPU accelerated 3D projects easily.\n// By: Vadik1 <https://scratch.mit.edu/users/Vadik1/>\n// License: MPL-2.0 AND BSD-3-Clause\n// Version: 1.2.2\n",
+      "expandedSha256": "266f388ca8c8441f3b16254ceb37054270823837622db80112724738a7f90156"
+    },
+    {
+      "file": "resources/extensions/XeroName/Deltatime.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "XeroName <https://scratch.mit.edu/users/plant2014/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Delta Time\n// ID: dtbyxeroname\n// Description: Precise delta timing blocks.\n// By: XeroName <https://scratch.mit.edu/users/plant2014/>\n// License: MIT\n",
+      "expandedSha256": "163c8d83503aa92bf8d43de75628a2d0aa56a06996cf487c08562f2fc0b06ed7"
+    },
+    {
+      "file": "resources/extensions/XmerOriginals/closecontrol.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [
+        "XmerOriginals <https://scratch.mit.edu/users/XmerOriginals/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Ask Before Closing Tab\n// ID: xmerclosecontrol\n// Description: Show a prompt when someone tries to close the tab.\n// By: XmerOriginals <https://scratch.mit.edu/users/XmerOriginals/>\n// License: MPL-2.0\n",
+      "expandedSha256": "a9aed9fe2a2abca0fcedca08ebd68c318c17413cfd5a52ba9c35c26620610154"
+    },
+    {
+      "file": "resources/extensions/ZXMushroom63/searchApi.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "ZXMushroom63"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Search Params\n// ID: zxmushroom63searchparams\n// Description: Interact with URL search parameters: the part of the URL after a question mark.\n// By: ZXMushroom63\n// License: MIT\n",
+      "expandedSha256": "65f4e9d2ed165678a6ee5abfea3442e25b9fa00068103ceedad5eecfc6173489"
+    },
+    {
+      "file": "resources/extensions/ar.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "Vadik1 <https://scratch.mit.edu/users/Vadik1/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Augmented Reality\n// ID: AR\n// Description: Shows image from camera and performs motion tracking, allowing 3D projects to correctly overlay virtual objects on real world.\n// By: Vadik1 <https://scratch.mit.edu/users/Vadik1/>\n// License: MIT\n",
+      "expandedSha256": "d42bd2216b86852f6e7253c0d6ebc09d4ead58c44564e2ce5a7aa84cb3e78986"
+    },
+    {
+      "file": "resources/extensions/battery.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Battery\n// ID: battery\n// Description: Access information about the battery of phones or laptops. May not work on all devices and browsers.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "ae05b25a7b4eaf2726f57bc1c1a95ca6b40c5d7524ff986e5f9ec1d9409e71c1"
+    },
+    {
+      "file": "resources/extensions/bitwise.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [
+        "TrueFantom <https://scratch.mit.edu/users/TrueFantom/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Bitwise\n// ID: Bitwise\n// Description: Blocks that operate on the binary representation of numbers in computers.\n// By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "925aa1d5752861faa5cfd0cdb2e8e8cd711727912d9fd5d97850f828167e7a38"
+    },
+    {
+      "file": "resources/extensions/box2d.js.br",
+      "license": [
+        "BSD-3-Clause AND MIT AND Zlib AND ISC"
+      ],
+      "authors": [],
+      "originalAuthors": [
+        "griffpatch <https://scratch.mit.edu/users/griffpatch/>"
+      ],
+      "header": "// Name: Box2D Physics\n// ID: griffpatch\n// Description: Two dimensional physics.\n// Original: griffpatch <https://scratch.mit.edu/users/griffpatch/>\n// License: BSD-3-Clause AND MIT AND Zlib AND ISC\n",
+      "expandedSha256": "faa7b00cd6915c2c488f62bbf2958c775d6e7b92786060110ff97ad5ebfdfa5c"
+    },
+    {
+      "file": "resources/extensions/clipboard.js.br",
+      "license": [
+        "Apache-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Clipboard\n// ID: clipboard\n// Description: Read and write from the system clipboard.\n// License: Apache-2.0\n",
+      "expandedSha256": "29bb14e0fd3ad200bd5afc4eac6a7657367a2b9c73a2ba9acf9a7d8c75b9ff79"
+    },
+    {
+      "file": "resources/extensions/clouddata-ping.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [
+        "TheShovel"
+      ],
+      "header": "// Name: Ping Cloud Data\n// ID: clouddataping\n// Description: Determine whether a cloud variable server is probably up.\n// Original: TheShovel\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "dbf77d69b735cd8528757b43b1f7bae61205ec6b1dacba2dfd7856bab9345491"
+    },
+    {
+      "file": "resources/extensions/cloudlink.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "MikeDEV"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: CloudLink V4\n// ID: cloudlink\n// Description: A powerful WebSocket extension for Scratch.\n// By: MikeDEV\n// License: MIT\n",
+      "expandedSha256": "4479a27b396c1c8d17c95bbefa4575740dc3f92e7d9abead55bfb7e78c5a9091"
+    },
+    {
+      "file": "resources/extensions/codeGIO/ExtraUtilities.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "b843cfc312cb84bcde7edde99bca729449d800ea024df8dfa85630fef343a21d"
+    },
+    {
+      "file": "resources/extensions/cs2627883/numericalencoding.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "cs2627883 <https://scratch.mit.edu/users/cs2627883/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Numerical Encoding V1\n// ID: cs2627883NumericalEncoding\n// Description: Use V2 instead as it is more efficient. V1 only exists for compatibility reasons.\n// By: cs2627883 <https://scratch.mit.edu/users/cs2627883/>\n// License: MIT\n\n// https://github.com/CS2627883/Turbowarp-Encoding-Extension/blob/main/Encoding.js\n",
+      "expandedSha256": "746957a6c18dbbcbb7991571ff6ef00815de5e1abe26974584c867b5b2999cb9"
+    },
+    {
+      "file": "resources/extensions/cursor.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Mouse Cursor\n// ID: MouseCursor\n// Description: Use custom cursors or hide the cursor. Also allows replacing the cursor with any costume image.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "10febfa87d28534499834e74ee5f8bcc335685218b53243d454ab93f1077dc53"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/block-utility-examples.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "8a4bf34e202b6255aabe34ca26ae259a4c793abb87f0979f64dc16169804afa7"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/broadcast-1.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "b0db69422ac573485ce851b57e3b62adc7f2521954eb2a6b80844a2809070df3"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/broadcast-2.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "d23350cf3a772c82249abf7d57d8e6c7a99495da2274359b2ca5da6513860702"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/broadcast-3.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "0e8d96ceaf85f593803dbebfa09eb5a63bd89002f999164f5a85641f23aad6c8"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/broadcast-4.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "e1139d76feabaa7fe23bb071fe2676555bf2fca3b9e70149e6ad2a2db810662a"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/broadcast-5.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "16ebba04e9e734004c184bfc79bab8dc0795a9717bccca8af07be53da6cb1598"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/every-second.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "760725672c894432117875f9e2dbf57b94054a5cfaf827d7e74507829a22ad3d"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/hello-world-unsandboxed.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "29393640afddb419e3f6b95d10074fa2d36fce442c839de257a1b8ab784a43b7"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/turbo-mode.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "818ebc8181eec73a0d822903c107578f4943ffe7166590b1bb4dbf755a1719bd"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/when-key-pressed-restart.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "0cb83412c8cd8a0e334498bfe2e14f4440d382a1a3e2fdf27bc3c590fcac13ca"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/when-key-pressed-stage.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "045d91421e84aa081e62814138374318587a66838761da264ac4616da44332cb"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/when-key-pressed.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "e57c3656207d33f046b981a8b070548e51eb59458d7f082039f9a7f6d500caba"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/when-space-key-pressed.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "4de1b58255f4b3a11489b641aa3568ec7adc8616a17b6a6297a720cf7a4ba52e"
+    },
+    {
+      "file": "resources/extensions/docs-examples/unsandboxed/when.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "949dcae038be6521e5275e0943948e9bafc4bcbaf32d8c92afa636bdb2ffc738"
+    },
+    {
+      "file": "resources/extensions/docs-internal/scratchblocks.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "6d32889414688edec0ab55a79bc750c9ace491ced065e1c5674c94d595d5c3a9"
+    },
+    {
+      "file": "resources/extensions/encoding.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "-SIPC-"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Encoding\n// ID: Encoding\n// Description: Encode and decode strings into their unicode numbers, base 64, or URLs.\n// By: -SIPC-\n// License: MIT\n",
+      "expandedSha256": "ea527450871bfd91fba39248157b7a591dde4f98db553083c19b99ab933ea27a"
+    },
+    {
+      "file": "resources/extensions/fetch.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Fetch\n// ID: fetch\n// Description: Make requests to the broader internet.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "56d1db68d30f846908730607d092602cddea65b84543fb35f85c162421698f7a"
+    },
+    {
+      "file": "resources/extensions/files.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Files\n// ID: files\n// Description: Read and download files.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "b26a779b8559ee1d4d990f740cbb33a46cd1b6b19b047a9d4d344a831ded8466"
+    },
+    {
+      "file": "resources/extensions/gamejolt.js.br",
+      "license": [
+        "MIT\r"
+      ],
+      "authors": [
+        "softed <https://scratch.mit.edu/users/softed/>\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Game Jolt\r\n// ID: GameJoltAPI\r\n// Description: Blocks that allow games to interact with the GameJolt API. Unofficial.\r\n// By: softed <https://scratch.mit.edu/users/softed/>\r\n// License: MIT\r\n\r",
+      "expandedSha256": "04f03128f58f8a19feaf773352291de1b60f3c318774a3aff26c8684d37f167a"
+    },
+    {
+      "file": "resources/extensions/gamepad.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Gamepad\n// ID: Gamepad\n// Description: Directly access gamepads instead of just mapping buttons to keys.\n// License: MIT AND MPL-2.0\n\n// Some parts of this scripts are based on or designed to be compatible-ish with:\n// https://arpruss.github.io/gamepad.js (MIT Licensed)\n",
+      "expandedSha256": "974d2c790f6b726aa5e47c033b0b7c7798220a1dd44c7776217558ca1e1a1070"
+    },
+    {
+      "file": "resources/extensions/godslayerakp/http.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "RedMan13 <https://scratch.mit.edu/users/RedMan13/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: HTTP\n// ID: gsaHTTPRequests\n// Description: Comprehensive extension for interacting with external websites.\n// By: RedMan13 <https://scratch.mit.edu/users/RedMan13/>\n// License: MIT\n",
+      "expandedSha256": "4ba8fff991b47e0c6750a59090999b27db9a698bc3d3bd14df76fa873f130e2d"
+    },
+    {
+      "file": "resources/extensions/godslayerakp/ws.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "RedMan13 <https://scratch.mit.edu/users/RedMan13/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: WebSocket\n// ID: gsaWebsocket\n// Description: Manually connect to WebSocket servers.\n// By: RedMan13 <https://scratch.mit.edu/users/RedMan13/>\n// License: MIT\n",
+      "expandedSha256": "f582391a056902b0498ee4c0a71afbfd488a01a3f6578c761953a3382e19ae7c"
+    },
+    {
+      "file": "resources/extensions/iframe.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Iframe\n// ID: iframe\n// Description: Display webpages or HTML over the stage.\n// Context: \"iframe\" is an HTML element that lets websites embed other websites.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "fd292e9b6848e0f590b954e32015fb612fd6fbb5948ddbf371e978a3e6b92843"
+    },
+    {
+      "file": "resources/extensions/itchio.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "softed <https://scratch.mit.edu/users/softed/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: itch.io\n// ID: itch\n// Description: Blocks that interact with the itch.io website. Unofficial.\n// By: softed <https://scratch.mit.edu/users/softed/>\n// License: MIT\n",
+      "expandedSha256": "242403a29c1be23dc81182d2cdde60dd9c3e55e4d427f02d15b776a4d86f4f96"
+    },
+    {
+      "file": "resources/extensions/lab/face-sensing.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Face Sensing\n// ID: faceSensing\n// Description: Sense faces with the camera.\n// License: MPL-2.0\n// Scratch-compatible: true\n",
+      "expandedSha256": "442a18fd11c9387b0fbc9d3902feb172cce0d89d201933bcee2eaf89cd329463"
+    },
+    {
+      "file": "resources/extensions/lab/text.js.br",
+      "license": [
+        "MIT AND LGPL-3.0"
+      ],
+      "authors": [
+        "LilyMakesThings"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Animated Text\n// ID: text\n// Description: An easy way to display and animate text. Compatible with Scratch Lab's Animated Text experiment.\n// By: LilyMakesThings\n// License: MIT AND LGPL-3.0\n",
+      "expandedSha256": "dd18e5e1606838cf53e3b5ed54231182a6a3e2e50cb3d7dc7514e1bae79fa66f"
+    },
+    {
+      "file": "resources/extensions/lab/video-sprites.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [
+        "Staevski_G <https://scratch.mit.edu/users/Gogoi-does-things/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Video Sprites\n// ID: videoSprites\n// Description: Replace sprites with a live video feed. Compatible with Scratch Lab's Animated Text experiment.\n// By: Staevski_G <https://scratch.mit.edu/users/Gogoi-does-things/>\n// License: MPL-2.0\n",
+      "expandedSha256": "57f8b062b6ab3ffad3d0dcb0eef8997213c4c94ee7b07e81bc2d01fded11ef66"
+    },
+    {
+      "file": "resources/extensions/local-storage.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Local Storage\n// ID: localstorage\n// Description: Store data persistently. Like cookies, but better.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "450cbec7c7194d500846d479abc1e3799598b045d1f00a47855afb876acaabf5"
+    },
+    {
+      "file": "resources/extensions/mbw/xml.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "mybearworld <https://scratch.mit.edu/users/mybearworld/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: XML\n// ID: mbwxml\n// Description: Create and extract values from XML.\n// By: mybearworld <https://scratch.mit.edu/users/mybearworld/>\n// License: MIT\n",
+      "expandedSha256": "fe2be9e29f669d5ac2f88ef12957ad8b9a74cd94d7071f8395397b0302c3c2ac"
+    },
+    {
+      "file": "resources/extensions/mdwalters/notifications.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Notifications\n// ID: mdwaltersnotifications\n// Description: Display notifications.\n// License: MIT\n",
+      "expandedSha256": "e54e915a886b95165c067ef8fe7c7ee4df2cbc30741c5dced22b8e4c3d1d3937"
+    },
+    {
+      "file": "resources/extensions/navigator.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Navigator\n// ID: navigatorinfo\n// Description: Details about the user's browser and operating system.\n// Context: \"Navigator\" refers to someone's browser\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "7fbd01d765b885ec9c39ebaea1e73a9a843610a1aa99fd0590155d0e504d84c6"
+    },
+    {
+      "file": "resources/extensions/numerical-encoding-2.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Numerical Encoding V2\n// ID: numericalencoding2\n// Description: Encode strings as numbers for cloud variables. Not compatible with V1 due to using much more efficient format.\n// License: MPL-2.0\n",
+      "expandedSha256": "5c4d7a899f899e379e2c215826ebcf8459db159a53fd82a7dc16d553c960e0a1"
+    },
+    {
+      "file": "resources/extensions/obviousAlexC/SensingPlus.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Sensing Plus\n// ID: obviousalexsensing\n// Description: An extension to the sensing category.\n// By: ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>\n// License: MIT\n",
+      "expandedSha256": "e6a9dcafa8a4ec81d12391b5d216be8cd8f001d56d0d19597550363d99de20ce"
+    },
+    {
+      "file": "resources/extensions/obviousAlexC/newgroundsIO.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Newgrounds\n// ID: NGIO\n// Description: Blocks that allow games to interact with the Newgrounds API. Unofficial.\n// By: ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>\n// License: MIT\n",
+      "expandedSha256": "5a1e9345a5a242f81cd3c017c8dcaebdb0d3f12eafe3923678b93afd2d379a20"
+    },
+    {
+      "file": "resources/extensions/obviousAlexC/penPlus.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>",
+        "Pen-Group"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Pen Plus V7\n// ID: penP\n// Description: Advanced rendering capabilities.\n// By: ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>\n// By: Pen-Group\n// License: MIT\n\n// With permission from Sharkpool-SP to use his pen layer data uri block!\n// Thanks dude!\n\n//If you are a mod developer please hit ctrl + f and look for /* MESSAGE FOR MOD DEVELOPERS */ to find more info\n//About supporting you mod.\n//    --Thanks ObviousAlexC\n\n//if you are looking for extension settings search up /* EXTENSION SETTINGS */\n\n//7.1.9 patch notes\n",
+      "expandedSha256": "16863a96df8f7c3296927561f4a74117d05a40b1e10a3c86b790df42b8d16c71"
+    },
+    {
+      "file": "resources/extensions/penplus.js.br",
+      "license": [
+        "MIT AND BSD-3-Clause"
+      ],
+      "authors": [
+        "ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Pen Plus V5 (Old)\n// ID: betterpen\n// Description: Replaced by Pen Plus V7.\n// By: ObviousAlexC <https://scratch.mit.edu/users/pinksheep2917/>\n// License: MIT AND BSD-3-Clause\n",
+      "expandedSha256": "9ac5fedc827b2d60e6a0dd980aca60d36501c2c59a531feff5ef879512420925"
+    },
+    {
+      "file": "resources/extensions/pointerlock.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Pointerlock\n// ID: pointerlock\n// Description: Adds blocks for mouse locking. Mouse x & y blocks will report the change since the previous frame while the pointer is locked. Replaces the pointerlock experiment.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "0a3d18b9b96fa3ae8e719cc54581a798a5de50074c253bd9449635f52ba82a97"
+    },
+    {
+      "file": "resources/extensions/qxsck/data-analysis.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "qxsck <https://scratch.mit.edu/users/qxsck/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Data Analysis\n// ID: qxsckdataanalysis\n// Description: Blocks to compute means, medians, maximums, minimums, variances, and modes.\n// By: qxsck <https://scratch.mit.edu/users/qxsck/>\n// License: MIT\n",
+      "expandedSha256": "a139477f2301c1b5649e0e6abb059bfbb21bfd96b0f492ea57626f264881ceb8"
+    },
+    {
+      "file": "resources/extensions/qxsck/var-and-list.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "qxsck <https://scratch.mit.edu/users/qxsck/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Variable and list\n// ID: qxsckvarandlist\n// Description: More blocks related to variables and lists.\n// By: qxsck <https://scratch.mit.edu/users/qxsck/>\n// License: MIT\n",
+      "expandedSha256": "789da42f44e7de3e3824907ca4212d76779f168bc9a279b6203d98d89260e25a"
+    },
+    {
+      "file": "resources/extensions/rixxyx.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "RixTheTyrunt <https://scratch.mit.edu/users/RixTheTyrunt/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: RixxyX\n// ID: RixxyX\n// Description: Various utility blocks.\n// By: RixTheTyrunt <https://scratch.mit.edu/users/RixTheTyrunt/>\n// License: MIT\n",
+      "expandedSha256": "beacfb4118e3d11e2f8a88ad4d000b2b354781d40d9fb8aee245f04b56e31a1c"
+    },
+    {
+      "file": "resources/extensions/runtime-options.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Runtime Options\n// ID: runtimeoptions\n// Description: Get and modify turbo mode, framerate, interpolation, clone limit, stage size, and more.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "4d027e73bccbd9e39a3aa2e0e93fe632342c7b6b809355b220d612088ef5f493"
+    },
+    {
+      "file": "resources/extensions/shreder95ua/resolution.js.br",
+      "license": [
+        "MIT\r"
+      ],
+      "authors": [
+        "shreder95ua <https://scratch.mit.edu/users/shreder95ua/>\r"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Screen Resolution\r\n// ID: shreder95resolution\r\n// Description: Get the resolution of the primary screen.\r\n// By: shreder95ua <https://scratch.mit.edu/users/shreder95ua/>\r\n// License: MIT\r\n\r",
+      "expandedSha256": "9beb1a1f89c9a7f83e32362c0737c5786d3fadbd6f6e9b81a6499e92c644a989"
+    },
+    {
+      "file": "resources/extensions/sound.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: URL Playback\n// ID: notSound\n// Description: Play sounds from URLs. Previously called \"Sound\".\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "ca54b2c5793605793bc7190be220a4cca6aabeb45cb1e7df90097ee3b67d792f"
+    },
+    {
+      "file": "resources/extensions/steamworks.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Steamworks\n// ID: steamworks\n// Description: Connect your project to Steamworks APIs.\n// License: MPL-2.0\n// Context: Probably don't translate the word \"Steamworks\".\n",
+      "expandedSha256": "78a777a2b919b7547e2995da8c39529990f714c09f4298ac12b9b37748d916cb"
+    },
+    {
+      "file": "resources/extensions/stretch.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// Name: Stretch\n// ID: stretch\n// Description: Stretch sprites horizontally or vertically.\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "5ff66bda4d3b91c24596bc87e76045c85cf9ebcce333c97385a02f1ad5d152f8"
+    },
+    {
+      "file": "resources/extensions/test/bad-xml.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "d820b47a666709f65c48486b9685df4c40c4e417cad2be2340b8e142c33558d3"
+    },
+    {
+      "file": "resources/extensions/test/broken.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "971ee0b3c804d4ff18e7369a781366d62bf5c4532fab88b70193a34603c692ff"
+    },
+    {
+      "file": "resources/extensions/test/button.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "b620da46a19c84b10ca436a7265b7907f84a122f5f86fd4600b56e23d0e93692"
+    },
+    {
+      "file": "resources/extensions/test/cjk.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "a9c439e7938f6407193d2f5f176a1e41da104f1d024089bcd8115a8d06fb4bcf"
+    },
+    {
+      "file": "resources/extensions/test/l10n.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "978e77cb27198e03eb7c9a372f103d3ec699ab8ab29783ebd8e744b3ac8857e7"
+    },
+    {
+      "file": "resources/extensions/test/label.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "c63476dc69cc26f277e3aa35b76aa13d91a193473636e7dbee68380e32b234a6"
+    },
+    {
+      "file": "resources/extensions/test/loops.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "// From https://github.com/TurboWarp/scratch-vm/pull/141",
+      "expandedSha256": "617097d866aa0ef28ce271287bf15ae16a8fca8d4e652d313b00571a213cfdf0"
+    },
+    {
+      "file": "resources/extensions/test/scratchx.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "fb10e0a41d7facf61308f2b7e8f86e6914c5624ed8518a9d18141c0e026586bf"
+    },
+    {
+      "file": "resources/extensions/text.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [
+        "CST1229 <https://scratch.mit.edu/users/CST1229/>",
+        "BludIsAnLemon <https://scratch.mit.edu/users/BludIsAnLemon/>",
+        "Man-o-Valor <https://scratch.mit.edu/users/man-o-valor/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Text\n// ID: strings\n// Description: Manipulate characters and text.\n// By: CST1229 <https://scratch.mit.edu/users/CST1229/>\n// By: BludIsAnLemon <https://scratch.mit.edu/users/BludIsAnLemon/>\n// By: Man-o-Valor <https://scratch.mit.edu/users/man-o-valor/>\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "8251ab8352392abfdc1ee3a8b05b0311cdec6f68427e073cba0b96915b8d906f"
+    },
+    {
+      "file": "resources/extensions/true-fantom/base.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TrueFantom <https://scratch.mit.edu/users/TrueFantom/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Base\n// ID: truefantombase\n// Description: Convert numbers between bases.\n// By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>\n// License: MIT\n// Context: \"Base\" refers to the mathematical definition eg. base 2 is binary, base 10 is decimal, base 16 is hex.\n",
+      "expandedSha256": "2d21c8dd64e332460045f41b5dc9d9f904d0823dd92823165830b0d643304c2e"
+    },
+    {
+      "file": "resources/extensions/true-fantom/couplers.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TrueFantom <https://scratch.mit.edu/users/TrueFantom/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Couplers\n// ID: truefantomcouplers\n// Description: A few adapter blocks.\n// By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>\n// License: MIT\n",
+      "expandedSha256": "4fe4659614b21b7b128ac5312e33c3e94deafa9caab12a1bf33d7f94d3db96e1"
+    },
+    {
+      "file": "resources/extensions/true-fantom/math.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TrueFantom <https://scratch.mit.edu/users/TrueFantom/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Math\n// ID: truefantommath\n// Description: A lot of operators blocks, from exponentiation to trigonometric functions.\n// By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>\n// License: MIT\n",
+      "expandedSha256": "1f42b749674d2ca31ccb58570f3d8d2b0015258b2018dd5e0f6162c7cc315856"
+    },
+    {
+      "file": "resources/extensions/true-fantom/network-m.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "f92f9d5d2f76dac199d8a92cadaa9899ed6d0de8cdd00af851f4003b31f1ed32"
+    },
+    {
+      "file": "resources/extensions/true-fantom/network.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TrueFantom <https://scratch.mit.edu/users/TrueFantom/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Network\n// ID: truefantomnetwork\n// Description: Various blocks for interacting with the network.\n// By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>\n// License: MIT\n",
+      "expandedSha256": "17690d40e2def03446948b9daca2418e30835604fbdac8050376c2ca580b9cc4"
+    },
+    {
+      "file": "resources/extensions/true-fantom/regexp.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "TrueFantom <https://scratch.mit.edu/users/TrueFantom/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: RegExp\n// ID: truefantomregexp\n// Description: Full interface for working with Regular Expressions.\n// By: TrueFantom <https://scratch.mit.edu/users/TrueFantom/>\n// License: MIT\n// Context: RegExp is short for \"Regular Expression\", a sort of programming language. This extension uses [IMAGE] to indicate that the following input should contain a regular expression.\n",
+      "expandedSha256": "e550c7e0697cf8d4464254a8f46f8937424d60f594ceacbdc5a74bbf38430190"
+    },
+    {
+      "file": "resources/extensions/turboloader/audiostream.js.br",
+      "license": [],
+      "authors": [],
+      "originalAuthors": [],
+      "header": "",
+      "expandedSha256": "1bd0cff14e78370ba05b6a2920b694dd7c203d21dc800f8ae4284d0481b32e8d"
+    },
+    {
+      "file": "resources/extensions/utilities.js.br",
+      "license": [
+        "MIT AND MPL-2.0"
+      ],
+      "authors": [],
+      "originalAuthors": [
+        "Sheep_maker <https://scratch.mit.edu/users/Sheep_maker/>"
+      ],
+      "header": "// Name: Utilities\n// ID: utilities\n// Description: A bunch of interesting blocks.\n// Original: Sheep_maker <https://scratch.mit.edu/users/Sheep_maker/>\n// License: MIT AND MPL-2.0\n",
+      "expandedSha256": "54c2706202669bf45ba186b8c81855acb1a32b1a60f0273bc871f680d83b6d49"
+    },
+    {
+      "file": "resources/extensions/veggiecan/LongmanDictionary.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "veggiecan0419"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Longman Dictionary\n// ID: longvegdictionary\n// Description: Get the definitions of words from the Longman Dictionary in your projects.\n// By: veggiecan0419\n// License: MIT\n",
+      "expandedSha256": "814f43cbecac328c7957cbce5972eb2a7755dc9a89fca9093072f99fdc947d04"
+    },
+    {
+      "file": "resources/extensions/veggiecan/browserfullscreen.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "Veggiecan0419"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Browser Fullscreen\n// ID: fullscreen0419\n// Description: Enter and exit fullscreen mode.\n// By: Veggiecan0419\n// License: MIT\n",
+      "expandedSha256": "ed0576ab41f6008fda4b1ccd9790251dee380292f2808f4d578db750766d8e26"
+    },
+    {
+      "file": "resources/extensions/veggiecan/mobilekeyboard.js.br",
+      "license": [
+        "MPL-2.0"
+      ],
+      "authors": [
+        "veggiecan0419"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Mobile Keyboard\n// ID: mobilekeyboard0419\n// Description: Show the keyboard on mobile devices and get the users input without showing any input modal.\n// License: MPL-2.0\n// By: veggiecan0419\n",
+      "expandedSha256": "b44181a39113ded401736b671762793eed2e91097536b622f0977d55317e0b66"
+    },
+    {
+      "file": "resources/extensions/vercte/dictionaries.js.br",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        "Vercte <https://scratch.mit.edu/users/lolecksdeehaha/>"
+      ],
+      "originalAuthors": [],
+      "header": "// Name: Dictionaries\n// ID: verctedictionaries\n// Description: Use the power of dictionaries in your project.\n// By: Vercte <https://scratch.mit.edu/users/lolecksdeehaha/>\n// License: MIT\n",
+      "expandedSha256": "dcf7b6adc11ed4be80832c16e84c17411faa524684178fd77af3c030718d8efe"
+    }
+  ]
+}

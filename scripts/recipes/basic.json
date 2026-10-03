@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "scripts": [
+    [
+      {"opcode": "event_whenflagclicked"},
+      {"opcode": "motion_movesteps", "inputs": {"STEPS": 100}},
+      {"opcode": "looks_say", "inputs": {"MESSAGE": "Hello, tw-cli!"}}
+    ]
+  ]
+}

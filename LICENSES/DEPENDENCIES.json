@@ -1,0 +1,213 @@
+{
+  "scope": "Direct dependencies; node_modules and native binaries are not redistributed in this source release. Transitive dependencies are locked in package-lock.json.",
+  "dependencies": [
+    {
+      "name": "@fiahfy/icns",
+      "installedVersion": "0.0.7",
+      "declaredLicense": "MIT",
+      "source": "git+https://github.com/fiahfy/icns.git",
+      "lockedResolution": "https://registry.npmjs.org/@fiahfy/icns/-/icns-0.0.7.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/@fiahfy__icns/LICENSE"
+      ]
+    },
+    {
+      "name": "scratch-sb1-converter",
+      "installedVersion": "0.2.7",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://github.com/LLK/scratch-sb1-converter.git",
+      "lockedResolution": "https://registry.npmjs.org/scratch-sb1-converter/-/scratch-sb1-converter-0.2.7.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/scratch-sb1-converter/LICENSE",
+        "LICENSES/dependencies/scratch-sb1-converter/README.md"
+      ]
+    },
+    {
+      "name": "@napi-rs/canvas",
+      "installedVersion": "1.0.10",
+      "declaredLicense": "MIT",
+      "source": "git+https://github.com/Brooooooklyn/canvas.git",
+      "lockedResolution": "https://registry.npmjs.org/@napi-rs/canvas/-/canvas-1.0.10.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/@napi-rs__canvas/LICENSE"
+      ]
+    },
+    {
+      "name": "@resvg/resvg-js",
+      "installedVersion": "2.6.2",
+      "declaredLicense": "MPL-2.0",
+      "source": "git@github.com:yisibl/resvg-js.git",
+      "lockedResolution": "https://registry.npmjs.org/@resvg/resvg-js/-/resvg-js-2.6.2.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/@resvg__resvg-js/LICENSE"
+      ]
+    },
+    {
+      "name": "@turbowarp/jszip",
+      "installedVersion": "3.12.0",
+      "declaredLicense": "(MIT OR GPL-3.0-or-later)",
+      "source": "https://github.com/Stuk/jszip.git",
+      "lockedResolution": "https://registry.npmjs.org/@turbowarp/jszip/-/jszip-3.12.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/@turbowarp__jszip/LICENSE.markdown"
+      ]
+    },
+    {
+      "name": "@turbowarp/packager",
+      "installedVersion": "3.13.0",
+      "declaredLicense": "MPL-2.0",
+      "source": "git+https://github.com/TurboWarp/packager.git",
+      "lockedResolution": "https://registry.npmjs.org/@turbowarp/packager/-/packager-3.13.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/@turbowarp__packager/LICENSE"
+      ]
+    },
+    {
+      "name": "@turbowarp/scratch-storage",
+      "installedVersion": "2.0.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://github.com/TurboWarp/scratch-storage.git",
+      "lockedResolution": "https://registry.npmjs.org/@turbowarp/scratch-storage/-/scratch-storage-2.0.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/@turbowarp__scratch-storage/LICENSE"
+      ]
+    },
+    {
+      "name": "@turbowarp/scratch-svg-renderer",
+      "installedVersion": "1.1.0",
+      "declaredLicense": "MPL-2.0",
+      "source": "https://github.com/TurboWarp/scratch-svg-renderer.git",
+      "lockedResolution": "https://registry.npmjs.org/@turbowarp/scratch-svg-renderer/-/scratch-svg-renderer-1.1.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/@turbowarp__scratch-svg-renderer/LICENSE"
+      ]
+    },
+    {
+      "name": "dom-serializer",
+      "installedVersion": "0.2.2",
+      "declaredLicense": "MIT",
+      "source": "git://github.com/cheeriojs/dom-renderer.git",
+      "lockedResolution": "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.2.2.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/dom-serializer/LICENSE"
+      ]
+    },
+    {
+      "name": "htmlparser2",
+      "installedVersion": "3.10.0",
+      "declaredLicense": "MIT",
+      "source": "git://github.com/fb55/htmlparser2.git",
+      "lockedResolution": "https://registry.npmjs.org/htmlparser2/-/htmlparser2-3.10.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/htmlparser2/LICENSE"
+      ]
+    },
+    {
+      "name": "node-gles-webgl2",
+      "installedVersion": "0.5.0",
+      "declaredLicense": "Apache-2.0",
+      "source": "git+https://github.com/dsafdsaf132/node-gles-webgl2.git",
+      "lockedResolution": "https://registry.npmjs.org/node-gles-webgl2/-/node-gles-webgl2-0.5.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/node-gles-webgl2/LICENSE"
+      ]
+    },
+    {
+      "name": "node-web-audio-api",
+      "installedVersion": "2.2.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "git+https://github.com/ircam-ismm/node-web-audio-api.git",
+      "lockedResolution": "https://registry.npmjs.org/node-web-audio-api/-/node-web-audio-api-2.2.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/node-web-audio-api/LICENSE"
+      ]
+    },
+    {
+      "name": "scratch-audio",
+      "installedVersion": "0.1.0",
+      "declaredLicense": "BSD-3-Clause",
+      "source": "https://github.com/TurboWarp/scratch-audio/tree/aba00cd02e36d95407effafa03f3678e4c669b30",
+      "lockedResolution": "git+ssh://git@github.com/TurboWarp/scratch-audio.git#aba00cd02e36d95407effafa03f3678e4c669b30",
+      "noticeFiles": [
+        "LICENSES/dependencies/scratch-audio/LICENSE",
+        "LICENSES/dependencies/scratch-audio/README.md"
+      ]
+    },
+    {
+      "name": "scratch-blocks",
+      "installedVersion": "0.1.0",
+      "declaredLicense": "GPL-3.0",
+      "source": "https://github.com/TurboWarp/scratch-blocks/tree/d3d1c2c89c0c63d3c16434ba063accd881d487c2",
+      "lockedResolution": "git+ssh://git@github.com/TurboWarp/scratch-blocks.git#d3d1c2c89c0c63d3c16434ba063accd881d487c2",
+      "noticeFiles": [
+        "LICENSES/dependencies/scratch-blocks/LICENSE",
+        "LICENSES/dependencies/scratch-blocks/README.md"
+      ]
+    },
+    {
+      "name": "scratch-parser",
+      "installedVersion": "0.0.0-development",
+      "declaredLicense": "MPL-2.0",
+      "source": "https://github.com/TurboWarp/scratch-parser/tree/fb65ba09d78ab6a0d19ce908d64b72d1a122312f",
+      "lockedResolution": "git+ssh://git@github.com/TurboWarp/scratch-parser.git#fb65ba09d78ab6a0d19ce908d64b72d1a122312f",
+      "noticeFiles": [
+        "LICENSES/dependencies/scratch-parser/LICENSE",
+        "LICENSES/dependencies/scratch-parser/README.md"
+      ]
+    },
+    {
+      "name": "scratch-render",
+      "installedVersion": "0.1.0",
+      "declaredLicense": "MPL-2.0",
+      "source": "https://github.com/TurboWarp/scratch-render/tree/a67f7c9c07d459582c227d4fd3fae8f59d8fc9ce",
+      "lockedResolution": "git+ssh://git@github.com/TurboWarp/scratch-render.git#a67f7c9c07d459582c227d4fd3fae8f59d8fc9ce",
+      "noticeFiles": [
+        "LICENSES/dependencies/scratch-render/LICENSE",
+        "LICENSES/dependencies/scratch-render/README.md"
+      ]
+    },
+    {
+      "name": "scratch-render-fonts",
+      "installedVersion": "1.0.0",
+      "declaredLicense": null,
+      "source": "https://github.com/TurboWarp/scratch-render-fonts/tree/7b6768fc6dfef6b343a06f992587b74807043961",
+      "lockedResolution": "git+ssh://git@github.com/TurboWarp/scratch-render-fonts.git#7b6768fc6dfef6b343a06f992587b74807043961",
+      "noticeFiles": [
+        "LICENSES/dependencies/scratch-render-fonts/OFL.txt",
+        "LICENSES/dependencies/scratch-render-fonts/LICENSE.txt",
+        "LICENSES/dependencies/scratch-render-fonts/README.md"
+      ]
+    },
+    {
+      "name": "scratch-vm",
+      "installedVersion": "2.1.46",
+      "declaredLicense": "MPL-2.0",
+      "source": "https://github.com/TurboWarp/scratch-vm/tree/43f13efd1883eeef8f82616faf69380ff75ab068",
+      "lockedResolution": "git+ssh://git@github.com/TurboWarp/scratch-vm.git#43f13efd1883eeef8f82616faf69380ff75ab068",
+      "noticeFiles": [
+        "LICENSES/dependencies/scratch-vm/LICENSE",
+        "LICENSES/dependencies/scratch-vm/README.md"
+      ]
+    },
+    {
+      "name": "semver",
+      "installedVersion": "7.8.5",
+      "declaredLicense": "ISC",
+      "source": "git+https://github.com/npm/node-semver.git",
+      "lockedResolution": "https://registry.npmjs.org/semver/-/semver-7.8.5.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/semver/LICENSE"
+      ]
+    },
+    {
+      "name": "twgl.js",
+      "installedVersion": "4.4.0",
+      "declaredLicense": "MIT",
+      "source": "https://github.com/greggman/twgl.js.git",
+      "lockedResolution": "https://registry.npmjs.org/twgl.js/-/twgl.js-4.4.0.tgz",
+      "noticeFiles": [
+        "LICENSES/dependencies/twgl.js/LICENSE.md"
+      ]
+    }
+  ]
+}

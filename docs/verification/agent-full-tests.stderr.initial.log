@@ -1,0 +1,2 @@
+npm notice run tw-cli@0.1.0 test
+npm notice run node scripts/node24.js --require ./src/native-environment.js --test test/*.js
