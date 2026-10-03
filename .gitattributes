@@ -2,6 +2,6 @@
 LICENSES/** -text -whitespace
 vendor/** -text -whitespace
 docs/verification/** -whitespace
-resources/** -text
-upstream/*.zip -text
-test/fixtures/*.sb3 -text
+resources/** -text -diff -whitespace
+upstream/*.zip -text -diff
+test/fixtures/*.sb3 -text -diff
