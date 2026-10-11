@@ -14,7 +14,7 @@ const CAPABILITIES = Object.freeze([
   ['custom-css', '许可自定义样式（可含联网资源）；不是样式沙箱', true, null],
   ['cloud-network', '许可输出联网云提供器；还必须逐主机授权 net', true, null],
   ['unsafe-cloud', '许可输出危险云行为（可打开链接/下载）；独立于云联网许可', true, null],
-  ['builtin-extension', '只允许冻结pen/music及已验证数据适配videoSensing/Gamepad加载', true, 'id'],
+  ['builtin-extension', '只允许冻结pen/music及数据适配videoSensing/Gamepad加载', true, 'id'],
   ['gamepad', '许可输出打包器 gamepad 功能；不表示已连接/实测设备', true, null],
   ['pointerlock', '许可输出打包器 pointerlock 功能；不表示已实测交互', true, null],
   ['clipboard-read', '系统剪贴板读取未支持', false, null],
@@ -166,22 +166,24 @@ const writeFile = async (policy, value, bytes, {explicit = false, force = false}
   policy.require('write', full, {explicit});
   return require('./project').atomicWrite(full, bytes, force);
 };
-const assertData = (value, depth = 0) => {
+const assertData = (value, depth = 0, maxArray = 10000) => {
   if (depth > 24) throw new Error('JSON 嵌套深度超出限制');
   if (value === null || ['string', 'boolean'].includes(typeof value)) return;
   if (typeof value === 'number') {if (!Number.isFinite(value)) throw new Error('JSON 数字必须有限'); return;}
-  if (Array.isArray(value)) {if (value.length > 10000) throw new Error('JSON 数组超限'); for (const item of value) assertData(item, depth + 1); return;}
+  if (Array.isArray(value)) {if (value.length > maxArray) throw new Error('JSON 数组超限'); for (const item of value) assertData(item, depth + 1, maxArray); return;}
   if (typeof value !== 'object' || ![Object.prototype, null].includes(Object.getPrototypeOf(value))) throw new Error('只允许普通 JSON 数据对象');
   for (const key of Reflect.ownKeys(value)) {
     if (typeof key !== 'string' || ['__proto__', 'prototype', 'constructor'].includes(key) || /[\x00-\x1f\x7f]/.test(key)) throw new Error('拒绝 prototype pollution 键');
     const descriptor = Object.getOwnPropertyDescriptor(value, key);
     if (!Object.hasOwn(descriptor, 'value')) throw new Error('拒绝 JSON getter/setter');
-    assertData(descriptor.value, depth + 1);
+    assertData(descriptor.value, depth + 1, maxArray);
   }
 };
-const parseJSON = text => {
-  if (typeof text !== 'string' || Buffer.byteLength(text) > 4 * 1024 * 1024) throw new Error('JSON 输入类型/大小无效');
-  const value = JSON.parse(text); assertData(value); return value;
+const parseJSON = (text, {maxArray = 10000, maxBytes = 4 * 1024 * 1024} = {}) => {
+  if (!Number.isInteger(maxArray) || maxArray < 1 || maxArray > 200000) throw new Error('JSON 数组限额无效');
+  if (!Number.isInteger(maxBytes) || maxBytes < 1 || maxBytes > 32 * 1024 * 1024) throw new Error('JSON 字节限额无效');
+  if (typeof text !== 'string' || Buffer.byteLength(text) > maxBytes) throw new Error('JSON 输入类型/大小无效');
+  const value = JSON.parse(text); assertData(value, 0, maxArray); return value;
 };
 const validateInvocation = (specs, command, args, options) => {
   if (!Array.isArray(args) || !args.every(item => typeof item === 'string')) throw new Error('命令参数必须是字符串数组');

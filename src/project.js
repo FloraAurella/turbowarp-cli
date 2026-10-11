@@ -14,8 +14,14 @@ const parser = require('scratch-parser');
 const AudioEngine = require('scratch-audio/src/AudioEngine');
 const StageLayering = require('scratch-vm/src/engine/stage-layering');
 
-const MAX_PROJECT_BYTES = 100 * 1024 * 1024;
+const {MAX_PROJECT_BYTES, MAX_EXPANDED_PROJECT_BYTES, MAX_PROJECT_METADATA_BYTES} = require('./project-limits');
 const md5 = bytes => crypto.createHash('md5').update(bytes).digest('hex');
+const identityUUID = seed => {
+  const bytes = crypto.createHash('sha256').update(seed).digest().subarray(0, 16);
+  bytes[6] = (bytes[6] & 15) | 80; bytes[8] = (bytes[8] & 63) | 128;
+  const hex = bytes.toString('hex');
+  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-${hex.slice(12, 16)}-${hex.slice(16, 20)}-${hex.slice(20)}`;
+};
 const emptyTarget = (name, isStage, costumes) => ({
   isStage, name, variables: {}, lists: {}, broadcasts: {}, blocks: {}, comments: {},
   currentCostume: 0, costumes, sounds: [], volume: 100, layerOrder: isStage ? 0 : 1,
@@ -79,7 +85,7 @@ const rejectPrototypeKeys = value => {
   }
 };
 const checkedZip = async bytes => {
-  if (bytes.length > MAX_PROJECT_BYTES) throw new Error('Project exceeds the 100 MiB input limit');
+  if (bytes.length > MAX_PROJECT_BYTES) throw new Error(`Project exceeds the ${MAX_PROJECT_BYTES / 1024 / 1024} MiB input limit`);
   const zip = await JSZip.loadAsync(bytes);
   let total = 0;
   if (Object.keys(zip.files).length > 20000) throw new Error('Archive contains too many entries');
@@ -89,7 +95,7 @@ const checkedZip = async bytes => {
     const size = entry._data?.uncompressedSize || 0;
     if (!Number.isSafeInteger(size) || size < 0) throw new Error('Invalid archive size');
     total += size;
-    if (total > MAX_PROJECT_BYTES * 2) throw new Error('Expanded project exceeds the 200 MiB limit');
+    if (total > MAX_EXPANDED_PROJECT_BYTES) throw new Error(`Expanded project exceeds the ${MAX_EXPANDED_PROJECT_BYTES / 1024 / 1024} MiB limit`);
   }
   return zip;
 };
@@ -144,10 +150,10 @@ const checkAssets = async (json, zip, version = 3, verifyHash = true) => {
 
 const readSB3 = async bytes => {
   if (!Buffer.isBuffer(bytes)) bytes = Buffer.from(bytes);
-  if (bytes.length > MAX_PROJECT_BYTES) throw new Error('Project exceeds the 100 MiB input limit');
+  if (bytes.length > MAX_PROJECT_BYTES) throw new Error(`Project exceeds the ${MAX_PROJECT_BYTES / 1024 / 1024} MiB input limit`);
   if (bytes[0] !== 0x50 || bytes[1] !== 0x4b) throw new Error('Expected a local Scratch ZIP project');
   const zip = await checkedZip(bytes);
-  for (const name of ['project.json', 'tw-cli-state.json']) if (zip.file(name)?._data.uncompressedSize > 8 * 1024 * 1024) throw new Error('Project metadata exceeds 8 MiB');
+  for (const name of ['project.json', 'tw-cli-state.json']) if (zip.file(name)?._data.uncompressedSize > MAX_PROJECT_METADATA_BYTES) throw new Error(`Project metadata exceeds ${MAX_PROJECT_METADATA_BYTES / 1024 / 1024} MiB: ${name}`);
   if (!zip.file('project.json')) throw new Error('SB3 is missing project.json');
   const json = JSON.parse(await zip.file('project.json').async('string'));
   rejectPrototypeKeys(json);
@@ -161,7 +167,7 @@ const normalizeProject = async input => {
   if (!/^ScratchV0[12]$/.test(bytes.toString('ascii', 0, 10)) && !(bytes[0] === 0x50 && bytes[1] === 0x4b)) {
     throw new Error('Expected a local SB/SB2/SB3 project archive');
   }
-  if (bytes.length > MAX_PROJECT_BYTES) throw new Error('Project exceeds the 100 MiB input limit');
+  if (bytes.length > MAX_PROJECT_BYTES) throw new Error(`Project exceeds the ${MAX_PROJECT_BYTES / 1024 / 1024} MiB input limit`);
   let json, zip, sourceFormat;
   if (/^ScratchV0[12]$/.test(bytes.toString('ascii', 0, 10))) {
     sourceFormat = 'sb';
@@ -179,19 +185,19 @@ const normalizeProject = async input => {
       if (!Number.isSafeInteger(sound.sampleCount) || sound.sampleCount < 0) throw new Error('Invalid SB sound size');
       expanded += sound.sampleCount * 2;
     }
-    if (expanded > MAX_PROJECT_BYTES * 2) throw new Error('SB expanded media exceeds the 200 MiB limit');
+    if (expanded > MAX_EXPANDED_PROJECT_BYTES) throw new Error(`SB expanded media exceeds the ${MAX_EXPANDED_PROJECT_BYTES / 1024 / 1024} MiB limit`);
     json = sb.json; json.projectVersion = 2;
     const fake = sb.zip; zip = new JSZip();
     let total = 0;
     for (const [name, entry] of Object.entries(fake.files)) {
       const data = Buffer.from(entry.bytes); total += data.length;
-      if (total > MAX_PROJECT_BYTES * 2) throw new Error('Converted SB assets exceed the 200 MiB limit');
+      if (total > MAX_EXPANDED_PROJECT_BYTES) throw new Error(`Converted SB assets exceed the ${MAX_EXPANDED_PROJECT_BYTES / 1024 / 1024} MiB limit`);
       zip.file(name, data);
     }
   } else {
     zip = await checkedZip(bytes);
     const metadataFiles = Object.values(zip.files).filter(entry => entry.name === 'project.json' || /^[^/]+\/project\.json$/.test(entry.name));
-    if (metadataFiles.length !== 1 || metadataFiles[0]._data.uncompressedSize > 8 * 1024 * 1024) throw new Error('Project must have one metadata file within 8 MiB');
+    if (metadataFiles.length !== 1 || metadataFiles[0]._data.uncompressedSize > MAX_PROJECT_METADATA_BYTES) throw new Error(`Project must have one metadata file within ${MAX_PROJECT_METADATA_BYTES / 1024 / 1024} MiB`);
     [json] = await parseArchive(bytes);
     rejectPrototypeKeys(json);
     sourceFormat = json.projectVersion === 2 ? 'sb2' : 'sb3';
@@ -258,7 +264,7 @@ const readProject = async bytes => {
 const readSpriteArchive = async bytes => {
   const zip = await checkedZip(bytes);
   const metadataFiles = Object.values(zip.files).filter(entry => entry.name === 'sprite.json' || /^[^/]+\/sprite\.json$/.test(entry.name));
-  if (metadataFiles.length !== 1 || metadataFiles[0]._data.uncompressedSize > 8 * 1024 * 1024) throw new Error('Sprite must have one metadata file within 8 MiB');
+  if (metadataFiles.length !== 1 || metadataFiles[0]._data.uncompressedSize > MAX_PROJECT_METADATA_BYTES) throw new Error(`Sprite must have one metadata file within ${MAX_PROJECT_METADATA_BYTES / 1024 / 1024} MiB`);
   const [sprite] = await parseArchive(bytes, true);
   rejectPrototypeKeys(sprite);
   if (sprite.projectVersion !== 3 || sprite.isStage) throw new Error('Expected a local sprite3 archive, not a stage or legacy sprite');
@@ -267,7 +273,7 @@ const readSpriteArchive = async bytes => {
   return {sprite, zip};
 };
 
-const atomicWrite = async (filename, bytes, overwrite = false) => {
+const atomicWrite = async (filename, bytes, overwrite = false, {beforeCommit} = {}) => {
   const full = await checkedPath(filename, {missing: true});
   const parent = path.dirname(full);
   await fs.mkdir(parent, {recursive: true});
@@ -291,6 +297,7 @@ const atomicWrite = async (filename, bytes, overwrite = false) => {
       throw new Error('Atomic write verification failed');
     }
     await checkedPath(full, {missing: true});
+    if (beforeCommit) await beforeCommit(full);
     if (overwrite) await fs.rename(temporary, full);
     else {
       try {await fs.link(temporary, full);} catch (error) {
@@ -363,8 +370,11 @@ class Project {
       // validated binary assets before any SVG costume is rasterized.
       vm.runtime.fontManager.updateRenderer();
       const originals = vm.runtime.targets.filter(target => target.isOriginal);
-      if (identity) {
-        const remap = new Map(originals.map((target, index) => [target.id, identity.targets[index]]));
+      {
+        // An ordinary SB3 lacks our identity metadata. Stable derived identities
+        // let independent read/validate/apply processes refer to the same nodes.
+        const seed = crypto.createHash('sha256').update(normalizedBytes).digest('hex');
+        const remap = new Map(originals.map((target, index) => [target.id, identity ? identity.targets[index] : identityUUID(`${seed}:target:${index}`)]));
         for (const target of originals) target.id = remap.get(target.id);
         for (const monitor of vm.runtime.getMonitorState().valueSeq()) {
           if (remap.has(monitor.targetId)) vm.runtime.requestUpdateMonitor({id: monitor.id, targetId: remap.get(monitor.targetId)});
@@ -393,7 +403,70 @@ class Project {
           }
         }
       }
+      if (identity?.blockInputs !== undefined && (!identity.blockInputs || typeof identity.blockInputs !== 'object' ||
+        Array.isArray(identity.blockInputs) || Object.keys(identity.blockInputs).length !== originals.length ||
+        !originals.every(target => Object.hasOwn(identity.blockInputs, target.id)))) {
+        throw new Error('Invalid CLI block input identity metadata');
+      }
+      for (const [index, target] of originals.entries()) {
+        // SB3 stores number/text/variable input primitives without their VM IDs.
+        // Persist slot identities separately and derive them for ordinary SB3s.
+        const sourceIds = new Set(Object.keys(json.targets[index].blocks || {}));
+        const persisted = identity?.blockInputs?.[target.id] || {};
+        if (!persisted || typeof persisted !== 'object' || Array.isArray(persisted)) throw new Error('Invalid CLI block input identity metadata');
+        for (const [key, value] of Object.entries(persisted)) {
+          let slot;
+          try {slot = JSON.parse(key);} catch {throw new Error('Invalid CLI block input identity metadata');}
+          if (!Array.isArray(slot) || slot.length !== 3 || slot.some(part => typeof part !== 'string' || !part) ||
+            !['block', 'shadow'].includes(slot[2]) || typeof value !== 'string' || !value || value.length > 256 ||
+            ['__proto__', 'constructor', 'prototype'].includes(value)) throw new Error('Invalid CLI block input identity metadata');
+        }
+        const graph = target.blocks._blocks, remap = new Map(), active = new Set();
+        const resolveId = id => {
+          if (remap.has(id)) return remap.get(id);
+          if (sourceIds.has(id)) {remap.set(id, id); return id;}
+          if (active.has(id) || active.size > 512) throw new Error('Invalid cyclic block input identity');
+          active.add(id);
+          const block = graph[id], parent = block.parent && graph[block.parent];
+          let key;
+          if (parent) {
+            const input = Object.entries(parent.inputs).find(([, input]) => input.block === id || input.shadow === id);
+            if (!input) throw new Error('Block input identity has no owning slot');
+            key = JSON.stringify([resolveId(parent.id), input[0], input[1].shadow === id ? 'shadow' : 'block']);
+          } else throw new Error(`Block input identity has no source entry or owning slot: ${id}`);
+          const result = Object.hasOwn(persisted, key) ? persisted[key] : identityUUID(`${target.id}:input:${key}`);
+          remap.set(id, result); active.delete(id); return result;
+        };
+        for (const id of Object.keys(graph)) resolveId(id);
+        if (new Set(remap.values()).size !== remap.size) throw new Error('Duplicate CLI block input identity');
+        const resolveReference = id => id ? remap.get(id) || id : id;
+        const rebuilt = Object.create(null);
+        for (const block of Object.values(graph)) {
+          block.id = resolveReference(block.id); block.parent = resolveReference(block.parent); block.next = resolveReference(block.next);
+          for (const input of Object.values(block.inputs)) {input.block = resolveReference(input.block); input.shadow = resolveReference(input.shadow);}
+          rebuilt[block.id] = block;
+        }
+        target.blocks._blocks = rebuilt;
+        target.blocks._scripts = target.blocks._scripts.map(resolveReference);
+        target.blocks.resetCache();
+        for (const comment of Object.values(target.comments)) {
+          comment.blockId = resolveReference(comment.blockId);
+          // Compact dictionary reporters omit block.comment during serialization.
+          // Their comment records retain the source ID and restore the reverse link.
+          const source = json.targets[index].blocks?.[comment.blockId], block = rebuilt[comment.blockId];
+          if (block && Array.isArray(source) && [12, 13].includes(source[0])) {
+            if (block.comment && block.comment !== comment.id) throw new Error(`Multiple comments attached to compact block: ${block.id}`);
+            block.comment = comment.id;
+          }
+        }
+      }
       for (const target of originals) {
+        if (!identity?.assets) for (const type of ['costumes', 'sounds']) {
+          const assets = type === 'costumes' ? target.getCostumes() : target.getSounds();
+          assets.forEach((asset, index) => Object.defineProperty(asset, 'cliId', {
+            value: identityUUID(`${target.id}:${type}:${index}:${asset.assetId}`), writable: true, configurable: true
+          }));
+        }
         this.ensureAssetIds(target);
         target.renderer = this.renderer;
         target.initDrawable(target.isStage ? StageLayering.BACKGROUND_LAYER : StageLayering.SPRITE_LAYER);
@@ -469,12 +542,19 @@ class Project {
     if (!this.vm) throw new Error('No project is open');
     const targets = this.vm.runtime.targets.filter(target => target.isOriginal).map(target => this.ensureAssetIds(target));
     const zip = new JSZip();
-    zip.file('project.json', this.vm.toJSON(null, {allowOptimization: false}));
+    const serialized = this.vm.toJSON(null, {allowOptimization: false});
+    const json = JSON.parse(serialized);
+    zip.file('project.json', serialized);
     zip.file('tw-cli-state.json', JSON.stringify({version: 1,
       targets: targets.map(target => target.id), extra: {loadedExtensions: [...safeExtensions].filter(id => this.vm.extensionManager.isExtensionLoaded(id))},
       assets: Object.fromEntries(targets.map(target => [target.id, {
         costumes: target.getCostumes().map(asset => asset.cliId), sounds: target.getSounds().map(asset => asset.cliId)
-      }]))}));
+      }])),
+      blockInputs: Object.fromEntries(targets.map((target, index) => [target.id,
+        Object.fromEntries(Object.values(target.blocks._blocks).flatMap(parent => Object.entries(parent.inputs).flatMap(([name, input]) =>
+          ['block', 'shadow'].filter(role => input[role] && !Object.hasOwn(json.targets[index].blocks, input[role])).map(role =>
+            [JSON.stringify([parent.id, name, role]), input[role]]))))
+      ]))}));
     for (const asset of this.vm.serializeAssets()) zip.file(asset.fileName, asset.fileContent);
     return zip.generateAsync({type: 'nodebuffer', compression: 'DEFLATE'});
   }

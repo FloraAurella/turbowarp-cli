@@ -163,7 +163,7 @@ class FileStore {
   async save(type, name, payload, metadata = {}) {
     await this.prepare(true);
     if (!['project', 'sprite', 'block', 'costume', 'sound'].includes(type) || typeof name !== 'string' || !name || name.length > 512) throw new Error('Invalid local store item type/name');
-    if (payload.length > MAX_PROJECT_BYTES) throw new Error('Store item exceeds 100 MiB');
+    if (payload.length > MAX_PROJECT_BYTES) throw new Error(`Store item exceeds ${MAX_PROJECT_BYTES / 1024 / 1024} MiB`);
     const id = crypto.randomUUID(); const zip = new JSZip();
     const item = {version: 1, id, type, name, created: new Date().toISOString(), bytes: payload.length, sha256: sha256(payload), metadata};
     zip.file('item.json', JSON.stringify(item)); zip.file('payload', payload);

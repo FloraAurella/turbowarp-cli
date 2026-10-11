@@ -5,10 +5,11 @@ const path = require('node:path');
 const os = require('node:os');
 const {spawnSync} = require('node:child_process');
 const JSZip = require('@turbowarp/jszip');
-const {Project, blankProject, readProject, readSpriteArchive, readLocalFile, md5} = require('../src/project');
+const {Project, blankProject, readProject, readSpriteArchive, readLocalFile, md5, MAX_PROJECT_BYTES} = require('../src/project');
 const {LibraryStore, FileStore} = require('../src/library-store');
 const io = require('../src/project-io-commands');
 const {CommandSession} = require('../src/commands');
+const {MAX_PROJECT_METADATA_BYTES} = require('../src/project-limits');
 const fixtures = path.join(path.dirname(require.resolve('scratch-parser')), 'test/fixtures/data');
 require('../src/network-policy').install();
 
@@ -28,6 +29,63 @@ const projectAssets = async bytes => {
   for (const target of json.targets) for (const asset of [...target.costumes, ...target.sounds]) assets.set(asset.md5ext, await zip.file(asset.md5ext).async('nodebuffer'));
   return {json, assets};
 };
+
+test('open accepts an SB3 above 100 MiB and rejects files above 300 MiB without replacing the project', async () => temporary(async dir => {
+  const zip = await JSZip.loadAsync(await blankProject());
+  zip.file('input-limit-padding.bin', Buffer.alloc(100 * 1024 * 1024));
+  const bytes = await zip.generateAsync({type: 'nodebuffer', compression: 'STORE'});
+  assert.ok(bytes.length > 100 * 1024 * 1024 && bytes.length < MAX_PROJECT_BYTES);
+  const input = path.join(dir, 'large.sb3'), oversized = path.join(dir, 'oversized.sb3');
+  await fs.writeFile(input, bytes);
+  const handle = await fs.open(oversized, 'w');
+  try {await handle.truncate(MAX_PROJECT_BYTES + 1);} finally {await handle.close();}
+  const session = new CommandSession();
+  try {
+    await session.open(input);
+    assert.equal(session.project.info().targets.length, 2);
+    assert.equal(session.project.file, input);
+    const vm = session.project.vm;
+    await assert.rejects(session.open(oversized), /within 314572800 bytes/);
+    assert.equal(session.project.vm, vm);
+    assert.equal(session.project.file, input);
+    assert.equal(session.dirty, false);
+  } finally {session.dispose();}
+}));
+
+test('project JSON accepts exactly 64 MiB and oversized metadata preserves the open project', async () => temporary(async dir => {
+  const zip = await JSZip.loadAsync(await blankProject());
+  const json = await zip.file('project.json').async('string');
+  const padding = ' '.repeat(MAX_PROJECT_METADATA_BYTES - Buffer.byteLength(json));
+  zip.file('project.json', json + padding);
+  const source = path.join(dir, 'metadata-64m.sb3');
+  await fs.writeFile(source, await zip.generateAsync({type: 'nodebuffer', compression: 'DEFLATE'}));
+  const session = new CommandSession();
+  try {
+    await session.open(source);
+    assert.equal(session.project.info().targets.length, 2);
+    const vm = session.project.vm, selected = vm.editingTarget.id;
+    zip.file('project.json', json + padding + ' ');
+    const oversized = path.join(dir, 'metadata-over-64m.sb3');
+    await fs.writeFile(oversized, await zip.generateAsync({type: 'nodebuffer', compression: 'DEFLATE'}));
+    await assert.rejects(session.open(oversized), /metadata.*64 MiB/);
+    assert.equal(session.project.vm, vm); assert.equal(vm.editingTarget.id, selected);
+    assert.equal(session.project.file, source); assert.equal(session.dirty, false);
+    // The independent SB3 reader also checks CLI identity metadata before JSON parsing.
+    zip.file('project.json', json);
+    zip.file('tw-cli-state.json', ' '.repeat(MAX_PROJECT_METADATA_BYTES + 1));
+    await assert.rejects(readProject(await zip.generateAsync({type: 'nodebuffer', compression: 'DEFLATE'})), /64 MiB.*tw-cli-state\.json/);
+  } finally {session.dispose();}
+}));
+
+test('sprite JSON above 8 MiB imports with the 64 MiB metadata limit', async () => withSession(async (session, dir) => {
+  const file = path.join(dir, 'sprite.sprite3');
+  await call(session, 'project', ['export-sprite', file]);
+  const zip = await JSZip.loadAsync(await fs.readFile(file));
+  const json = await zip.file('sprite.json').async('string');
+  zip.file('sprite.json', json + ' '.repeat(9 * 1024 * 1024));
+  const {sprite} = await readSpriteArchive(await zip.generateAsync({type: 'nodebuffer', compression: 'DEFLATE'}));
+  assert.equal(sprite.name, 'Sprite1');
+}));
 // Real ScratchV02 object stream. Object-table records/references are encoded by
 // the documented frozen SB1 format, not a renamed SB3/JSON pretending to be SB.
 const sbFixture = () => {

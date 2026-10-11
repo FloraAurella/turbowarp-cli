@@ -56,7 +56,7 @@ const schema = (block, runtime) => {
   if (block.opcode === 'procedures_definition') return {shape: 'hat', fields: {}, inputs: {custom_block: 'prototype'}};
   const core = frozenSchemas().get(block.opcode);
   if (core) return {...core, shape: block.opcode === 'control_stop' && block.mutation?.hasnext === 'true' ? 'statement' : core.shape};
-  const approved = block.opcode.startsWith('pen_') || block.opcode.startsWith('music_');
+  const approved = ['pen_', 'music_', 'videoSensing_', 'Gamepad_'].some(prefix => block.opcode.startsWith(prefix));
   const definition = approved && runtime?.getBlocksJSON().find(item => item.type === block.opcode);
   if (!definition) throw new Error(`Unknown/unloaded opcode or unavailable input shape: ${block.opcode}`);
   const inputs = {}, fields = {};
@@ -258,8 +258,8 @@ const createViaAPI = (target, blocks) => {
     if (mutation) target.blocks.changeBlock({id: copy.id, element: 'mutation', value: mutationDOM(mutation)});
   }
 };
-const applyGraph = (target, graph, runtime) => {
-  validateGraph(graph, runtime);
+const applyGraph = (target, graph, runtime, shapes = true) => {
+  validateGraph(graph, runtime, shapes);
   // VM deleteBlock is recursive. Validate before touching it, then delete only roots.
   // createBlock accepts the entire VM block descriptor and maintains scripts/cache/events.
   for (const id of [...target.blocks.getScripts()]) target.blocks.deleteBlock(id);
@@ -349,7 +349,7 @@ const recipeOpcodeAvailable = (name, runtime) => !!(runtime.getOpcodeFunction(na
   ['math_number', 'math_integer', 'math_positive_number', 'math_whole_number', 'math_angle', 'text', 'colour_picker'].includes(name));
 const describeSchemas = (opcode, runtime, target) => {
   const candidates = [...new Set([...frozenSchemas().keys(), ...(!runtime ? [] : runtime.getBlocksJSON()
-    .filter(item => item.type?.startsWith('pen_') || item.type?.startsWith('music_')).map(item => item.type))])].sort();
+    .filter(item => ['pen_', 'music_', 'videoSensing_', 'Gamepad_'].some(prefix => item.type?.startsWith(prefix))).map(item => item.type))])].sort();
   const describe = name => {
     const info = schema({opcode: name}, runtime);
     const inputs = Object.fromEntries(Object.entries(info.inputs).map(([key, type]) => [key,

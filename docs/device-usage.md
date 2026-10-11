@@ -181,7 +181,7 @@ BLE fixture 固定发现 `fixture-ble` 和 `characteristicDidChange`；BT 固定
 ## 验收
 
 ```sh
-/path/to/node24/bin/node --test /path/to/turbowarp-cli/test/device-adapters.test.js
+node scripts/node24.js --test test/device-adapters.test.js
 ```
 
 测试直接读取真实 VM reporters，并运行 Scratch 脚本把帧光流、手柄轴和响度写入变量；包含 SB3 保存重载和 runtime worker，不只断言返回 injected。还覆盖 CRC/尺寸炸弹、PCM/WAV 截断/NaN/对齐、canonical base64、UTF-8/未知字段/prototype、累计内存/数量、恶意路径/symlink/FIFO/大文件、有限管道与默认拒绝设备/网络。

@@ -24,7 +24,11 @@ moduleSpecs['project-io-commands.js'] = (() => {
   library: {categories: spec(1, 1, ['dir']), list: spec(1, 1, ['dir', 'category', 'query', 'offset', 'limit']),
     search: spec(2, 2, ['dir', 'category', 'offset', 'limit']), load: spec(2, 2, [...edit, 'dir']), status: spec(0, 0, ['dir'])},
   backpack: {use: spec(1), list: spec(0, 0, ['dir']), save: spec(2, 3, [...edit, 'dir']), load: spec(1, 1, [...edit, 'dir'])},
-  project: {fetch: spec(1, 2, ['output', 'force', 'allow', 'max-bytes', 'timeout-ms']),
+  project: {read: spec(0, 0, ['project', 'target', 'script', 'format']),
+    find: spec(1, 1, ['project', 'target', 'opcode', 'resource']),
+    validate: spec(1, 1, ['project']), apply: spec(1, 1, ['project', 'out', 'force']),
+    exec: spec(1, 1, ['project', 'out', 'force']),
+    fetch: spec(1, 2, ['output', 'force', 'allow', 'max-bytes', 'timeout-ms']),
     import: spec(1, 1, ['project', 'out', 'force']), 'import-sprite': spec(1, 1, ['project', 'out', 'force']),
     'export-sprite': spec(0, 1, output), export: spec(0, 1, ['project', 'output', 'force']),
     'restore-use': spec(1), 'restore-list': spec(0, 0, ['dir']), 'restore-save': spec(1, 1, ['project', 'dir']),
@@ -389,6 +393,11 @@ const HELP = `tw — TurboWarp 纯指令实验版（不是全功能对等发布�
   blocks schema [opcode]             查询形状、输入、字段与菜单
   script validate script.json        只读校验；--project / --target 可指定项目与目标
   script apply script.json           追加完整脚本；一次撤销；--out 保存 SB3
+  project read                       项目概览；--target / --script 展开代码；--format text
+  project find 查询词                 按 opcode、字段、过程和注释定位代码
+  project validate edit.json          独立校验原生编辑文档；文件或 stdin -
+  project apply edit.json             原子批量编辑；一次性命令显式 --out 保存
+  project exec edit.cjs               Node 24 本地编辑脚本；一次性命令显式 --out
 
 项目
   new 项目.sb3                       新建项目（含舞台和一个角色）

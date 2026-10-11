@@ -23,6 +23,11 @@ const annotations = {
   'script validate': {parameters: ['file'], project: 'required', access: 'read', examples: [['script', 'validate', 'script.json', '--project', 'demo.sb3']]},
   'script apply': {parameters: ['file'], project: 'required', access: 'write', examples: [['script', 'apply', 'script.json', '--project', 'demo.sb3', '--out', 'edited.sb3']]},
   'blocks schema': {parameters: ['opcode'], project: 'optional', access: 'read', examples: [['blocks', 'schema', 'motion_movesteps']]},
+  'project read': {parameters: [], project: 'required', access: 'read', examples: [['project', 'read', '--project', 'demo.sb3'], ['project', 'read', '--project', 'demo.sb3', '--target', 'Sprite1', '--format', 'text']]},
+  'project find': {parameters: ['query'], project: 'required', access: 'read', examples: [['project', 'find', 'motion_movesteps', '--project', 'demo.sb3']]},
+  'project validate': {parameters: ['editFile'], project: 'required', access: 'read', examples: [['project', 'validate', 'edit.json', '--project', 'demo.sb3']]},
+  'project apply': {parameters: ['editFile'], project: 'required', access: 'write', examples: [['project', 'apply', 'edit.json', '--project', 'demo.sb3', '--out', 'edited.sb3']]},
+  'project exec': {parameters: ['scriptFile'], project: 'required', access: 'write', examples: [['project', 'exec', 'edit.cjs', '--project', 'demo.sb3', '--out', 'edited.sb3']]},
   'library status': {parameters: [], project: 'none', access: 'read'},
   'library search': {parameters: ['kind', 'query'], project: 'none', access: 'read', examples: [['library', 'search', 'sprite', 'Cat', '--limit', '5']]},
   'library load': {parameters: ['kind', 'selector'], project: 'required', access: 'write', examples: [['library', 'load', 'sprite', 'Cat 2']]},
@@ -36,7 +41,10 @@ const annotations = {
   quit: {parameters: [], project: 'none', access: 'session'}, exit: {parameters: [], project: 'none', access: 'session'}
 };
 const optionSemantics = {
-  project: {type: 'path', description: '打开本地项目；script validate 使用独立只读项目，不替换原会话。'},
+  project: {type: 'path', description: '打开本地项目；script validate 与 project read/find/validate 使用独立项目，不替换原会话。'},
+  format: {type: 'enum', description: 'project read 输出 json（默认）或只读 text。'},
+  script: {type: 'selector', description: '读取指定脚本根积木的稳定 ID。'},
+  resource: {type: 'selector', description: '按资源稳定 ID 或名称过滤代码引用。'},
   target: {type: 'selector', description: '目标名称或稳定 ID；pack build 中为打包目标。'},
   out: {type: 'path', description: '编辑命令保存 SB3；run/render 输出 PNG；package 输出打包文件。'},
   output: {type: 'path', description: '导出资源、配置或打包文件。'},
@@ -60,8 +68,8 @@ const describe = (specs, booleans, family) => {
           type: 'string', semanticType: null, required: index < rule.min, semanticKnown: !!annotation?.parameters[index]})),
         options: rule.options.map(option => ({name: option, takesValue: !booleans.has(option),
           type: booleans.has(option) ? 'boolean' : 'string', semantic: optionSemantics[option] || null,
-          default: command === 'run' && option === 'frames' ? 30 : null,
-          defaultKnown: command === 'run' && option === 'frames'})),
+          default: command === 'run' && option === 'frames' ? 30 : command === 'project' && action === 'read' && option === 'format' ? 'json' : null,
+          defaultKnown: command === 'run' && option === 'frames' || command === 'project' && action === 'read' && option === 'format'})),
         project: annotation?.project || null, access: annotation?.access || null,
         persistence: annotation?.access === 'write' ? 'session: save; one-shot: --out .sb3' :
           annotation ? (annotation.access === 'save' ? 'explicit project save' : 'does not edit project') : null,

@@ -46,6 +46,10 @@ const main = async () => {
   console.log = (...args) => console.error(...args);
   try {
     if (argv[0] !== 'session') {
+      const invocation = validateCommand(argv);
+      if (invocation.command === 'project' && ['apply', 'exec'].includes(invocation.args[0]) && !invocation.options.out) {
+        throw new CommandError('INVALID_ARGUMENT', 'Project editing needs an explicit --out result.sb3', '使用 --out 指定输出项目；会话和 SDK 可以随后显式保存。');
+      }
       const result = await session.execute(argv);
       if (session.dirty) {console.error('Editing command needs --out 项目.sb3 to persist changes.'); process.exitCode = 2;}
       emit(result); return;
@@ -57,6 +61,7 @@ const main = async () => {
       throw new CommandError('INVALID_ARGUMENT', 'Use tw session [--jsonl [--fail-fast]]', '--fail-fast 只用于 JSONL 自动化会话。');
     }
     const lines = readline.createInterface({input: process.stdin, crlfDelay: Infinity, terminal: false});
+    session.stdinOwned = true;
     for await (const line of lines) {
       if (!line.trim()) continue;
       let id = null;

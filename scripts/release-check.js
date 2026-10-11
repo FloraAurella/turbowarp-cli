@@ -5,7 +5,7 @@ const {commandSpecs} = require('../src/commands');
 
 const result = status();
 const root = path.resolve(__dirname, '..');
-const mandatoryFiles = ['bin/tw.js', 'tw', 'README.md', 'LICENSE', 'package-lock.json',
+const mandatoryFiles = ['bin/tw.js', 'tw', 'README.md', 'LICENSE', 'package-lock.json', 'index.d.ts', 'src/sdk.js', 'docs/project-agent-usage.md',
   'docs/census/m1-census.json', 'docs/census/m1-census.md', 'docs/addons-inventory.json',
   'docs/addons-disposition.md', 'docs/completion-audit.md', 'docs/quickstart.md', 'docs/command-reference.md',
   'docs/acceptance-evidence.json', 'docs/census/action-acceptance.json', 'docs/census/action-acceptance.md',

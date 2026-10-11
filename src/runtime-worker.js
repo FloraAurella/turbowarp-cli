@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const Module = require('node:module');
 const {Project} = require('./project');
+const {MAX_PROJECT_BASE64_CHARS} = require('./project-limits');
 const {createInputReplay} = require('./device-adapters');
 const {PROTOCOL} = require('./runtime-controller');
 const {resourceError, errorInfo} = require('./errors');
@@ -137,7 +138,7 @@ class PersistentRuntime {
   async init(input) {
     object(input, ['project', 'fps', 'compile', 'turbo', 'seed', 'inputs', 'cloudFile', 'runtimeSettings', 'paused',
       'traceLimit', 'watch', 'target', 'maxFrames', 'lifetimeMS', 'answer'], 'runtime initialization');
-    const bytes = Buffer.from(text(input.project, 'project base64', 140 * 1024 * 1024), 'base64');
+    const bytes = Buffer.from(text(input.project, 'project base64', MAX_PROJECT_BASE64_CHARS), 'base64');
     await this.project.load(bytes);
     if (input.cloudFile) this.project.attachCloud(text(input.cloudFile, 'cloud path', 4096));
     this.compiled = applySettings(this.project, input); this.fps = this.project.vm.runtime.frameLoop.framerate;

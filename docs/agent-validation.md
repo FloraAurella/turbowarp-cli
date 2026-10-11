@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | `npm test` | **297/297通过，0失败、取消或跳过**；63.64秒 | [完整日志](verification/agent-full-tests.log)、[stderr](verification/agent-full-tests.stderr.log) |
 | 源码稳定性 | 最终测试前后96个源码、脚本、测试和配置文件哈希一致 | [测试前哈希](verification/agent-sources-before.json)、[汇总](verification/agent-implementation.json) |
-| `npm run tutorial:smoke` | 原37条实际指令 + 三个 Agent 流程65条请求，共102条；通过 | [教程日志](verification/agent-tutorial.log)、[教程产物清单](verification/examples/verified-Rn9fo5/verification.json) |
+| `npm run tutorial:smoke` | 原37条实际指令 + 三个 Agent 流程65条请求，共102条；通过 | [教程日志](verification/agent-tutorial.log)、[教程产物清单](../examples/verified-Rn9fo5/verification.json) |
 | `npm run resources:check` | 1610个资源文件、301个扩展、1304个素材哈希检查通过 | [资源日志](verification/agent-resources.log) |
 | `npm run baseline:check` | 冻结开发基线检查通过 | [基线日志](verification/agent-baseline.log) |
 | `./tw doctor --json` | 入口Node26.5.0，选择Node24.18.0，macOS arm64，4项原生依赖可加载 | [环境诊断](verification/agent-doctor.json) |
@@ -18,9 +18,9 @@
 
 ## 实际示例
 
-- [基础创作](verification/examples/verified-Rn9fo5/agent-basic/verification.json)：17条请求，新建/本地素材/校验/追加/保存重开/运行；运行x=-20，编辑x=-120，磁盘项目不变。
-- [输入回放](verification/examples/verified-Rn9fo5/agent-input/verification.json)：21条请求，空格键JSONL回放；运行y=40，编辑y=0，磁盘项目不变。
-- [调试与修正](verification/examples/verified-Rn9fo5/agent-debug/verification.json)：27条请求；预期出现一次INVALID_ARGUMENT后修正，apply节点映射设置真实断点、命中、单步到x=-20、检查trace，编辑x=-120。
+- [基础创作](../examples/verified-Rn9fo5/agent-basic/verification.json)：17条请求，新建/本地素材/校验/追加/保存重开/运行；运行x=-20，编辑x=-120，磁盘项目不变。
+- [输入回放](../examples/verified-Rn9fo5/agent-input/verification.json)：21条请求，空格键JSONL回放；运行y=40，编辑y=0，磁盘项目不变。
+- [调试与修正](../examples/verified-Rn9fo5/agent-debug/verification.json)：27条请求；预期出现一次INVALID_ARGUMENT后修正，apply节点映射设置真实断点、命中、单步到x=-20、检查trace，编辑x=-120。
 
 每个示例均解码实际480×360 PNG，记录文件与像素哈希，保留项目、图片、完整请求/响应和stderr。使用固定seed=1234、本地Cat 2素材、新建输出目录，无网络或真实设备要求。此处图片检查不代替GUI图像差分验收。
 

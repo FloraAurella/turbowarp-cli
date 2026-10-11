@@ -2,6 +2,8 @@
 const describe = () => ({
   schemaVersion: 1,
   implemented: [
+    {id: 'native-project-code', commands: ['project read', 'project find', 'project validate', 'project apply', 'project exec'], conditions: ['Node 24', '本地 Scratch/TurboWarp 项目', 'exec 是完整本地权限的 Node 脚本', '一次性写入显式 --out'], acceptance: 'SB3 roundtrip and local runtime tests'},
+    {id: 'project-sdk', commands: ['openProject', 'createProject', 'project.batch', 'project.save'], conditions: ['Node 24', 'tw-cli 公共包入口', 'JSON 对象或受信任本地 JavaScript'], acceptance: 'local-functional-tests'},
     {id: 'project-editing', commands: ['new', 'open', 'save', 'undo', 'redo'], conditions: ['Node 24', '本地项目文件'], acceptance: 'local-functional-tests'},
     {id: 'script-recipes', commands: ['script validate', 'script apply', 'blocks schema'], conditions: ['已打开项目', '可查询 schema 的已加载积木', '过程使用现有 proc 命令'], acceptance: 'local-functional-tests'},
     {id: 'offline-library', commands: ['library status', 'library search', 'library load'], conditions: ['随附本地素材'], acceptance: 'resource-hashes'},

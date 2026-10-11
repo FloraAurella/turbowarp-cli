@@ -1,4 +1,4 @@
-TurboWarp CLI (tw-cli), 0.1.0 experimental source release
+TurboWarp CLI (tw-cli), 0.1.2 experimental source and macOS arm64 portable release
 Copyright (C) 2026 tw-cli contributors.
 
 The CLI-specific source and documentation are licensed under GPL-3.0-only.
@@ -10,6 +10,17 @@ command-line workflow for project editing, native offscreen rendering,
 offline audio, declarative block recipes, JSONL automation and packaging.
 It incorporates frozen upstream components identified in baseline.json.
 Copied upstream files retain their original licenses, authors and notices.
+
+Modification notice, 2026-10-11: version 0.1.2 adds native structured
+project read/find/validate/apply/exec commands, a JavaScript SDK and types,
+atomic batch editing with revision/source-file conflict checks, 300 MiB
+project inputs and 64 MiB metadata limits, zero-size SVG handling and
+compact reporter identity preservation. The macOS arm64 portable package
+contains a compiled payload, Node 24 and native dependencies; corresponding
+source, build scripts and dependency source/license inventory accompany
+the release. Existing workspace SB3 and local generated artifacts are not
+included. The GPL rights to modify and redistribute corresponding source
+are unaffected by payload integrity checks or read-only file modes.
 
 Scratch is developed by the Lifelong Kindergarten Group at the MIT Media
 Lab. See http://scratch.mit.edu.

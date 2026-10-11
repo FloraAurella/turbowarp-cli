@@ -1,16 +1,63 @@
 {
+  "version": 2,
   "archives": [
     {
       "path": "upstream/desktop-baseline-source.zip",
-      "sha256": "ab3a47813d03bac724b0b6efd67c3c59179ce716cb20880da2000ab186818f7a",
-      "bytes": 842947
+      "originalSha256": "ab3a47813d03bac724b0b6efd67c3c59179ce716cb20880da2000ab186818f7a",
+      "inputSha256": "ab3a47813d03bac724b0b6efd67c3c59179ce716cb20880da2000ab186818f7a",
+      "sha256": "e57d8d875b298db4653244902f4523c281688037351f6b5994e63bd9dcd21b72",
+      "bytes": 847645,
+      "includedFiles": 153,
+      "excludedProjectEntries": [],
+      "removedFromInput": [],
+      "note": "Filtered upstream code archive; excluded sample Scratch projects are not redistributed. Original archive checksum is provenance, not the filtered archive checksum."
     },
     {
       "path": "upstream/extensions-source.zip",
-      "sha256": "c9fcddf0b1faad735486f70181dd9a23683bc963cf9ac63b9f341e93195995b7",
-      "bytes": 4000926
+      "originalSha256": "c9fcddf0b1faad735486f70181dd9a23683bc963cf9ac63b9f341e93195995b7",
+      "inputSha256": "c9fcddf0b1faad735486f70181dd9a23683bc963cf9ac63b9f341e93195995b7",
+      "sha256": "ed84f2d97e2f5df8f7fe9bb59e8419e1b5ef34421d12a1e6c49a06b12a18f09d",
+      "bytes": 3459293,
+      "includedFiles": 336,
+      "excludedProjectEntries": [
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/AR cube.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Additive Fire.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Ask for the manager.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Base 64.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Box2D.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Clipping Sprites and Pen.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Cloud Variables.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Moving Around with Pointer Lock.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Party Time.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Pen Plus.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Recolor the Dango.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Simple3D template.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Stretch.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Temporary Variables - Thread vs. Runtime.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Tickle Me.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Tweening.sb3"
+      ],
+      "removedFromInput": [
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/AR cube.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Additive Fire.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Ask for the manager.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Base 64.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Box2D.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Clipping Sprites and Pen.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Cloud Variables.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Moving Around with Pointer Lock.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Party Time.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Pen Plus.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Recolor the Dango.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Simple3D template.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Stretch.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Temporary Variables - Thread vs. Runtime.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Tickle Me.sb3",
+        "extensions-90192c38ce9128c5eb828ad0957e0a968de9babd/samples/Tweening.sb3"
+      ],
+      "note": "Filtered upstream code archive; excluded sample Scratch projects are not redistributed. Original archive checksum is provenance, not the filtered archive checksum."
     }
   ],
   "extensionsCommit": "90192c38ce9128c5eb828ad0957e0a968de9babd",
-  "desktopNote": "Local frozen desktop source snapshot; version field is 1.16.0 but this is not the official v1.16.0 tag. Runtime does not require this archive."
+  "desktopNote": "Frozen desktop source snapshot; not the official v1.16.0 tag. Archives are filtered code and license deliveries, not complete upstream checkouts."
 }

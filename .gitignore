@@ -8,6 +8,21 @@ coverage/
 *.tgz
 .DS_Store
 
+# Project data is kept outside the public tool tree. Release builders use an
+# explicit allowlist as well, including when inspecting nested archives.
+games/
+edit/
+.zcode/
+protected-preview/artifacts/
+docs/verification/
+*.sb3
+*.sb2
+*.sb
+*.sprite3
+*.sprite2
+*.sprite
+**/project.json
+
 # Local configuration and credentials
 .env
 .env.*

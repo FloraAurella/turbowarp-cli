@@ -5,7 +5,7 @@ const JSZip = require('@turbowarp/jszip');
 const {Project, blankProject, atomicWrite, readLocalFile, emptyTarget, svgCostume, md5} = require('./project');
 const editorCommands = require('./editor-commands');
 const commandModules = require('./command-modules');
-const {resourceError} = require('./errors');
+const {resourceError, CommandError} = require('./errors');
 
 const number = (value, label) => {
   const result = Number(value);
@@ -69,22 +69,35 @@ class CommandSession {
     }
   }
   async transaction(label, operation, options = {}) {
+    if (this._batchDepth) {
+      if (options.out) throw new CommandError('INVALID_ARGUMENT', 'Nested output is forbidden in a project batch', '仅在批量提交后保存一次项目。');
+      return operation();
+    }
     const before = await this.snapshot();
     const serializedBefore = this.project.vm.toJSON(null, {allowOptimization: false});
     const selected = this.project.vm.editingTarget?.id;
     const dirty = this.dirty;
+    const file = this.project.file, sourceHash = this.project.sourceHash;
     const state = this.sessionState();
     try {
-      const result = await operation();
+      const result = await operation(before);
+      if (options.skipUnchanged && result.changed === false) {
+        if (options.out && path.resolve(options.out) !== this.project.file) result.saved = await this.save(options.out, options.force);
+        return result;
+      }
       this.dirty = true;
       // Persistence is part of the command, not a second transaction. A refused
       // overwrite must leave the project and undo/redo stacks untouched.
-      if (options.out) await this.save(options.out, options.force);
+      if (options.out) {
+        const saved = await this.save(options.out, options.force);
+        if (options.skipUnchanged) result.saved = saved;
+      }
       this.undoStack.push({label, bytes: before, selected, state});
       this.trimHistory(this.undoStack);
       this.redoStack = [];
       return result;
     } catch (error) {
+      if (this.disposed) throw error;
       let unchanged = false;
       try {
         unchanged = this.project.vm && this.project.vm.toJSON(null, {allowOptimization: false}) === serializedBefore &&
@@ -96,7 +109,7 @@ class CommandSession {
           this.project.vm.editingTarget = this.project.vm.runtime.getTargetById(selected);
           this.project.vm.runtime.setEditingTarget(this.project.vm.editingTarget);
         }
-      } finally {this.restoreSessionState(state); this.dirty = dirty;}
+      } finally {this.restoreSessionState(state); this.dirty = dirty; this.project.file = file; this.project.sourceHash = sourceHash;}
       throw error;
     }
   }
@@ -115,6 +128,12 @@ class CommandSession {
   async execute(argv) {
     if (this.disposed) throw new Error('Command session is disposed');
     const {command, args, options} = validateCommand(argv);
+    if (command === 'project' && ['read', 'find', 'validate'].includes(args[0]) && options.project) {
+      const candidate = new CommandSession();
+      candidate.stdinOwned = this.stdinOwned;
+      try {await candidate.open(options.project); return await candidate.nativeProject(args, options);}
+      finally {candidate.dispose();}
+    }
     if (!options.project) return this.executeCommand(argv);
     if (command === 'script' && args[0] === 'validate') {
       const candidate = new Project();
@@ -171,17 +190,17 @@ class CommandSession {
       if (this.dirty && !options.force) throw new Error('Unsaved changes; use save or --force');
       const output = args[0] || options.out;
       const previous = output && this.project.vm ? {bytes: await this.snapshot(), selected: this.project.vm.editingTarget?.id,
-        file: this.project.file, dirty: this.dirty, state: this.sessionState()} : null;
+        file: this.project.file, sourceHash: this.project.sourceHash, dirty: this.dirty, state: this.sessionState()} : null;
       try {
         await this.project.load(await blankProject());
-        this.project.file = null; this.dirty = true;
+        this.project.file = null; this.project.sourceHash = null; this.dirty = true;
         const result = output ? await this.save(output, options.force) : this.project.info();
         this.undoStack = []; this.redoStack = []; this.inputs = []; this.runtimeSettings = {};
         commandModules.restoreState(this);
         return result;
       } catch (error) {
         if (previous) {
-          try {await this.restore(previous.bytes, previous.selected);} finally {this.restoreSessionState(previous.state); this.project.file = previous.file; this.dirty = previous.dirty;}
+          try {await this.restore(previous.bytes, previous.selected);} finally {this.restoreSessionState(previous.state); this.project.file = previous.file; this.project.sourceHash = previous.sourceHash; this.dirty = previous.dirty;}
         }
         throw error;
       }
@@ -308,17 +327,89 @@ class CommandSession {
       this.project = candidate;
     } else await this.project.load(bytes);
     this.project.file = path.resolve(file); this.undoStack = []; this.redoStack = []; this.dirty = false; this.inputs = []; this.runtimeSettings = {};
+    this.project.sourceHash = crypto.createHash('sha256').update(bytes).digest('hex');
     commandModules.restoreState(this);
     return this.project.info();
   }
   async save(file, force) {
+    if (this._batchDepth) throw new CommandError('INVALID_ARGUMENT', 'Saving inside a project batch is forbidden', '在 batch 完成后调用 save，或向最终提交提供 --out。');
     const filename = file || this.project.file;
     if (!filename) throw new Error('Missing output path: save 项目.sb3');
     if (path.extname(filename).toLowerCase() !== '.sb3') throw new Error('Project output must end in .sb3');
     const overwrite = force || path.resolve(filename) === this.project.file;
-    const result = await atomicWrite(filename, await this.project.bytes(), overwrite);
-    this.project.file = result.path; this.dirty = false;
+    const checkConflict = async () => {
+      if (path.resolve(filename) !== this.project.file || !this.project.sourceHash) return;
+      let actual;
+      try {actual = crypto.createHash('sha256').update(await readLocalFile(filename)).digest('hex');}
+      catch (error) {if (error.code !== 'ENOENT') throw error; actual = null;}
+      if (actual !== this.project.sourceHash) throw new CommandError('PROJECT_CONFLICT', 'The source project changed on disk after it was opened', '重新读取项目并重新应用修改；--force 不绕过内容冲突。', {path: path.resolve(filename)});
+    };
+    await checkConflict();
+    const result = await atomicWrite(filename, await this.project.bytes(), overwrite, {beforeCommit: checkConflict});
+    this.project.file = result.path; this.project.sourceHash = result.sha256; this.dirty = false;
     return result;
+  }
+  async projectBatch(callback, options = {}) {
+    if (this._batchDepth) {
+      if (options.out) throw new CommandError('BATCH_COMMAND_DENIED', 'Nested project output is forbidden', '在 batch 完成后保存一次项目。');
+      return callback();
+    }
+    const engine = require('./project-code');
+    return this.transaction('project batch', async before => {
+      const previous = engine.revision(this.project);
+      this._batchDepth = 1;
+      this._batchSnapshot = before;
+      let result;
+      try {result = await callback(); await engine.validate(this.project);}
+      finally {this._batchDepth = 0; this._batchSnapshot = null;}
+      const revision = engine.revision(this.project);
+      return {...result, version: 1, changed: revision !== previous, revision,
+        diagnostics: result?.diagnostics || [], idMap: result?.idMap || {}};
+    }, {...options, skipUnchanged: true});
+  }
+  async applyProjectEdits(document, options = {}) {
+    return this.projectBatch(() => require('./project-code').applyOperations(this, document), options);
+  }
+  async validateProjectEdits(document) {
+    const candidate = new CommandSession();
+    try {
+      await candidate.project.load(await this.snapshot());
+      const result = await candidate.applyProjectEdits(document);
+      return {...result, valid: true, applied: false};
+    } finally {candidate.dispose();}
+  }
+  async nativeProject(args, options = {}) {
+    const engine = require('./project-code');
+    if (args[0] === 'read') {
+      if (options.format && !['json', 'text'].includes(options.format)) throw new CommandError('INVALID_ARGUMENT', 'format must be json or text', '使用 --format json 或 --format text。');
+      return engine.read(this.project, options);
+    }
+    if (args[0] === 'find') return engine.find(this.project, args[1], options);
+    if (args[0] === 'exec') {
+      const {runProjectScript} = require('./project-execution');
+      return this.projectBatch(async () => {
+        const edited = await runProjectScript(this._batchSnapshot, args[1], {workers: this.workers});
+        const selected = this.project.vm.editingTarget?.id;
+        await this.project.load(edited.bytes);
+        if (selected && this.project.vm.runtime.getTargetById(selected)) this.project.vm.setEditingTarget(selected);
+        return edited.result;
+      }, options);
+    }
+    let bytes;
+    if (args[1] === '-') {
+      if (this.stdinOwned) throw new CommandError('INVALID_ARGUMENT', 'JSONL sessions already own stdin', '在会话中使用编辑文件路径，或通过 SDK 提交对象。');
+      const chunks = []; let size = 0;
+      for await (const chunk of process.stdin) {
+        size += Buffer.byteLength(chunk);
+        if (size > 32 * 1024 * 1024) throw new CommandError('INVALID_ARGUMENT', 'Edit JSON exceeds 32 MiB', '拆分编辑文档。');
+        chunks.push(Buffer.from(chunk));
+      }
+      bytes = Buffer.concat(chunks);
+    } else bytes = await readLocalFile(args[1], 32 * 1024 * 1024);
+    let document;
+    try {document = JSON.parse(bytes.toString('utf8'));}
+    catch {throw new CommandError('INVALID_ARGUMENT', 'Expected valid project edit JSON', '提供 {version:1,baseRevision,operations}。', {path: '$'});}
+    return args[0] === 'validate' ? this.validateProjectEdits(document) : this.applyProjectEdits(document, options);
   }
   async sprite(args, options, target) {
     const vm = this.project.vm;

@@ -19,7 +19,7 @@ tw record start /absolute/new-frames --project /absolute/demo.sb3 \
 
 ### frozen GUI 六选项
 
-frozen 源码位置为 `/path/to/desktop-master/node_modules/scratch-gui/src/addons/addons/mediarecorder/userscript.js`。本实现不用浏览器 `MediaRecorder`，以下默认差异不能忽略。
+frozen 源码位置为 `../desktop-master/node_modules/scratch-gui/src/addons/addons/mediarecorder/userscript.js`。本实现不用浏览器 `MediaRecorder`，以下默认差异不能忽略。
 
 | CLI 选项 | 默认值 | 明确语义 |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ manifest `memory` 包含至多 80 个 phase 样本（bootstrap、canvas require�
 
 可证明全段无交集的 WAV 现在从 source header 的实际样本长度/offset/length 做 parent 预检，**创建输出目录和启动 native worker 之前**失败；测试跟踪 child registration 必须为 0。对于脚本提前 stop 导致原有音轨不再有交集，worker 的实际 captured interval 混音验证仍拒绝。另保留超限 guard 的**注入 byte sample 单元测试**：超上限一字节仍拒绝，且 phase trace 不超过 80 项。此单元测试不是实际分配 512 MiB 的 OS/RSS 压力验收；真实 native 分配与释放的证据是上述固定长帧/编码压力测量及修复前默认字体进程的 550.94 MiB 高水位。
 
-复验命令（19 cases：record 11 + gamepad mapping 8，无 skip）为 `node --require /path/to/turbowarp-cli/src/native-environment.js --test /path/to/turbowarp-cli/test/recording.test.js /path/to/turbowarp-cli/test/gamepad-mapping.test.js`。
+复验命令（19 cases：record 11 + gamepad mapping 8，无 skip）为 `node --require src/native-environment.js --test test/recording.test.js test/gamepad-mapping.test.js`。
 
 安全 VM 和当前 Project 使用已批准的 frozen/offline extension factories；不读取任意 extension code。不开放摄像头、麦克风、HID、BLE/BT 或网络。原始设备样本仍走现有 `device` 模块/worker replay。没有 browser、Electron、download 或弹窗。
 
@@ -195,6 +195,6 @@ record start /absolute/new-pad-record --duration 1 --projectaudio false
 
 ## 验收边界
 
-- `/path/to/turbowarp-cli/test/gamepad-mapping.test.js` 对比真实 frozen GamepadData/export 纯函数和 comment parser，测试 CommandSession store、dirty、controller switch、undo/redo、parser/save/reload 与实际 VM key/mouse replay。
-- `/path/to/turbowarp-cli/test/recording.test.js` 分开列模拟项目帧/六选项边界、真实 native WAV 数值混音，以及真实系统 ffmpeg/ffprobe MP4/WebM 编码、读回帧数和非零 PCM/RMS。PNG 使用 header 和 decoded pixels 双验证；另测 exact grants、超时/dispose kill 和失败目录清理。
+- `test/gamepad-mapping.test.js` 对比真实 frozen GamepadData/export 纯函数和 comment parser，测试 CommandSession store、dirty、controller switch、undo/redo、parser/save/reload 与实际 VM key/mouse replay。
+- `test/recording.test.js` 分开列模拟项目帧/六选项边界、真实 native WAV 数值混音，以及真实系统 ffmpeg/ffprobe MP4/WebM 编码、读回帧数和非零 PCM/RMS。PNG 使用 header 和 decoded pixels 双验证；另测 exact grants、超时/dispose kill 和失败目录清理。
 - **未验收**：真实 GUI MediaRecorder 差分、实时 OS 捕捉、完整项目 audio/music clockOffline scheduling、browser/turbo/interpolation 的完整时间等价。不得把这些缺口写成“已完成”。

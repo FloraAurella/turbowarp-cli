@@ -17,6 +17,21 @@ const checkDimensions = (width, height) => {
   }
 };
 
+// Only use explicit SVG lengths to recognize empty viewports. Positive images
+// still go through the native decoder and the existing dimension limits.
+const svgLength = value => {
+  if (value === undefined) return null;
+  const match = typeof value === 'string' && value.trim().match(/^([+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?)(px|in|cm|mm|pt|pc|em|ex|%)?$/i);
+  if (!match) throw new Error('SVG has invalid viewport dimensions');
+  const number = Number(match[1]);
+  if (!Number.isFinite(number) || number < 0) throw new Error('SVG has invalid viewport dimensions');
+  if (number === 0) return 0;
+  const factor = {'': 1, px: 1, in: 96, cm: 96 / 2.54, mm: 96 / 25.4, pt: 96 / 72, pc: 16}[match[2]?.toLowerCase() || ''];
+  const length = factor === undefined ? null : number * factor;
+  if (length !== null && !Number.isFinite(length)) throw new Error('SVG has invalid viewport dimensions');
+  return length;
+};
+
 // Validate decoded XML attributes and CSS, not the original spelling of a URL. The
 // native SVG decoder must never get external resources or nested executable SVGs.
 const parseSVG = source => {
@@ -209,13 +224,32 @@ class PixelSkin extends Skin {
     let viewBox;
     if (root.attribs.viewBox !== undefined) {
       viewBox = root.attribs.viewBox.trim().split(/[\s,]+/).map(Number);
-      if (viewBox.length !== 4 || !viewBox.every(Number.isFinite) || viewBox[2] <= 0 || viewBox[3] <= 0) {
+      if (viewBox.length !== 4 || !viewBox.every(Number.isFinite) || viewBox[2] < 0 || viewBox[3] < 0) {
         throw new Error('SVG has invalid viewBox dimensions');
       }
       // Frozen SVGSkin uses viewBox units, not CSS width/height, for costume size.
       root.attribs.width = String(viewBox[2]); root.attribs.height = String(viewBox[3]);
     }
     const bytes = Buffer.from(serialize(root, {xmlMode: true}));
+    const viewport = viewBox ? viewBox.slice(2) : [svgLength(root.attribs.width), svgLength(root.attribs.height)];
+    if (viewport.some(value => value !== null && value < 0)) throw new Error('SVG has invalid viewport dimensions');
+    if (viewport.includes(0)) {
+      // Frozen SVGSkin treats zero width OR height as an empty image. Avoid
+      // passing it to decoders which require a positive raster allocation, and
+      // clear old silhouette data when an existing costume becomes empty.
+      if (this.vector) this.resetMIPs();
+      else if (this._texture) {this._renderer.gl.deleteTexture(this._texture); this._texture = null;}
+      this.vector = true;
+      this._svg = bytes;
+      this._size = viewport.map(value => value ?? 0);
+      this.resolution = 1;
+      this._maxMIPLevel = 0;
+      this._rotationCenter[0] = 0;
+      this._rotationCenter[1] = 0;
+      this._silhouette.update(new ImageData(1, 1));
+      this.emitWasAltered();
+      return;
+    }
     const image = new Image(); image.src = bytes;
     checkDimensions(image.width, image.height);
     if (!viewBox) viewBox = [0, 0, image.width, image.height];

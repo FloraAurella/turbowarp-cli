@@ -20,6 +20,9 @@ const main = async () => {
 };
 if (require.main === module) main().catch(error => {
   const info = errorInfo(error);
+  if (process.argv[2] === 'project' && ['read', 'find', 'validate', 'apply', 'exec'].includes(process.argv[3])) {
+    process.stdout.write(JSON.stringify({ok: false, error: info.message, errorInfo: info}) + '\n');
+  }
   console.error(`tw: ${info.message}\n${info.hint}`);
   process.exitCode = 1;
 });

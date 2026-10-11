@@ -2,6 +2,8 @@
 
 本轮接口保持纯 CLI 和原有 JSONL 协议。推荐按“查询能力 → 查询积木 → 校验 → 创建 → 保存 → 重开 → 运行 → 检查结果”的顺序使用。命令可用与本机功能测试通过不代表完整 GUI 对等；发布验收继续使用 `tw check`。
 
+修改已有项目优先使用 [原生项目读写与 JavaScript SDK](project-agent-usage.md)：`project read/find/validate/apply/exec` 提供保留节点身份的代码读改写闭环和一次批量提交。本文的版本 1 配方继续用于追加新脚本。
+
 ## 1. 环境诊断与统一入口
 
 ```bash

@@ -6,6 +6,7 @@ const Module = require('node:module');
 const {createHash} = require('node:crypto');
 const Packager = require('@turbowarp/packager');
 const JSZip = require('@turbowarp/jszip');
+const {MAX_PROJECT_BYTES, MAX_EXPANDED_PROJECT_BYTES} = require('./project-limits');
 const {createCanvas, loadImage} = require('@napi-rs/canvas');
 const {parseDOM} = require('htmlparser2');
 const serialize = require('dom-serializer');
@@ -451,10 +452,12 @@ const build = async (session, args, options, p) => {
   }
   if (!session.project?.vm || typeof session.snapshot !== 'function') throw new Error('先打开项目或 --project 项目.sb3');
   const source = Buffer.from(await session.snapshot());
-  if (source.length > 100 * 1024 * 1024) throw new Error('打包项目输入超过100MiB');
-  const archive = await validateArchive(source, {maxExpanded: 200 * 1024 * 1024});
+  if (source.length > MAX_PROJECT_BYTES) throw new Error(`打包项目输入超过${MAX_PROJECT_BYTES / 1024 / 1024}MiB`);
+  const archive = await validateArchive(source, {maxExpanded: MAX_EXPANDED_PROJECT_BYTES});
   if (!archive.file('project.json')) throw new Error('打包输入缺少project.json');
-  const sourceJSON = permission.parseJSON(await archive.file('project.json').async('string'));
+  // Project lists legitimately exceed command/config array sizes. This SB3 has
+  // already passed archive and Project validation; retain the official list cap.
+  const sourceJSON = permission.parseJSON(await archive.file('project.json').async('string'), {maxArray: 200000, maxBytes: 32 * 1024 * 1024});
   if (sourceJSON.extensionURLs && Object.keys(sourceJSON.extensionURLs).length) p.deny('extension-execute', null, '项目内自定义扩展未支持安全执行；不能绕过Project安全加载门');
   if (Array.isArray(sourceJSON.extensions) && sourceJSON.extensions.some(id => ['videoSensing', 'Gamepad'].includes(id))) p.deny('extension-execute', null,
     '未支持数据扩展打包转换 missing-data-provider-conversion：CLI预录videoSensing/Gamepad不能降格为产物实时摄像头/缺失opcode；这是未完产品能力');

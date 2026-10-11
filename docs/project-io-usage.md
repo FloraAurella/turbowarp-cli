@@ -18,7 +18,9 @@ save /absolute/path/working.sb3
 
 `project import` 是编辑操作，不改变当前保存路径、不清空历史，必须已有项目（可先 `new`）。主命令层的 transaction 提供失败回滚、undo/redo；整个项目替换导入仍按编辑处理。导出文件仅用 positional 或 `--output`；不能同时指定两者。`--force` 仅允许覆盖普通文件，拒绝 symlink。不得把导出 `--output` 当成项目 `--out` 持久化。
 
-SB/SB2 由冻结 scratch-parser/VM 转换为 SB3。SB 是真正 ScratchV01/02 二进制，经 VM 使用的冻结 scratch-sb1-converter 读取；SB2 ZIP 包支持一层目录。提前检查原始 ZIP 路径、200 MiB 展开限制、所有必须本地存在的资产；缺失不回退下载/默认素材。SB3 和 SB2 的文件资产校验 MD5，SB 二进制内部媒体由冻结 converter 转码后再校验保存资产。原始位图、SVG、WAV 字节在无需合并/转码时保持。SB PCM 转为 WAV，不能宣称源容器字节一致。
+项目及角色元数据 `project.json`、`sprite.json` 与 CLI 身份元数据 `tw-cli-state.json` 的单文件解压大小上限为 64 MiB（67,108,864 字节）；大小检查发生在 JSON 解析及替换当前项目之前。
+
+项目文件打开和导入上限为 300 MiB（314,572,800 字节）。SB/SB2 由冻结 scratch-parser/VM 转换为 SB3。SB 是真正 ScratchV01/02 二进制，经 VM 使用的冻结 scratch-sb1-converter 读取；SB2 ZIP 包支持一层目录。提前检查原始 ZIP 路径、600 MiB 展开限制、所有必须本地存在的资产；缺失不回退下载/默认素材。SB3 和 SB2 的文件资产校验 MD5，SB 二进制内部媒体由冻结 converter 转码后再校验保存资产。原始位图、SVG、WAV 字节在无需合并/转码时保持。SB PCM 转为 WAV，不能宣称源容器字节一致。
 
 转换使用 renderer-free VM 避免浏览器对象。旧 SVG 的浏览器 `getBBox`、文字、Scratch 2 SVG quirks 归一化不宣称 GUI parity；CLI 保留原 SVG bytes，用原生 rasterizer hydrate。旧位图 text-layer 使用原生 canvas 合并，合并后的 PNG 字节有意改变。Legacy 可执行 ScratchX/未知扩展拒绝，转换后的 SB3 再次进行扩展、opcode、cloud 及资产校验。层序从 legacy executableTargets 保留，独立于角色列表 indexInLibrary；重复名称不用于层序匹配。
 
@@ -63,11 +65,11 @@ node scripts/fetch-cli-library.js --desktop-release 1.16.0 --release-archive /ab
 ## 显式 URL 获取（不隐式打开）
 
 ```text
-project fetch https://example.org/local-project.sb3 /absolute/result.sb3 --allow net:example.org --max-bytes 104857600 --timeout-ms 15000
+project fetch https://example.org/local-project.sb3 /absolute/result.sb3 --allow net:example.org --max-bytes 314572800 --timeout-ms 15000
 project import /absolute/result.sb3
 ```
 
-fetch 不需当前项目，不修改编辑状态；复用共享 permission-policy + network-policy.fetchBytes。默认 deny，每个 redirect 主机都独立授权，不允许 HTTPS 降级；项目 URL 只允许 HTTPS。输入总大小最多100 MiB、总超时0.1–30秒，获取后先冻结parser/VM+资产安全校验，再原子写SB3。`--allow` 只在该条命令生效，写文件路径是显式授权，不能通过网络授权获得任意扩展执行。Scratch ID/token 云拉取及远程散装资产组装不包含在此接口；不声明真实Scratch服务器验收。loopback测试只验证共享HTTP权限/redirect/maxBytes边界。
+fetch 不需当前项目，不修改编辑状态；复用共享 permission-policy + network-policy.fetchBytes。默认 deny，每个 redirect 主机都独立授权，不允许 HTTPS 降级；项目 URL 只允许 HTTPS。输入总大小默认及最多300 MiB、总超时0.1–30秒，获取后先冻结parser/VM+资产安全校验，再原子写SB3。`--allow` 只在该条命令生效，写文件路径是显式授权，不能通过网络授权获得任意扩展执行。Scratch ID/token 云拉取及远程散装资产组装不包含在此接口；不声明真实Scratch服务器验收。loopback测试只验证共享HTTP权限/redirect/maxBytes边界。
 
 ## 原子本地文件背包
 

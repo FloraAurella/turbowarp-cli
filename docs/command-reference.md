@@ -549,6 +549,11 @@ proc delete：位置参数 1..1；选项 --project 值 --target 值 --out 值 --
 
 ```text
 project 指令参考
+project read：位置参数 0..0；选项 --project 值 --target 值 --script 值 --format 值
+project find：位置参数 1..1；选项 --project 值 --target 值 --opcode 值 --resource 值
+project validate：位置参数 1..1；选项 --project 值
+project apply：位置参数 1..1；选项 --project 值 --out 值 --force
+project exec：位置参数 1..1；选项 --project 值 --out 值 --force
 project fetch：位置参数 1..2；选项 --output 值 --force --allow 值 --max-bytes 值 --timeout-ms 值
 project import：位置参数 1..1；选项 --project 值 --out 值 --force
 project import-sprite：位置参数 1..1；选项 --project 值 --out 值 --force

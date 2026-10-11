@@ -63,7 +63,10 @@ const main = async () => {
   const {runExample} = require('./agent-example');
   const agentExamples = [];
   for (const mode of ['basic', 'input', 'debug']) agentExamples.push(await runExample(mode, path.join(out, 'agent-' + mode)));
-  const manifest = {directory: out, commands: transcript.length, agentExamples, targetXAfterRun: 25, editorXAfterRun: 0,
+  const projectExamples = [];
+  const runProjectExample = require('./project-edit-examples').runExample;
+  for (const mode of ['move', 'batch', 'procedure']) projectExamples.push(await runProjectExample(mode, path.join(out, 'project-' + mode)));
+  const manifest = {directory: out, commands: transcript.length, agentExamples, projectExamples, targetXAfterRun: 25, editorXAfterRun: 0,
     traceEntries: trace.trace.entries.length, libraryAssets: library.available,
     noDOM: runtime.noDOM && recordManifest.noDOM, recordingFrames: recordManifest.timing.frameCount,
     files: ['demo.sb3', 'result.png', 'demo.html', 'demo.zip', 'with-cat.sb3', 'drawing.svg', 'drawing.png', 'font.png',

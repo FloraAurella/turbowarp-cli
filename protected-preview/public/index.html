@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="把 Scratch SB3 工程编译为可以离线试玩的 HTML，原始积木工程保留在你这里。">
+    <title>积木留存 · Scratch 发布工作台</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="积木留存首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>积木留存<span class="brand-caption">Scratch 发布工作台</span></span>
+      </a>
+      <span class="local-badge"><span aria-hidden="true"></span>本机编译</span>
+    </header>
+
+    <main>
+      <div class="intro">
+        <div>
+          <p class="eyebrow">给作品一个可分享的版本</p>
+          <h1>作品带走。<br><span>积木留下。</span></h1>
+        </div>
+        <p class="intro-copy">上传 Scratch 工程，生成可以直接打开的 HTML。<br class="desktop-break">玩家照常试玩，你保留可编辑的原始工程。</p>
+      </div>
+
+      <div class="workbench">
+        <section class="build-panel" aria-labelledby="build-heading">
+          <div class="panel-heading"><h2 id="build-heading">准备发布</h2><span class="format-tag">.sb3 → .html</span></div>
+
+          <div class="dropzone" id="dropzone">
+            <div class="file-symbol" aria-hidden="true"><svg viewBox="0 0 48 56" fill="none"><path d="M10 2h19l12 12v37a3 3 0 0 1-3 3H10a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3Z"/><path d="M29 2v12h12M16 27h15M16 34h15M16 41h9"/></svg><span>SB3</span></div>
+            <p class="drop-title" id="drop-title">把你的工程拖到这里</p>
+            <p class="drop-copy" id="drop-copy">Scratch 3 工程 · .sb3 · 最大 32 MB</p>
+            <button class="button button-secondary" id="choose-file" type="button">选择 SB3 文件</button>
+            <input class="visually-hidden" id="file-input" type="file" accept=".sb3,application/zip,application/x.scratch.sb3" tabindex="-1" aria-label="选择 SB3 文件">
+          </div>
+
+          <div class="selected-file" id="selected-file" hidden>
+            <span class="file-check" aria-hidden="true">✓</span>
+            <div><strong id="file-name"></strong><span id="file-size"></span></div>
+            <button class="icon-button" id="remove-file" type="button" aria-label="移除已选择的文件">×</button>
+          </div>
+
+          <div class="title-field">
+            <label for="project-title">作品名称</label>
+            <input id="project-title" type="text" maxlength="120" placeholder="选择工程后自动填写" autocomplete="off">
+            <p>用于播放器标题和下载文件名。</p>
+          </div>
+
+          <button class="button button-primary" id="compile" type="button" disabled><span id="compile-label">编译为 HTML</span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></button>
+          <div class="progress-track" id="progress-track" hidden aria-hidden="true"><span></span></div>
+          <div class="build-status" id="build-status" role="status" aria-live="polite">选择一个工程，即可开始。</div>
+
+          <div class="example-row"><span>想先看看效果？</span><button id="load-example" class="text-button" type="button">试用示例工程 <span aria-hidden="true">↗</span></button></div>
+          <p class="support-note">支持标准积木、画笔和音乐。云变量、摄像头、麦克风、硬件和其他扩展暂不支持；遇到这些内容会提示构建失败。</p>
+          <p class="privacy-note"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 6h10v7H3V6Zm2 0V4a3 3 0 0 1 6 0v2"/></svg>文件只发送到这台电脑的编译服务，不上传云端。</p>
+        </section>
+
+        <section class="preview-panel" aria-labelledby="preview-heading">
+          <div class="preview-heading"><div><span class="preview-dot" aria-hidden="true"></span><h2 id="preview-heading">作品预览</h2></div><span id="preview-state">等待编译</span></div>
+          <div class="stage-shell" id="stage-shell">
+            <div class="empty-stage" id="empty-stage">
+              <div class="block-art" aria-hidden="true"><span class="block block-one"></span><span class="block block-two"></span><span class="block block-three"></span><span class="block-shadow"></span></div>
+              <p>下一次绿旗，<br>就在这里开始。</p>
+              <span>编译后可以直接试玩，也可以下载到本地。</span>
+            </div>
+            <iframe id="player" title="已编译 Scratch 作品预览" sandbox="allow-scripts allow-same-origin allow-downloads" allow="autoplay; fullscreen" allowfullscreen hidden></iframe>
+          </div>
+          <div class="preview-footer">
+            <span><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13V2m0 1c4-3 6 3 10 0v6c-4 3-6-3-10 0"/></svg><span id="preview-hint">生成后，点击播放器绿旗开始。</span></span>
+            <button class="text-button" id="reload-preview" type="button" disabled>重新加载 <span aria-hidden="true">↻</span></button>
+          </div>
+          <div class="download-row">
+            <div><p id="download-heading">可带走的 HTML</p><span id="download-description">单文件 · 离线运行</span></div>
+            <a class="button button-download" id="download" aria-disabled="true" tabindex="-1"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10m-4-4 4 4 4-4M4 13v4h12v-4"/></svg>下载 HTML</a>
+          </div>
+        </section>
+      </div>
+
+      <aside class="protection-note" aria-labelledby="protection-heading">
+        <div class="note-heading"><span aria-hidden="true">{ }</span><h2 id="protection-heading">分享作品，保留工程</h2></div>
+        <div class="note-body"><p>发布文件运行编译后的程序，不携带原始积木图。请另外保存你的 SB3，它仍是继续编辑作品的原件。</p><p>图片、声音和运行逻辑仍可被分析；这能减少直接扒取工程，无法阻止所有逆向或整个 HTML 被转发。在线预览最长保留 30 分钟，新编译可能替换旧预览；下载文件不受影响。</p></div>
+      </aside>
+      <details class="report" id="report" hidden><summary>查看这次编译结果</summary><pre id="report-content"></pre></details>
+    </main>
+
+    <footer class="site-footer"><span>为 Scratch 作品制作发布副本</span><span>原始工程始终由你保管</span></footer>
+  </body>
+</html>

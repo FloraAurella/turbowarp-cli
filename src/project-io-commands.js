@@ -2,6 +2,7 @@ const path = require('node:path');
 const {readProject, readSpriteArchive, readLocalFile, atomicWrite, emptyTarget, validateProjectPolicy, rejectPrototypeKeys, md5} = require('./project');
 const {LibraryStore, FileStore, kindName} = require('./library-store');
 const {resourceError} = require('./errors');
+const {MAX_PROJECT_BYTES} = require('./project-limits');
 
 const specs = require('./command-catalog').moduleSpecs['project-io-commands.js'];
 const requiresProject = (command, args) => command === 'library' ? args[0] === 'load' : command === 'backpack' ?
@@ -120,6 +121,9 @@ const loadBlocks = async (session, target, bytes) => {
 };
 
 const execute = async (session, command, args, options = {}) => {
+  if (command === 'project' && ['read', 'find', 'validate', 'apply', 'exec'].includes(args[0])) {
+    return session.nativeProject(args, options);
+  }
   validate(command, args, options);
   if (requiresProject(command, args) && !session.project.vm) throw new Error('Open or create a project first');
   const [action, first, second, third] = args;
@@ -138,7 +142,7 @@ const execute = async (session, command, args, options = {}) => {
       const integer = (value, min, max, label) => {
         const number = Number(value); if (!Number.isInteger(number) || number < min || number > max) throw new Error(`${label} must be ${min}..${max}`); return number;
       };
-      const maxBytes = integer(options['max-bytes'] || 100 * 1024 * 1024, 1, 100 * 1024 * 1024, 'max-bytes');
+      const maxBytes = integer(options['max-bytes'] || MAX_PROJECT_BYTES, 1, MAX_PROJECT_BYTES, 'max-bytes');
       const timeoutMs = integer(options['timeout-ms'] || 15000, 100, 30000, 'timeout-ms');
       const {createPolicy, writeFile} = require('./permission-policy');
       const policy = createPolicy(session, options, 'project fetch');

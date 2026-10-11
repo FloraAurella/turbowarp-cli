@@ -1,10 +1,18 @@
 {
   "name": "tw-cli",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Experimental pure command-line TurboWarp over a frozen upstream baseline; full GUI parity is not yet accepted.",
   "license": "GPL-3.0-only",
   "private": true,
   "type": "commonjs",
+  "main": "./src/sdk-entry.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./src/sdk-entry.js"
+    }
+  },
   "engines": {
     "node": "24.x"
   },
@@ -12,9 +20,15 @@
     "tw": "./bin/tw.js"
   },
   "scripts": {
+    "preview:protected": "node scripts/node24.js protected-preview/server.js",
+    "build:protected": "node scripts/node24.js protected-preview/build.js",
     "example:basic": "node scripts/node24.js scripts/agent-example.js basic",
     "example:input": "node scripts/node24.js scripts/agent-example.js input",
     "example:debug": "node scripts/node24.js scripts/agent-example.js debug",
+    "example:edit-move": "node scripts/node24.js scripts/project-edit-examples.js move",
+    "example:edit-batch": "node scripts/node24.js scripts/project-edit-examples.js batch",
+    "example:edit-procedure": "node scripts/node24.js scripts/project-edit-examples.js procedure",
+    "test:project": "node scripts/node24.js --require ./src/native-environment.js --test test/project-code.test.js test/project-agent-interface.test.js test/project-transaction.test.js test/reporter-identities.test.js test/sdk.test.js",
     "test": "node scripts/node24.js --require ./src/native-environment.js --test test/*.js",
     "baseline:check": "node scripts/node24.js scripts/check-baseline.js",
     "tutorial:smoke": "node scripts/node24.js scripts/tutorial-smoke.js",
@@ -24,6 +38,8 @@
     "delivery:check": "node scripts/node24.js scripts/delivery-check.js"
   },
   "dependencies": {
+    "acorn": "7.4.1",
+    "terser": "4.8.1",
     "@fiahfy/icns": "0.0.7",
     "scratch-sb1-converter": "0.2.7",
     "@napi-rs/canvas": "1.0.10",

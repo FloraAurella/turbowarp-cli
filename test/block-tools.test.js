@@ -61,7 +61,7 @@ test('module exports complete registry contract, excludes subcommand from positi
 });
 
 test('real checked-in SB3 inspect/count/find, duplicate fresh IDs, reload and execute twice', async () => withSession(async (session, dir) => {
-  const real = path.join(__dirname, 'fixtures/demo.sb3');
+  const real = await require('./helpers/demo-project').writeDemoProject(path.join(dir, 'synthetic-demo.sb3'));
   await session.execute(['open', real]);
   const info = await session.execute(['blocks', 'inspect']);
   assert.equal((await session.execute(['blocks', 'count'])).blockCount, 2);

@@ -422,7 +422,7 @@ test('batch trace byte budget evicts oversized accumulated locations and total r
   assert.equal(score(result), 120); assert.ok(result.trace.dropped > 0); assert.ok(result.trace.entries.length < 10000);
   assert.ok(result.trace.bytes <= 4 * 1024 * 1024);
   assert.equal(result.trace.bytes, result.trace.entries.reduce((bytes, entry) => bytes + Buffer.byteLength(JSON.stringify(entry)), 0));
-  // Keep input metadata below its independent 8 MiB guard: a 5 MiB final list
+  // Keep input metadata below its independent 64 MiB guard: a 5 MiB final list
   // plus the real ~4 MiB trace exceeds the total response limit, not a parser
   // or watch limit. Do not loosen either safety boundary to exercise this path.
   await session.execute(['list', 'add', 'huge', JSON.stringify(['x'.repeat(5 * 1024 * 1024)])]);

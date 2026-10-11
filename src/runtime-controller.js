@@ -1,6 +1,7 @@
 const path = require('node:path');
 const {fork} = require('node:child_process');
 const {CommandError} = require('./errors');
+const {MAX_PROJECT_BYTES} = require('./project-limits');
 
 const PROTOCOL = 'tw-runtime-v1';
 const ACTIONS = new Set(['pause', 'resume', 'stop', 'step', 'status', 'input', 'answer', 'watch', 'trace', 'breakpoint', 'clones']);
@@ -28,7 +29,7 @@ class RuntimeController {
   async start(bytes, options = {}) {
     if (Number(process.versions.node.split('.')[0]) !== 24) throw new Error('Persistent runtime requires Node.js 24');
     if (this.child || this.closed) throw new Error('RuntimeController cannot be restarted; create a new controller');
-    if (!Buffer.isBuffer(bytes) || !bytes.length || bytes.length > 100 * 1024 * 1024) throw new Error('Runtime project must be a nonempty SB3 buffer, max 100 MiB');
+    if (!Buffer.isBuffer(bytes) || !bytes.length || bytes.length > MAX_PROJECT_BYTES) throw new Error(`Runtime project must be a nonempty SB3 buffer, max ${MAX_PROJECT_BYTES / 1024 / 1024} MiB`);
     const env = {...process.env};
     // Do not inherit preload scripts, alternate module resolution or inspector
     // flags into the isolated copy. Project extensions still fail closed there.
